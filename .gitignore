@@ -77,3 +77,8 @@ tools/
 *.testsettings
 AngleOfSun.bundle
 SheetCopier.bundle
+src/.vs/SCaddins/DesignTimeBuild/.dtbcache.v2
+src/.vs/SCaddins/FileContentIndex/0008985b-1c03-4d70-9ca0-b06d0ac5cfe7.vsidx
+src/.vs/SCaddins/FileContentIndex/690f2711-5392-4c69-b3aa-568b80ab0f30.vsidx
+src/.vs/SCaddins/FileContentIndex/a0fa9c0e-ad6d-4edf-8c44-2ed1395e9a22.vsidx
+src/.vs/SCaddins/FileContentIndex/b1f7df7b-8ad3-4231-8810-56451da6d1f0.vsidx

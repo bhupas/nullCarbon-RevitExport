@@ -36,7 +36,7 @@
         /// Exports the given schedules to a single merged Excel workbook.
         /// For each schedule, a temporary CSV file is created by schedule.Export.
         /// Then each CSV is added as a worksheet in one Excel workbook.
-        /// The CSV data is assumed to be tab-delimited.
+        /// The CSV data is assumed to be delimited based on the user-selected options.
         /// Finally, the temporary CSV files are deleted.
         /// </summary>
         /// <param name="schedules">The list of schedules to export.</param>
@@ -77,11 +77,35 @@
 
                                 // Configure the text format for reading the CSV.
                                 bool firstRowIsHeader = false;
+
+                                // Use the user-selected field delimiter from options.
+                                char delimiterChar = options.FieldDelimiter != null && options.FieldDelimiter.Length > 0
+                                    ? options.FieldDelimiter[0]
+                                    : '\t';
+
+                                // Determine the text qualifier based on the user-selected option.
+                                char textQualifierChar = '\"'; // default to double quote
+                                switch (options.TextQualifier)
+                                {
+                                    case ExportTextQualifier.DoubleQuote:
+                                        textQualifierChar = '\"';
+                                        break;
+                                    case ExportTextQualifier.Quote:
+                                        textQualifierChar = '\'';
+                                        break;
+                                    case ExportTextQualifier.None:
+                                        textQualifierChar = '\0'; // no text qualifier
+                                        break;
+                                    default:
+                                        textQualifierChar = '\"';
+                                        break;
+                                }
+
                                 var format = new ExcelTextFormat
                                 {
-                                    Delimiter = '\t',  // Tab-delimited
-                                    EOL = "\r\n",      // Windows-style newlines
-                                    TextQualifier = '\"'
+                                    Delimiter = delimiterChar,
+                                    EOL = "\r\n",
+                                    TextQualifier = textQualifierChar
                                 };
 
                                 // Read the CSV file as text.

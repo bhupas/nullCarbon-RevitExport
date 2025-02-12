@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+     SCexport config file template.
+     Andrew Nicholas 20210531
+
+	 #### File usage #####
+     There are two ways to use this file:
+        1.  Place this in the same folder as your Revit Central file and rename it to
+            SCexport.xml
+
+        2.  Create a project parameter in your model named "Project Config File". it should be:
+                - Type          = Text
+                - Categories    = Project Information
+				
+     For help see: https://github.com/acnicholas/scaddins/wiki/SCexport#markdown-header-xml-project-configuration-file
+-->
+
+<!-- 
+  WARNING!!! <Format> is only used for revit verionsion 2021 and older. 
+	<Format> uses the available replacement strings:
+    
+    $height 
+    $width
+    $fullExportName
+    $fullExportPath 
+    $exportDir
+    $pageSize
+    $projectNumber  
+    $sheetDescription 
+    $sheetNumber
+    $sheetRevision
+    $sheetRevisionDate 
+    $sheetRevisionDescription
+    __customParameter__				-	get the string value of any sheet parameter:
+-->
+
+<SCexport>
+    <!--This is the first scheme. The first is the default-->
+    <FilenameScheme name="Architectural">
+      <Format>$projectNumber-$sheetNumber[$sheetRevision] - $sheetDescription</Format> <!--USE FOR REVIT 2021 AND EARLIER-->
+      <PDFNamingRule>SC-PDF</PDFNamingRule> <!--USE FOR REVIT 2022 AND LATER, will use PDF export setup of the same name from whithin Revit-->
+    </FilenameScheme>
+    
+    <!--Tag pdf's after export-->
+    <FilenameScheme name="Architectural with PDF tagging">
+        <Format>$projectNumber-$sheetNumber[$sheetRevision]</Format>
+        <Hook>tagPdf</Hook>
+    </FilenameScheme>
+    
+    <!--Renames dwg files after export-->
+    <FilenameScheme name="Architectural USQ and ACONEX">
+        <Format>$projectNumber-$sheetNumber[$sheetRevision]</Format>
+        <Hook>aconexDWGSuffix</Hook>
+    </FilenameScheme>
+    
+    <!--Creates a transparent png files after each pdf export-->
+    <FilenameScheme name="Marketing Plans">
+        <Format>$projectNumber-$sheetNumber[$sheetRevision]</Format>
+        <Hook>convertToPng</Hook>
+        <Hook>aconexDWGSuffix</Hook>
+    </FilenameScheme>
+    
+    <!--Add a watermark-->
+    <FilenameScheme name="PDF Watermarker">
+        <Format>$projectNumber-$sheetNumber[$sheetRevision]</Format>
+        <Hook>watermark</Hook>
+    </FilenameScheme>
+            
+    <!--
+        Tag pdf's after export   
+        requirements:
+        ExifTool http://owl.phy.queensu.ca/~phil/exiftool/
+    -->
+    <PostExportHook name="tagPdf">
+        <Command>C:\exiftool\exiftool.exe</Command>
+        <Args>-Title="$fullExportName - $sheetDescription" -Author="Scott Carver Pty Ltd" -Subject="$projectNumber" $exportDir\$fullExportName.$fileExtension</Args>
+        <SupportedFileExtension>pdf</SupportedFileExtension>
+    </PostExportHook>
+    
+    <!--
+        convert each exported pdf to a transparent png
+
+        requirements:
+            imagemagick http://imagemagick.sourceforge.net/http/www/archives.html
+            ghostscript http://www.ghostscript.com/download/
+
+        place the following text in a script called C:\Temp\createPNG.bat:
+
+        convert -size 1920x1080 xc:white temp.png
+        convert -transparent white temp.png canvas.png
+        convert -fuzz 10%% -transparent white -density 300 -resize x1080 %1 temp.png
+        composite -gravity center temp.png canvas.png %1.png
+    -->
+    <PostExportHook name="convertToPng">
+        <Command>C:\Temp\createPNG.bat</Command>
+        <Args>$exportDir\$fullExportName$fileExtension</Args>
+        <SupportedFileExtension>.pdf</SupportedFileExtension>
+    </PostExportHook>
+    
+    
+    <!--simple hook to rename dwg files with a _DWG suffix-->
+    <PostExportHook name="aconexDWGSuffix">
+        <Command>cmd.exe</Command>
+        <Args> /C RENAME "$exportDir\$fullExportName$fileExtension" "$fullExportName_DWG$fileExtension"</Args>
+        <SupportedFileExtension>.dwg</SupportedFileExtension>
+    </PostExportHook>
+      
+    <!--
+        add a watermark to pdf's
+        requires: https://www.pdflabs.com/tools/pdftk-server/
+    -->
+    <PostExportHook name="watermark">
+        <Command>"C:\Program Files (x86)\PDFtk Server\bin\pdftk.exe"</Command>
+        <Args> "$exportDir\$fullExportName$fileExtension" background "$exportDir\watermark.pdf" output "$exportDir\$fullExportName-WM$fileExtension"</Args>
+        <SupportedFileExtension>.pdf</SupportedFileExtension>
+    </PostExportHook>
+    
+</SCexport>

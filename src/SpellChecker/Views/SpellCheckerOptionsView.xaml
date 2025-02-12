@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="SCaddins.SpellChecker.Views.SpellCheckerOptionsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SCaddins.SpellChecker.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Margin="5">List of element types to ignore:</Label>
+        <TextBox x:Name="ElementsToIgnore" Grid.Row="1" AcceptsReturn="True" Margin="5" VerticalScrollBarVisibility="Visible" MinHeight="200">
+        </TextBox>
+    </Grid>
+</UserControl>

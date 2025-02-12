@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="SCexport">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="1" maxOccurs="unbounded" name="FilenameScheme">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Format" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                            <xs:element name="PDFNamingRule" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element name="DWGNamingRule" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                            <xs:element minOccurs="0" maxOccurs="unbounded" name="Hook" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="name" type="xs:string" use="required" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element minOccurs="0" maxOccurs="unbounded" name="PostExportHook">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Command" type="xs:string" />
+                            <xs:element name="Args" type="xs:string" />
+                            <xs:element minOccurs="0" maxOccurs="unbounded" name="SupportedFileExtension" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="name" type="xs:string" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

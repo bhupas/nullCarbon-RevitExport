@@ -1,0 +1,4 @@
+0,0,0,$BrickLength/2 + $Mortar/2,$BrickHeight + $Mortar,$BrickLength,$Mortar
+0,$BrickLength/2 + $Mortar/2,$Mortar,$BrickLength/2 + $Mortar/2,$BrickHeight + $Mortar,$BrickLength,$Mortar
+90,0,$BrickHeight + 2 * $Mortar,$BrickHeight + $Mortar,$BrickLength/2 + $Mortar/2,$BrickHeight,$BrickHeight + 2 * $Mortar
+90,$BrickLength,$BrickHeight + 2 * $Mortar,$BrickHeight + $Mortar,$BrickLength/2 + $Mortar/2,$BrickHeight,$BrickHeight + 2 * $Mortar

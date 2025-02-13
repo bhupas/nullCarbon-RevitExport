@@ -6,6 +6,15 @@
 
     public class OptionsViewModel : Screen
     {
+        // Constructor that ensures the default field delimiter is set to Tab.
+        public OptionsViewModel()
+        {
+            if (string.IsNullOrEmpty(Settings.Default.FieldDelimiter))
+            {
+                Settings.Default.FieldDelimiter = "\t";
+            }
+        }
+
         public static dynamic DefaultWindowSettings
         {
             get
@@ -29,7 +38,6 @@
             {
                 return Settings.Default.ExportExcel;
             }
-
             set
             {
                 Settings.Default.ExportExcel = value;
@@ -45,7 +53,6 @@
             {
                 return Settings.Default.ExportTitle;
             }
-
             set
             {
                 Settings.Default.ExportTitle = value;
@@ -58,7 +65,6 @@
             {
                 return Settings.Default.ExportColumnHeader;
             }
-
             set
             {
                 Settings.Default.ExportColumnHeader = value;
@@ -77,7 +83,6 @@
             {
                 return Settings.Default.IncludeGroupedColumnHeaders;
             }
-
             set
             {
                 Settings.Default.IncludeGroupedColumnHeaders = value;
@@ -90,7 +95,6 @@
             {
                 return Settings.Default.ExportGrouppHeaderAndFooters;
             }
-
             set
             {
                 Settings.Default.ExportGrouppHeaderAndFooters = value;
@@ -105,7 +109,6 @@
             {
                 return Settings.Default.FieldDelimiter;
             }
-
             set
             {
                 Settings.Default.FieldDelimiter = value;
@@ -120,7 +123,6 @@
             {
                 return Settings.Default.TextQualifier;
             }
-
             set
             {
                 Settings.Default.TextQualifier = value;

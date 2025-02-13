@@ -15,20 +15,12 @@
       "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\views\\optionsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\scaddins-master\\scaddins-master\\src\\assets\\ribbon\\help-rvt-16-dark.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:assets\\ribbon\\help-rvt-16-dark.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\scaddins-master\\scaddins-master\\src\\exportschedules\\viewmodels\\exportschedulesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\viewmodels\\exportschedulesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\scaddins-master\\scaddins-master\\src\\assets\\add.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:assets\\add.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\scaddins-master\\scaddins-master\\src\\assets\\about.bmp||{58961B49-13E0-48C0-9258-13CBC4D40279}",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:assets\\about.bmp||{58961B49-13E0-48C0-9258-13CBC4D40279}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\scaddins-master\\scaddins-master\\src\\assets\\scaos.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:assets\\scaos.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\scaddins-master\\scaddins-master\\src\\exportschedules\\views\\exportschedulesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\views\\exportschedulesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\scaddins-master\\scaddins-master\\src\\exportschedules\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,22 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\scaddins-master\\scaddins-master\\src\\exportschedules\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\scaddins-master\\scaddins-master\\src\\exportschedules\\viewmodels\\exportschedulesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\viewmodels\\exportschedulesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\scaddins-master\\scaddins-master\\src\\exportschedules\\viewmodels\\scheduleitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\viewmodels\\scheduleitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\scaddins-master\\scaddins-master\\src\\exportschedules\\views\\exportschedulesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\views\\exportschedulesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\scaddins-master\\scaddins-master\\src\\exportmanager\\segmentedsheetname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportmanager\\segmentedsheetname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -72,109 +48,11 @@
               "RelativeDocumentMoniker": "ExportSchedules\\ViewModels\\OptionsViewModel.cs",
               "ToolTip": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\ExportSchedules\\ViewModels\\OptionsViewModel.cs",
               "RelativeToolTip": "ExportSchedules\\ViewModels\\OptionsViewModel.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAASwG4AAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-11T12:48:42.03Z",
               "IsPinned": true,
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "help-rvt-16-dark.png",
-              "DocumentMoniker": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\Assets\\Ribbon\\help-rvt-16-dark.png",
-              "RelativeDocumentMoniker": "Assets\\Ribbon\\help-rvt-16-dark.png",
-              "ToolTip": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\Assets\\Ribbon\\help-rvt-16-dark.png",
-              "RelativeToolTip": "Assets\\Ribbon\\help-rvt-16-dark.png",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-02-12T11:50:44.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "add.png",
-              "DocumentMoniker": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\Assets\\add.png",
-              "RelativeDocumentMoniker": "Assets\\add.png",
-              "ToolTip": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\Assets\\add.png",
-              "RelativeToolTip": "Assets\\add.png",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-02-12T11:30:39.057Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "about.bmp",
-              "DocumentMoniker": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\Assets\\about.bmp",
-              "RelativeDocumentMoniker": "Assets\\about.bmp",
-              "ToolTip": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\Assets\\about.bmp",
-              "RelativeToolTip": "Assets\\about.bmp",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-02-12T11:30:35.218Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "scaos.png",
-              "DocumentMoniker": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\Assets\\scaos.png",
-              "RelativeDocumentMoniker": "Assets\\scaos.png",
-              "ToolTip": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\Assets\\scaos.png",
-              "RelativeToolTip": "Assets\\scaos.png",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-02-12T11:30:25.714Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Utilities.cs",
-              "DocumentMoniker": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\ExportSchedules\\Utilities.cs",
-              "RelativeDocumentMoniker": "ExportSchedules\\Utilities.cs",
-              "ToolTip": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\ExportSchedules\\Utilities.cs",
-              "RelativeToolTip": "ExportSchedules\\Utilities.cs",
-              "ViewState": "AgIAAOAAAAAAAAAAAAAAAOsAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T09:19:59.086Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Schedule.cs",
-              "DocumentMoniker": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\ExportSchedules\\Schedule.cs",
-              "RelativeDocumentMoniker": "ExportSchedules\\Schedule.cs",
-              "ToolTip": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\ExportSchedules\\Schedule.cs",
-              "RelativeToolTip": "ExportSchedules\\Schedule.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAswEcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T09:16:10.178Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Command.cs",
-              "DocumentMoniker": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\ExportSchedules\\Command.cs",
-              "RelativeDocumentMoniker": "ExportSchedules\\Command.cs",
-              "ToolTip": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\ExportSchedules\\Command.cs",
-              "RelativeToolTip": "ExportSchedules\\Command.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAswB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T09:15:45.925Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ExportSchedulesViewModel.cs",
-              "DocumentMoniker": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
-              "RelativeDocumentMoniker": "ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
-              "ToolTip": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
-              "RelativeToolTip": "ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAswGEAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T09:16:03.173Z"
             },
             {
               "$type": "Document",
@@ -185,47 +63,70 @@
               "ToolTip": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\ExportSchedules\\Views\\OptionsView.xaml",
               "RelativeToolTip": "ExportSchedules\\Views\\OptionsView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-12T11:09:12.011Z",
+              "WhenOpened": "2025-02-13T11:48:05.738Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ScheduleItemViewModel.cs",
-              "DocumentMoniker": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\ExportSchedules\\ViewModels\\ScheduleItemViewModel.cs",
-              "RelativeDocumentMoniker": "ExportSchedules\\ViewModels\\ScheduleItemViewModel.cs",
-              "ToolTip": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\ExportSchedules\\ViewModels\\ScheduleItemViewModel.cs",
-              "RelativeToolTip": "ExportSchedules\\ViewModels\\ScheduleItemViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "ExportSchedulesViewModel.cs",
+              "DocumentMoniker": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
+              "RelativeDocumentMoniker": "ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
+              "ToolTip": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
+              "RelativeToolTip": "ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowE0AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T09:32:10.056Z"
+              "WhenOpened": "2025-02-13T11:21:49.025Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
+              "Title": "Utilities.cs",
+              "DocumentMoniker": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\ExportSchedules\\Utilities.cs",
+              "RelativeDocumentMoniker": "ExportSchedules\\Utilities.cs",
+              "ToolTip": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\ExportSchedules\\Utilities.cs",
+              "RelativeToolTip": "ExportSchedules\\Utilities.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAYwG4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T10:54:42.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ExportSchedulesView.xaml",
               "DocumentMoniker": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\ExportSchedules\\Views\\ExportSchedulesView.xaml",
               "RelativeDocumentMoniker": "ExportSchedules\\Views\\ExportSchedulesView.xaml",
               "ToolTip": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\ExportSchedules\\Views\\ExportSchedulesView.xaml",
               "RelativeToolTip": "ExportSchedules\\Views\\ExportSchedulesView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-12T09:46:09.229Z"
+              "WhenOpened": "2025-02-13T11:23:02.494Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "SegmentedSheetName.cs",
-              "DocumentMoniker": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\ExportManager\\SegmentedSheetName.cs",
-              "RelativeDocumentMoniker": "ExportManager\\SegmentedSheetName.cs",
-              "ToolTip": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\ExportManager\\SegmentedSheetName.cs",
-              "RelativeToolTip": "ExportManager\\SegmentedSheetName.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Schedule.cs",
+              "DocumentMoniker": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\ExportSchedules\\Schedule.cs",
+              "RelativeDocumentMoniker": "ExportSchedules\\Schedule.cs",
+              "ToolTip": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\ExportSchedules\\Schedule.cs",
+              "RelativeToolTip": "ExportSchedules\\Schedule.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAA9wDwAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T09:15:33.26Z"
+              "WhenOpened": "2025-02-13T11:19:30.799Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Command.cs",
+              "DocumentMoniker": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\ExportSchedules\\Command.cs",
+              "RelativeDocumentMoniker": "ExportSchedules\\Command.cs",
+              "ToolTip": "C:\\Work_revit\\scaddins-master\\scaddins-master\\src\\ExportSchedules\\Command.cs",
+              "RelativeToolTip": "ExportSchedules\\Command.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T11:19:20.418Z"
             }
           ]
         }

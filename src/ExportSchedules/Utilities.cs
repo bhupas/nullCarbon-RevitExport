@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Globalization;
     using System.IO;
     using System.Linq;
     using System.Text;
@@ -33,11 +34,11 @@
         }
 
         /// <summary>
-        /// Exports the given schedules to a single merged Excel workbook.
+        /// Exports the given schedules to a merged Excel workbook and saves individual CSV files for each schedule.
         /// For each schedule, a temporary CSV file is created by schedule.Export.
         /// Then each CSV is added as a worksheet in one Excel workbook.
         /// The CSV data is assumed to be delimited based on the user-selected options.
-        /// Finally, the temporary CSV files are deleted.
+        /// Unlike before, the CSV files are no longer deleted so that both file formats are available.
         /// </summary>
         /// <param name="schedules">The list of schedules to export.</param>
         /// <param name="exportPath">The directory to export to.</param>
@@ -105,7 +106,8 @@
                                 {
                                     Delimiter = delimiterChar,
                                     EOL = "\r\n",
-                                    TextQualifier = textQualifierChar
+                                    TextQualifier = textQualifierChar,
+                                    Culture = new CultureInfo("da-DK")
                                 };
 
                                 // Read the CSV file as text.
@@ -120,15 +122,8 @@
                             {
                                 exportMsg.AppendLine($"[Error] Merging {schedule.ExportName}: {ex.Message}");
                             }
-                            // Delete the temporary CSV file.
-                            try
-                            {
-                                File.Delete(csvFilePath);
-                            }
-                            catch (Exception ex)
-                            {
-                                exportMsg.AppendLine($"[Warning] Could not delete temporary file {csvFilePath}: {ex.Message}");
-                            }
+                            // NOTE: We are no longer deleting the temporary CSV file.
+                            // This change ensures that both the merged Excel file and individual CSV files remain.
                         }
                         else
                         {
@@ -154,6 +149,7 @@
                 fails);
             exportMsg.Insert(0, summaryString);
             exportMsg.AppendLine($"[Merged Excel] Merged Excel file created at {mergedExcelFilePath}");
+            exportMsg.AppendLine($"[CSV Files] CSV files for each schedule are saved in {exportPath}");
             return exportMsg.ToString();
         }
 

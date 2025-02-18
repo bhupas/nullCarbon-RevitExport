@@ -22,7 +22,7 @@
                 dynamic settings = new ExpandoObject();
                 settings.Height = 320;
                 settings.Width = 480;
-                settings.Title = "Export nullCarbon - Options";
+                settings.Title = "nullCarbon-LCA-Export - Options";
                 settings.Icon = new System.Windows.Media.Imaging.BitmapImage(
                   new System.Uri("pack://application:,,,/SCaddins;component/Assets/table.png"));
                 settings.ShowInTaskbar = false;

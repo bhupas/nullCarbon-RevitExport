@@ -571,7 +571,7 @@ namespace SCaddins
         private static PushButtonData LoadScheduleExporter(string dll)
         {
             var pbd = new PushButtonData(
-                              "Export nullCarbon", "Export nullCarbon", dll, "SCaddins.ExportSchedules.Command");
+                              "nullCarbon-LCA-Export", "nullCarbon-LCA-Export", dll, "SCaddins.ExportSchedules.Command");
             pbd.ToolTip = Resources.ScheduleCloudsToolTip;
             return pbd;
         }

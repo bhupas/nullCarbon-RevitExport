@@ -18,41 +18,60 @@
         public static void AddDelimitedDataToExcelWorkbook(string excelFileName, string worksheetName, string csvFileName)
         {
             bool firstRowIsHeader = false;
-            var format = new ExcelTextFormat();
-            // Use tab as the delimiter.
-            format.Delimiter = '\t';
-            format.EOL = "\r\n";
-            // Use the default text qualifier (double quote).
-            format.TextQualifier = '\"';
+            var format = new ExcelTextFormat
+            {
+                // Use tab as the delimiter.
+                Delimiter = '\t',
+                EOL = "\r\n",
+                // Default text qualifier (double quote).
+                TextQualifier = '\"'
+            };
 
             using (ExcelPackage package = new ExcelPackage(new FileInfo(excelFileName)))
             {
                 ExcelWorksheet worksheet = package.Workbook.Worksheets.Add(worksheetName);
-                worksheet.Cells["A1"].LoadFromText(new FileInfo(csvFileName), format, OfficeOpenXml.Table.TableStyles.Medium27, firstRowIsHeader);
+                worksheet.Cells["A1"].LoadFromText(
+                    new FileInfo(csvFileName),
+                    format,
+                    OfficeOpenXml.Table.TableStyles.Medium27,
+                    firstRowIsHeader
+                );
                 package.Save();
             }
         }
 
         /// <summary>
-        /// Exports the given schedules to a merged Excel workbook and saves individual CSV files for each schedule.
-        /// For each schedule, a temporary CSV file is created by schedule.Export.
-        /// Then each CSV is added as a worksheet in one Excel workbook.
-        /// The CSV data is assumed to be delimited based on the user-selected options.
-        /// Unlike before, the CSV files are no longer deleted so that both file formats are available.
+        /// Exports the given schedules to a single Excel workbook named after the Revit project plus " nullCarbon export",
+        /// then deletes any temporary CSV/TXT files that Revit generates during export.
         /// </summary>
         /// <param name="schedules">The list of schedules to export.</param>
         /// <param name="exportPath">The directory to export to.</param>
         /// <returns>A message summarizing the export results.</returns>
         public static string Export(List<Schedule> schedules, string exportPath)
         {
+            // If nothing is selected or no schedules found, bail out early.
+            if (schedules == null || schedules.Count == 0)
+            {
+                return "No schedules to export.";
+            }
+
+            // Attempt to get the Revit project’s title from the first schedule.
+            // Fall back if it's somehow null/empty.
+            string docTitle = schedules[0]?.RevitViewSchedule?.Document?.Title;
+            if (string.IsNullOrWhiteSpace(docTitle))
+            {
+                docTitle = "UnknownProject";
+            }
+
+            // Build the final Excel export file name:
+            string mergedExcelFileName = docTitle + " nullCarbon-LCA-Export.xlsx";
+            string mergedExcelFilePath = Path.Combine(exportPath, mergedExcelFileName);
+
             StringBuilder exportMsg = new StringBuilder();
             int successes = 0;
             int attempts = 0;
 
-            // Define the path for the merged Excel file.
-            string mergedExcelFilePath = Path.Combine(exportPath, "MergedSchedules.xlsx");
-
-            // Create a new ExcelPackage for the merged file.
+            // Create a new ExcelPackage for the final merged Excel file.
             using (ExcelPackage mergedPackage = new ExcelPackage())
             {
                 using (var options = LoadSavedExportOptions())
@@ -60,26 +79,31 @@
                     foreach (var schedule in schedules)
                     {
                         attempts++;
+
+                        // Make sure the export path actually exists.
                         if (!Directory.Exists(exportPath))
                         {
                             exportMsg.AppendLine($"[Error] {schedule.ExportName}. Directory not found: {exportPath}");
                             continue;
                         }
-                        // Export the schedule to a temporary CSV file.
+
+                        // Export the schedule to a temporary CSV/TXT file via Revit's built-in "schedule.Export" method.
                         if (schedule.Export(options, exportPath))
                         {
                             string csvFilePath = Path.Combine(exportPath, schedule.ExportName);
                             try
                             {
-                                // Remove the file extension from schedule.ExportName to use as the worksheet name.
+                                // Use the name (minus extension) as the worksheet name.
                                 string sheetName = Path.GetFileNameWithoutExtension(schedule.ExportName);
+
                                 // Create a new worksheet in the merged Excel file.
                                 ExcelWorksheet worksheet = mergedPackage.Workbook.Worksheets.Add(sheetName);
 
-                                // Configure the text format for reading the CSV.
                                 bool firstRowIsHeader = false;
 
                                 // Use the user-selected field delimiter from options.
+                                // (At this point, options.FieldDelimiter should already be the actual character
+                                //  e.g. "\t" or "," or ";".)
                                 char delimiterChar = options.FieldDelimiter != null && options.FieldDelimiter.Length > 0
                                     ? options.FieldDelimiter[0]
                                     : '\t';
@@ -110,10 +134,14 @@
                                     Culture = new CultureInfo("da-DK")
                                 };
 
-                                // Read the CSV file as text.
+                                // Read the CSV file from disk, then load into the worksheet.
                                 string csvContent = File.ReadAllText(csvFilePath);
-                                // Load the CSV data into the worksheet using the string overload.
-                                worksheet.Cells["A1"].LoadFromText(csvContent, format, OfficeOpenXml.Table.TableStyles.Medium27, firstRowIsHeader);
+                                worksheet.Cells["A1"].LoadFromText(
+                                    csvContent,
+                                    format,
+                                    OfficeOpenXml.Table.TableStyles.Medium27,
+                                    firstRowIsHeader
+                                );
 
                                 exportMsg.AppendLine($"[Success] {schedule.ExportName}");
                                 successes++;
@@ -122,8 +150,14 @@
                             {
                                 exportMsg.AppendLine($"[Error] Merging {schedule.ExportName}: {ex.Message}");
                             }
-                            // NOTE: We are no longer deleting the temporary CSV file.
-                            // This change ensures that both the merged Excel file and individual CSV files remain.
+                            finally
+                            {
+                                // Delete the temporary CSV/TXT file so only the single merged Excel remains.
+                                if (File.Exists(csvFilePath))
+                                {
+                                    File.Delete(csvFilePath);
+                                }
+                            }
                         }
                         else
                         {
@@ -131,11 +165,13 @@
                         }
                     }
                 }
-                // If the merged Excel file already exists, delete it to avoid crashing.
+
+                // If the merged Excel file already exists, delete it to avoid conflicts.
                 if (File.Exists(mergedExcelFilePath))
                 {
                     File.Delete(mergedExcelFilePath);
                 }
+
                 // Save the merged Excel workbook.
                 mergedPackage.SaveAs(new FileInfo(mergedExcelFilePath));
             }
@@ -148,8 +184,10 @@
                 successes,
                 fails);
             exportMsg.Insert(0, summaryString);
-            exportMsg.AppendLine($"[Merged Excel] Merged Excel file created at {mergedExcelFilePath}");
-            exportMsg.AppendLine($"[CSV Files] CSV files for each schedule are saved in {exportPath}");
+
+            // We only keep the single Excel file, no CSV/TXT are retained.
+            exportMsg.AppendLine($"[Excel Export] Merged Excel file created at {mergedExcelFilePath}");
+
             return exportMsg.ToString();
         }
 
@@ -165,7 +203,9 @@
                 if (elem is ViewSchedule schedule)
                 {
                     if (schedule.IsTitleblockRevisionSchedule || schedule.IsInternalKeynoteSchedule)
+                    {
                         continue;
+                    }
                     result.Add(new Schedule(schedule));
                 }
             }
@@ -177,14 +217,14 @@
         /// </summary>
         public static Dictionary<string, string> GetFieldDelimiters()
         {
-            Dictionary<string, string> result = new Dictionary<string, string>
+            // Key = Display text, Value = Actual delimiter string
+            return new Dictionary<string, string>
             {
                 { "Comma", "," },
                 { "Semi-Colon", ";" },
                 { "Tab", "\t" },
                 { "Space", " " }
             };
-            return result;
         }
 
         /// <summary>
@@ -192,13 +232,13 @@
         /// </summary>
         public static Dictionary<string, string> GetFieldTextQualifiers()
         {
-            Dictionary<string, string> result = new Dictionary<string, string>
+            // Key = Display text, Value = Actual qualifier string
+            return new Dictionary<string, string>
             {
                 { "Double Quote (\")", "\"" },
                 { "Quote (\')", "\'" },
                 { "None", string.Empty }
             };
-            return result;
         }
 
         /// <summary>
@@ -207,15 +247,35 @@
         private static ViewScheduleExportOptions LoadSavedExportOptions()
         {
             ViewScheduleExportOptions options = new ViewScheduleExportOptions();
+
             var headerExportType = Settings.Default.ExportColumnHeader ? ExportColumnHeaders.OneRow : ExportColumnHeaders.None;
             if (Settings.Default.IncludeGroupedColumnHeaders)
             {
                 headerExportType = ExportColumnHeaders.MultipleRows;
             }
             options.ColumnHeaders = headerExportType;
-            // Set default field delimiter to tab ("\t") if not provided.
-            options.FieldDelimiter = Settings.Default.FieldDelimiter ?? "\t";
+
+            // Grab what's stored in Settings for the delimiter
+            string fieldDelim = Settings.Default.FieldDelimiter;
+
+            // If the user never picked anything, or if it’s "tab" or "/tab", use an actual tab character.
+            if (string.IsNullOrWhiteSpace(fieldDelim))
+            {
+                fieldDelim = "\t";
+            }
+            else if (fieldDelim.Equals("tab", StringComparison.OrdinalIgnoreCase)
+                  || fieldDelim.Equals("/tab", StringComparison.OrdinalIgnoreCase))
+            {
+                fieldDelim = "\t";
+            }
+
+            // Now set the final delimiter
+            options.FieldDelimiter = fieldDelim;
+
+            // Whether to export grouped headers/footers, etc.
             options.HeadersFootersBlanks = Settings.Default.ExportGrouppHeaderAndFooters;
+
+            // Handle text qualifier from user settings
             string textQualifier = Settings.Default.TextQualifier;
             if (textQualifier == "\"")
             {
@@ -229,7 +289,15 @@
             {
                 options.TextQualifier = ExportTextQualifier.None;
             }
+            else
+            {
+                // Default to DoubleQuote if not recognized
+                options.TextQualifier = ExportTextQualifier.DoubleQuote;
+            }
+
+            // ExportTitle is a bool in your Settings
             options.Title = Settings.Default.ExportTitle;
+
             return options;
         }
 

@@ -264,7 +264,7 @@ namespace SCaddins.GridManager
             dynamic settings = new ExpandoObject();
             settings.Height = 480;
             settings.Width = 640;
-            settings.Title = "Grid and Level Tools - By Andrew Nicholas";
+            settings.Title = "Grid and Level Tools - By nullCarbon";
             settings.ShowInTaskbar = false;
             settings.SizeToContent = System.Windows.SizeToContent.Manual;
             settings.WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;

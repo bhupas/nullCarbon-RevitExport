@@ -96,7 +96,7 @@ namespace SCaddins.ExportManager.ViewModels
                 settings.Icon = new System.Windows.Media.Imaging.BitmapImage(
                     new Uri("pack://application:,,,/SCaddins;component/Assets/scexport.png"));
                 settings.Width = 1024;
-                settings.Title = "SCexport - By Andrew Nicholas";
+                settings.Title = "SCexport - By nullCarbon";
                 settings.ShowInTaskbar = false;
                 settings.SizeToContent = SizeToContent.Manual;
                 settings.WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;

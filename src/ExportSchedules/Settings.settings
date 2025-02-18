@@ -3,25 +3,25 @@
   <Profiles />
   <Settings>
     <Setting Name="ExportTitle" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="ExportColumnHeader" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="IncludeGroupedColumnHeaders" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="ExportGrouppHeaderAndFooters" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="FieldDelimiter" Type="System.String" Scope="User">
-      <Value Profile="(Default)">,</Value>
+      <Value Profile="(Default)">\t</Value>
     </Setting>
     <Setting Name="TextQualifier" Type="System.String" Scope="User">
-      <Value Profile="(Default)">"</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="ExportExcel" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">True</Value>
     </Setting>
   </Settings>
 </SettingsFile>

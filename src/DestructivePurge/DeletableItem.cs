@@ -1,4 +1,5 @@
-﻿// (C) Copyright 2013-2020 by Andrew Nicholas andrewnicholas@iinet.net.au
+﻿// (C) Copyright 2013-2020 by
+// andrewnicholas@iinet.net.au
 //
 // This file is part of SCaddins.
 //

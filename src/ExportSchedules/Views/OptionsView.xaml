@@ -50,7 +50,7 @@
                     ItemsSource="{Binding FieldDelimiters}"
                     SelectedValue="{Binding SelectedFieldDelimiter}"
                     SelectedValuePath="Value"
-                    DisplayMemberPath="Key">
+                    DisplayMemberPath="Key" SelectionChanged="ComboBox_SelectionChanged">
                 </ComboBox>
                 <Label Grid.Column="0" Grid.Row="1">Text Qualifier</Label>
                 <ComboBox

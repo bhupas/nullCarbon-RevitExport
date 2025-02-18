@@ -59,7 +59,7 @@ namespace SCaddins.PlaceCoordinate.ViewModels
                 ////settings.Icon = new System.Windows.Media.Imaging.BitmapImage(
                 ////  new System.Uri("pack://application:,,,/SCaddins;component/Assets/scasfar.png")
                 ////  );
-                settings.Title = "Place Coordinate - By Andrew Nicholas";
+                settings.Title = "Place Coordinate - By nullCarbon";
                 settings.ShowInTaskbar = false;
                 settings.SizeToContent = System.Windows.SizeToContent.WidthAndHeight;
                 settings.ResizeMode = System.Windows.ResizeMode.CanResize;

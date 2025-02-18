@@ -1,4 +1,5 @@
-﻿// (C) Copyright 2020-2021 by Andrew Nicholas
+﻿// (C) Copyright 2020-2021 by
+// 
 //
 // This file is part of SCaddins.
 //

@@ -41,7 +41,7 @@
                 settings.Width = 768;
                 settings.Icon = new System.Windows.Media.Imaging.BitmapImage(
                     new Uri("pack://application:,,,/SCaddins;component/Assets/table.png"));
-                settings.Title = "nullCarbon";
+                settings.Title = "nullCarbon-LCA-Export";
                 settings.ShowInTaskbar = false;
                 settings.SizeToContent = System.Windows.SizeToContent.Manual;
                 settings.ResizeMode = System.Windows.ResizeMode.CanResizeWithGrip;
@@ -77,6 +77,7 @@
 
             var outputMsg = Utilities.Export(selectedSchedules, ExportDir);
             SCaddinsApp.WindowManager.ShowMessageBox(outputMsg);
+            TryCloseAsync(true);
         }
 
         public void Options()

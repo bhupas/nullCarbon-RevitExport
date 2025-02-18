@@ -140,7 +140,7 @@ namespace SCaddins.HatchEditor
             dynamic settings = new ExpandoObject();
             settings.Height = 480;
             settings.Width = 768;
-            settings.Title = "Hatch Editor - By Andrew Nicholas";
+            settings.Title = "Hatch Editor - By nullCarbon";
             settings.ShowInTaskbar = false;
             settings.SizeToContent = System.Windows.SizeToContent.Manual;
             settings.WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;

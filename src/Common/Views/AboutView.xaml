@@ -47,16 +47,16 @@
                     Grid.Row="4" 
                     Focusable="False"
                     Margin="5"
-                    cal:Message.Attach="[Action NavigateTo('https://github.com/acnicholas/scaddins/wiki')]">
+                    cal:Message.Attach="[Action NavigateTo('https://nullcarbon.dk')]">
                 <TextBlock>
-                        <Hyperlink Focusable="False">Wiki</Hyperlink>
+                        <Hyperlink Focusable="False">Website</Hyperlink>
                 </TextBlock>
             </Button>
             <Button Style="{StaticResource HyperlinkButton}"
                     Grid.Row="5" 
                     Focusable="False"
                     Margin="5"
-                    cal:Message.Attach="[Action NavigateTo('https://github.com/acnicholas/scaddins')]">
+                    cal:Message.Attach="[Action NavigateTo('https://github.com/bhupas/nullCarbon-RevitExport')]">
                 <TextBlock>
                         <Hyperlink Focusable="False">Source Code</Hyperlink>
                 </TextBlock>

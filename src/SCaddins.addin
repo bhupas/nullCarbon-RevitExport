@@ -2,11 +2,11 @@
 <RevitAddIns>
   <!-- SCexport -->
   <AddIn Type="Application">
-    <Assembly>C:\Program Files\Studio.SC\nullCarbon-Export\_REVIT_VERSION_\SCaddins.dll</Assembly>
+    <Assembly>C:\Program Files\Studio.SC\nullCarbon-LCA-Export\_REVIT_VERSION_\SCaddins.dll</Assembly>
     <AddInId>DE9AB48F-CEFB-445F-9FED-408B5980EB0A</AddInId>
     <FullClassName>SCaddins.SCaddinsApp</FullClassName>
-    <Name>SCexport - Export Utility</Name>
+    <Name>nullCarbon-LCA-Export</Name>
     <VendorId>BEER</VendorId>
-    <VendorDescription>Andrew Nicholas, andrewn@scottcarver.com.au</VendorDescription>
+    <VendorDescription>nullCarbon, contact@nullcarbon.dk</VendorDescription>
   </AddIn>
 </RevitAddIns>

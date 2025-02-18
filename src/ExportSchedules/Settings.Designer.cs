@@ -12,7 +12,7 @@ namespace SCaddins.ExportSchedules {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.9.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.13.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -25,7 +25,7 @@ namespace SCaddins.ExportSchedules {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool ExportTitle {
             get {
                 return ((bool)(this["ExportTitle"]));
@@ -37,7 +37,7 @@ namespace SCaddins.ExportSchedules {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool ExportColumnHeader {
             get {
                 return ((bool)(this["ExportColumnHeader"]));
@@ -49,7 +49,7 @@ namespace SCaddins.ExportSchedules {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool IncludeGroupedColumnHeaders {
             get {
                 return ((bool)(this["IncludeGroupedColumnHeaders"]));
@@ -61,7 +61,7 @@ namespace SCaddins.ExportSchedules {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool ExportGrouppHeaderAndFooters {
             get {
                 return ((bool)(this["ExportGrouppHeaderAndFooters"]));
@@ -73,7 +73,7 @@ namespace SCaddins.ExportSchedules {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute(",")]
+        [global::System.Configuration.DefaultSettingValueAttribute("\\t")]
         public string FieldDelimiter {
             get {
                 return ((string)(this["FieldDelimiter"]));
@@ -85,7 +85,7 @@ namespace SCaddins.ExportSchedules {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("\"")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string TextQualifier {
             get {
                 return ((string)(this["TextQualifier"]));
@@ -97,7 +97,7 @@ namespace SCaddins.ExportSchedules {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool ExportExcel {
             get {
                 return ((bool)(this["ExportExcel"]));

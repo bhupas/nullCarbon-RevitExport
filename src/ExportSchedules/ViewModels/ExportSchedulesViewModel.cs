@@ -1,24 +1,20 @@
-﻿namespace SCaddins.ExportSchedules.ViewModels
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Dynamic;
-    using System.IO;
-    using System.Linq;
-    using Caliburn.Micro;
-    using SCaddins.ExportSchedules;
+﻿using Caliburn.Micro;
+using SCaddins.ExportSchedules;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
+namespace SCaddins.ExportSchedules.ViewModels
+{
     public class ExportSchedulesViewModel : Screen
     {
         public ExportSchedulesViewModel(List<Schedule> schedules, string exportDir)
         {
-            // Wrap each Schedule with ScheduleItemViewModel for check box selection.
             Schedules = new BindableCollection<ScheduleItemViewModel>(
                 schedules.Select(s => new ScheduleItemViewModel(s)));
             ExportDir = exportDir;
 
-            // Subscribe to property changes on each item so that when IsSelected changes,
-            // we update ExportIsEnabled and ExportLabel.
             foreach (var item in Schedules)
             {
                 item.PropertyChanged += (s, e) =>
@@ -36,7 +32,7 @@
         {
             get
             {
-                dynamic settings = new ExpandoObject();
+                dynamic settings = new System.Dynamic.ExpandoObject();
                 settings.Height = 480;
                 settings.Width = 768;
                 settings.Icon = new System.Windows.Media.Imaging.BitmapImage(
@@ -52,11 +48,9 @@
 
         public string ExportDir { get; set; }
 
-        // Export is enabled only if at least one schedule is selected and the directory exists.
         public bool ExportIsEnabled =>
             Schedules.Any(item => item.IsSelected) && Directory.Exists(ExportDir);
 
-        // Button label reflects how many schedules are selected.
         public string ExportLabel
         {
             get
@@ -102,5 +96,28 @@
                 }
             }
         }
+
+
+        public async void LoginCommand()
+        {
+            // Clear previous tokens to ensure a fresh login attempt.
+            TokenCache.AccessToken = null;
+            TokenCache.RefreshToken = null;
+
+            // Create the LoginViewModel and show the login dialog.
+            var vm = new LoginViewModel();
+            await SCaddinsApp.WindowManager.ShowDialogAsync(vm);
+
+            // After the dialog closes, check if a token was returned.
+            if (!string.IsNullOrEmpty(TokenCache.AccessToken))
+            {
+                SCaddinsApp.WindowManager.ShowMessageBox("You are logged in!");
+            }
+            else
+            {
+                SCaddinsApp.WindowManager.ShowMessageBox("Login failed or was canceled.");
+            }
+        }
+
     }
 }

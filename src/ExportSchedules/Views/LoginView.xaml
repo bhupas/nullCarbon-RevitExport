@@ -1,0 +1,27 @@
+<Window x:Class="SCaddins.ExportSchedules.Views.LoginView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:cal="http://www.caliburnproject.org"
+        Title="Login to nullCarbon" Height="200" Width="400"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="ToolWindow">
+    <StackPanel Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <TextBlock Text="Username:" />
+        <TextBox Width="200" 
+                 Margin="0,0,0,10"
+                 Text="{Binding Username, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+        <TextBlock Text="Password:" />
+        <!-- We have to handle password differently since WPF doesn't allow direct binding to 'PasswordBox.Password' -->
+        <PasswordBox Width="200"
+                     Margin="0,0,0,10"
+                     cal:Message.Attach="[Event PasswordChanged] = [Action OnPasswordChanged($source)]"/>
+
+        <Button Content="Login" Width="80" cal:Message.Attach="Login" />
+
+        <!-- Optionally, show a status message below -->
+        <TextBlock Margin="0,10,0,0" 
+                   Text="{Binding StatusMessage}" 
+                   Foreground="Red" />
+    </StackPanel>
+</Window>

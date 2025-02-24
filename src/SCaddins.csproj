@@ -108,7 +108,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="Caliburn.Micro" Version="4.0.212" />
+    <PackageReference Include="Caliburn.Micro" Version="4.0.230" />
     <PackageReference Include="CoreCLR-NCalc" Version="3.1.253" />
     <PackageReference Include="FluentIcons.WPF" Version="1.1.266" />
     <PackageReference Include="Hunspell.Native" Version="1.2.5359.26130" />

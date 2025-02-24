@@ -108,3 +108,9 @@ src/.vs/SCaddins/DesignTimeBuild/.dtbcache.v2
 src/.vs/SCaddins/v17/DocumentLayout.backup.json
 src/.vs/SCaddins/v17/DocumentLayout.json
 src/.vs/SCaddins/v17/fileList.bin
+*.bin
+*.vsidx
+*.bin
+*.vsidx
+*.v2
+*.v2

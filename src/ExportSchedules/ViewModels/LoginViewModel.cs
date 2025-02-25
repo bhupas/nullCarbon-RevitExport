@@ -52,63 +52,63 @@ namespace SCaddins.ExportSchedules.ViewModels
             }
         }
 
-public async Task Login()
-{
-    // Example base URL for your environment:
-    string baseUrl = "https://nullcarbonstaging.germanywestcentral.cloudapp.azure.com/backend";
-    string loginRoute = "/auth/jwt/create";
-    string fullUrl = baseUrl + loginRoute;
-
-    var requestData = new
-    {
-        username = Username,
-        password = Password
-    };
-
-    var jsonString = JsonConvert.SerializeObject(requestData);
-    var requestContent = new StringContent(jsonString, Encoding.UTF8, "application/json");
-
-    // Clear old status
-    StatusMessage = "";
-
-    try
-    {
-        using (var client = new HttpClient())
+        public async Task Login()
         {
-            var response = await client.PostAsync(fullUrl, requestContent);
-            var responseBody = await response.Content.ReadAsStringAsync();
+            // Example base URL for your environment:
+            string baseUrl = "https://nullcarbonstaging.germanywestcentral.cloudapp.azure.com/backend";
+            string loginRoute = "/auth/jwt/create";
+            string fullUrl = baseUrl + loginRoute;
 
-            if (response.IsSuccessStatusCode)
+            var requestData = new
             {
-                // Deserialize the JSON response for tokens.
-                var tokenData = JsonConvert.DeserializeObject<LoginResponse>(responseBody);
+                username = Username,
+                password = Password
+            };
 
-                if (tokenData != null && !string.IsNullOrEmpty(tokenData.Access))
-                {
-                    // Store the tokens in the static TokenCache.
-                    TokenCache.AccessToken = tokenData.Access;
-                    TokenCache.RefreshToken = tokenData.Refresh;
+            var jsonString = JsonConvert.SerializeObject(requestData);
+            var requestContent = new StringContent(jsonString, Encoding.UTF8, "application/json");
 
-                    StatusMessage = "You are logged in!";
-                    // Close the dialog on successful login.
-                    await TryCloseAsync(true);
-                }
-                else
+            // Clear old status
+            StatusMessage = "";
+
+            try
+            {
+                using (var client = new HttpClient())
                 {
-                    StatusMessage = "Login succeeded, but no token returned.";
+                    var response = await client.PostAsync(fullUrl, requestContent);
+                    var responseBody = await response.Content.ReadAsStringAsync();
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        // Deserialize the JSON response for tokens.
+                        var tokenData = JsonConvert.DeserializeObject<LoginResponse>(responseBody);
+
+                        if (tokenData != null && !string.IsNullOrEmpty(tokenData.Access))
+                        {
+                            // Store the tokens in the static TokenCache.
+                            TokenCache.AccessToken = tokenData.Access;
+                            TokenCache.RefreshToken = tokenData.Refresh;
+
+                            StatusMessage = "You are logged in!";
+                            // Close the dialog on successful login.
+                            await TryCloseAsync(true);
+                        }
+                        else
+                        {
+                            StatusMessage = "Login succeeded, but no token returned.";
+                        }
+                    }
+                    else
+                    {
+                        StatusMessage = $"Login failed: {responseBody}";
+                    }
                 }
             }
-            else
+            catch (Exception ex)
             {
-                StatusMessage = $"Login failed: {responseBody}";
+                StatusMessage = $"Exception: {ex.Message}";
             }
         }
-    }
-    catch (Exception ex)
-    {
-        StatusMessage = $"Exception: {ex.Message}";
-    }
-}
     }
 
     // Helper class for deserializing the JSON response

@@ -25,13 +25,14 @@
                 <!-- Button row -->
             </Grid.RowDefinitions>
 
-            <!-- Buttons for Login and Export -->
+            <!-- Buttons for Login and Sign Up (Export button removed from here) -->
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
-                <Button Content="Login"
+                <Button Content="{Binding LoginButtonText}"
                         Margin="0,0,8,0"
                         cal:Message.Attach="LoginCommand" />
-                <Button Content="{Binding ExportLabel}"
-                        cal:Message.Attach="Export" />
+                <Button Content="Sign up"
+                        Margin="0,0,8,0"
+                        cal:Message.Attach="SignUpCommand" />
             </StackPanel>
         </Grid>
 

@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Work_revit\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\views\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\views\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\viewmodels\\exportschedulesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\viewmodels\\exportschedulesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\views\\exportschedulesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\views\\exportschedulesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\views\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\views\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\viewmodels\\exportschedulesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\viewmodels\\exportschedulesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\views\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\views\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\views\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\views\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\viewmodels\\optionsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -666,7 +666,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -679,32 +679,19 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-11T12:48:42.03Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginView.xaml.cs",
-              "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Views\\LoginView.xaml.cs",
-              "RelativeDocumentMoniker": "ExportSchedules\\Views\\LoginView.xaml.cs",
-              "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\Views\\LoginView.xaml.cs",
-              "RelativeToolTip": "ExportSchedules\\Views\\LoginView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T11:25:53.505Z",
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LoginView.xaml",
-              "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Views\\LoginView.xaml",
-              "RelativeDocumentMoniker": "ExportSchedules\\Views\\LoginView.xaml",
-              "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\Views\\LoginView.xaml",
-              "RelativeToolTip": "ExportSchedules\\Views\\LoginView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-24T11:25:24.854Z",
+              "Title": "ExportSchedulesViewModel.cs",
+              "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
+              "RelativeDocumentMoniker": "ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
+              "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
+              "RelativeToolTip": "ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAHkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T11:56:49.124Z",
               "EditorCaption": ""
             },
             {
@@ -721,29 +708,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\ViewModels\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "ExportSchedules\\ViewModels\\LoginViewModel.cs",
               "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\ViewModels\\LoginViewModel.cs",
               "RelativeToolTip": "ExportSchedules\\ViewModels\\LoginViewModel.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAkwIAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAmwEYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-24T11:26:19.654Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ExportSchedulesViewModel.cs",
-              "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
-              "RelativeDocumentMoniker": "ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
-              "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
-              "RelativeToolTip": "ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T11:56:49.124Z",
+              "DocumentIndex": 3,
+              "Title": "LoginView.xaml",
+              "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Views\\LoginView.xaml",
+              "RelativeDocumentMoniker": "ExportSchedules\\Views\\LoginView.xaml",
+              "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\Views\\LoginView.xaml",
+              "RelativeToolTip": "ExportSchedules\\Views\\LoginView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-24T11:25:24.854Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginView.xaml.cs",
+              "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Views\\LoginView.xaml.cs",
+              "RelativeDocumentMoniker": "ExportSchedules\\Views\\LoginView.xaml.cs",
+              "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\Views\\LoginView.xaml.cs",
+              "RelativeToolTip": "ExportSchedules\\Views\\LoginView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T11:25:53.505Z"
             },
             {
               "$type": "Document",
@@ -754,8 +752,7 @@
               "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\Views\\OptionsView.xaml",
               "RelativeToolTip": "ExportSchedules\\Views\\OptionsView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-17T11:57:50.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T11:57:50.623Z"
             },
             {
               "$type": "Document",
@@ -767,8 +764,7 @@
               "RelativeToolTip": "ExportSchedules\\Views\\ExportSchedulesView.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T12:00:03.982Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T12:00:03.982Z"
             },
             {
               "$type": "Document",
@@ -779,8 +775,7 @@
               "ToolTip": "C:\\Work_revit\\src\\HatchEditor\\Views\\SelectHatchView.xaml",
               "RelativeToolTip": "HatchEditor\\Views\\SelectHatchView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-24T10:51:45.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-24T10:51:45.802Z"
             },
             {
               "$type": "Document",
@@ -791,8 +786,7 @@
               "ToolTip": "C:\\Work_revit\\src\\DestructivePurge\\Views\\DestructivePurgeView.xaml",
               "RelativeToolTip": "DestructivePurge\\Views\\DestructivePurgeView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-24T10:44:42.773Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-24T10:44:42.773Z"
             },
             {
               "$type": "Document",
@@ -804,8 +798,7 @@
               "RelativeToolTip": "ExportSchedules\\ViewModels\\ScheduleItemViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T12:14:40.044Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T12:14:40.044Z"
             },
             {
               "$type": "Document",
@@ -817,8 +810,7 @@
               "RelativeToolTip": "ExportSchedules\\Views\\OptionsView.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T12:00:18.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T12:00:18.49Z"
             },
             {
               "$type": "Document",
@@ -829,8 +821,7 @@
               "ToolTip": "C:\\Work_revit\\src\\SheetCopier\\Views\\ViewSelectionVIew.xaml",
               "RelativeToolTip": "SheetCopier\\Views\\ViewSelectionVIew.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-24T10:44:44.32Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-24T10:44:44.32Z"
             },
             {
               "$type": "Document",
@@ -842,8 +833,7 @@
               "RelativeToolTip": "SCaddins.addin",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000072|",
-              "WhenOpened": "2025-02-17T14:27:36.79Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:27:36.79Z"
             },
             {
               "$type": "Document",
@@ -854,8 +844,7 @@
               "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\Settings.settings",
               "RelativeToolTip": "ExportSchedules\\Settings.settings",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
-              "WhenOpened": "2025-02-17T12:35:43.404Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T12:35:43.404Z"
             },
             {
               "$type": "Document",
@@ -867,8 +856,7 @@
               "RelativeToolTip": "PlaceCoordinate\\ViewModels\\PlaceCoordinateViewModel.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAAQwD0AAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:13.939Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:13.939Z"
             },
             {
               "$type": "Document",
@@ -880,8 +868,7 @@
               "RelativeToolTip": "SCaddins.cs",
               "ViewState": "AgIAADQCAAAAAAAAAAAuwD0CAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:05:06.785Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:05:06.785Z"
             },
             {
               "$type": "Document",
@@ -893,8 +880,7 @@
               "RelativeToolTip": "SCaddins.csproj",
               "ViewState": "AgIAAAoAAAAAAAAAAEBVwA8AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-17T14:05:07.48Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:05:07.48Z"
             },
             {
               "$type": "Document",
@@ -906,8 +892,7 @@
               "RelativeToolTip": "ExportManager\\ViewModels\\SCexportViewModel.cs",
               "ViewState": "AgIAAFEAAAAAAAAAAADwv2IAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:05:08.425Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:05:08.425Z"
             },
             {
               "$type": "Document",
@@ -919,8 +904,7 @@
               "RelativeToolTip": "ExportSchedules\\Utilities.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAUwDYAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T12:14:14.639Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T12:14:14.639Z"
             },
             {
               "$type": "Document",
@@ -931,8 +915,7 @@
               "ToolTip": "C:\\Work_revit\\src\\Common\\Views\\AboutView.xaml",
               "RelativeToolTip": "Common\\Views\\AboutView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-17T12:37:41.403Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T12:37:41.403Z"
             },
             {
               "$type": "Document",
@@ -944,8 +927,7 @@
               "RelativeToolTip": "HatchEditor\\HatchEditor.cs",
               "ViewState": "AgIAAHwAAAAAAAAAAAAQwI4AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:55.187Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:55.187Z"
             },
             {
               "$type": "Document",
@@ -957,8 +939,7 @@
               "RelativeToolTip": "GridManager\\GridManager.cs",
               "ViewState": "AgIAAPgAAAAAAAAAAAAQwAoBAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:40.633Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:40.633Z"
             },
             {
               "$type": "Document",
@@ -970,8 +951,7 @@
               "RelativeToolTip": "DestructivePurge\\DestructivePurgeCommand.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAxwCoAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:34.073Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:34.073Z"
             },
             {
               "$type": "Document",
@@ -983,8 +963,7 @@
               "RelativeToolTip": "RevisionUtilities\\Command.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAAwCoAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:08.228Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:08.228Z"
             },
             {
               "$type": "Document",
@@ -996,8 +975,7 @@
               "RelativeToolTip": "ParameterUtilities\\ViewModels\\SCincrementViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:06:54.347Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:06:54.347Z"
             },
             {
               "$type": "Document",
@@ -1009,8 +987,7 @@
               "RelativeToolTip": "ExportManager\\SegmentedSheetName.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:06:58.214Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:06:58.214Z"
             },
             {
               "$type": "Document",
@@ -1022,8 +999,7 @@
               "RelativeToolTip": "HatchEditor\\ViewModels\\SelectHatchViewModel.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAAwEMAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:06:59.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:06:59.913Z"
             },
             {
               "$type": "Document",
@@ -1035,8 +1011,7 @@
               "RelativeToolTip": "HatchEditor\\ViewModels\\SetTemplateParametersIViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:01.929Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:01.929Z"
             },
             {
               "$type": "Document",
@@ -1048,8 +1023,7 @@
               "RelativeToolTip": "ModelSetupWizard\\SettingsIO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:02.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:02.733Z"
             },
             {
               "$type": "Document",
@@ -1061,8 +1035,7 @@
               "RelativeToolTip": "ExportManager\\Sheet.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:03.54Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:03.54Z"
             },
             {
               "$type": "Document",
@@ -1074,8 +1047,7 @@
               "RelativeToolTip": "SheetCopier\\SheetCopierCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:04.249Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:04.249Z"
             },
             {
               "$type": "Document",
@@ -1087,8 +1059,7 @@
               "RelativeToolTip": "SheetCopier\\SheetCopierConstants.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:05.102Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:05.102Z"
             },
             {
               "$type": "Document",
@@ -1100,8 +1071,7 @@
               "RelativeToolTip": "SheetCopier\\SheetCopierEnums.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:05.882Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:05.882Z"
             },
             {
               "$type": "Document",
@@ -1113,8 +1083,7 @@
               "RelativeToolTip": "SheetCopier\\SheetCopierManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:06.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:06.757Z"
             },
             {
               "$type": "Document",
@@ -1126,8 +1095,7 @@
               "RelativeToolTip": "SheetCopier\\SheetCopierView.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:07.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:07.513Z"
             },
             {
               "$type": "Document",
@@ -1139,8 +1107,7 @@
               "RelativeToolTip": "SheetCopier\\SheetCopierViewHost.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:08.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:08.356Z"
             },
             {
               "$type": "Document",
@@ -1152,8 +1119,7 @@
               "RelativeToolTip": "SheetCopier\\ViewModels\\SheetCopierViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:09.028Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:09.028Z"
             },
             {
               "$type": "Document",
@@ -1165,8 +1131,7 @@
               "RelativeToolTip": "SolarAnalysis\\SolarAnalysisColourSchemes.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:23.574Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:23.574Z"
             },
             {
               "$type": "Document",
@@ -1178,8 +1143,7 @@
               "RelativeToolTip": "SolarAnalysis\\SolarAnalysisCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:24.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:24.792Z"
             },
             {
               "$type": "Document",
@@ -1191,8 +1155,7 @@
               "RelativeToolTip": "SolarAnalysis\\SolarAnalysisManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:25.632Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:25.632Z"
             },
             {
               "$type": "Document",
@@ -1204,8 +1167,7 @@
               "RelativeToolTip": "SolarAnalysis\\SolarAnalysisTestFace.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:26.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:26.396Z"
             },
             {
               "$type": "Document",
@@ -1217,8 +1179,7 @@
               "RelativeToolTip": "SolarAnalysis\\ViewModels\\SolarViewsViewModel.cs",
               "ViewState": "AgIAAEEAAAAAAAAAAAAQwFMAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:27.443Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:27.443Z"
             },
             {
               "$type": "Document",
@@ -1230,8 +1191,7 @@
               "RelativeToolTip": "SpellChecker\\SpellChecker.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:29.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:29.913Z"
             },
             {
               "$type": "Document",
@@ -1243,8 +1203,7 @@
               "RelativeToolTip": "SpellChecker\\SpellCheckerCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:30.945Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:30.945Z"
             },
             {
               "$type": "Document",
@@ -1256,8 +1215,7 @@
               "RelativeToolTip": "SpellChecker\\ViewModels\\SpellCheckerOptionsViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:31.96Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:31.96Z"
             },
             {
               "$type": "Document",
@@ -1269,8 +1227,7 @@
               "RelativeToolTip": "SpellChecker\\ViewModels\\SpellCheckerViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:32.917Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:32.917Z"
             },
             {
               "$type": "Document",
@@ -1282,8 +1239,7 @@
               "RelativeToolTip": "LineOfSight\\StaduimSeatingTier.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:34.3Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:34.3Z"
             },
             {
               "$type": "Document",
@@ -1295,8 +1251,7 @@
               "RelativeToolTip": "LineOfSight\\StaduimSeatingTread.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:35.216Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:35.216Z"
             },
             {
               "$type": "Document",
@@ -1308,8 +1263,7 @@
               "RelativeToolTip": "Common\\SystemUtils.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:37.741Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:37.741Z"
             },
             {
               "$type": "Document",
@@ -1321,8 +1275,7 @@
               "RelativeToolTip": "ExportManager\\ViewModels\\TemplateViewViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:38.591Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:38.591Z"
             },
             {
               "$type": "Document",
@@ -1334,8 +1287,7 @@
               "RelativeToolTip": "ExportManager\\ViewModels\\ToggleSelectedSheetParametersViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:39.494Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:39.494Z"
             },
             {
               "$type": "Document",
@@ -1347,8 +1299,7 @@
               "RelativeToolTip": "ModelSetupWizard\\TransactionLog.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:40.354Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:40.354Z"
             },
             {
               "$type": "Document",
@@ -1360,8 +1311,7 @@
               "RelativeToolTip": "ModelSetupWizard\\TranscactionLogItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:41.214Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:41.214Z"
             },
             {
               "$type": "Document",
@@ -1373,8 +1323,7 @@
               "RelativeToolTip": "Common\\ViewModels\\UpgradeViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:42.027Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:42.027Z"
             },
             {
               "$type": "Document",
@@ -1386,8 +1335,7 @@
               "RelativeToolTip": "ViewUtilities\\UserView.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:42.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:42.858Z"
             },
             {
               "$type": "Document",
@@ -1399,8 +1347,7 @@
               "RelativeToolTip": "SheetCopier\\ViewModels\\ViewSelectionViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:43.721Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:43.721Z"
             },
             {
               "$type": "Document",
@@ -1412,8 +1359,7 @@
               "RelativeToolTip": "ExportManager\\ViewSetItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:44.379Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:44.379Z"
             },
             {
               "$type": "Document",
@@ -1425,8 +1371,7 @@
               "RelativeToolTip": "ExportManager\\ViewModels\\ViewSetSaveAsViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:45.416Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:45.416Z"
             },
             {
               "$type": "Document",
@@ -1438,8 +1383,7 @@
               "RelativeToolTip": "ExportManager\\Views\\ViewSetSelectionView.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:46.479Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:46.479Z"
             },
             {
               "$type": "Document",
@@ -1451,8 +1395,7 @@
               "RelativeToolTip": "ExportManager\\ViewModels\\ViewSetSelectionViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:47.229Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:47.229Z"
             },
             {
               "$type": "Document",
@@ -1464,8 +1407,7 @@
               "RelativeToolTip": "ViewUtilities\\ViewUnderlays.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:48.158Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:48.158Z"
             },
             {
               "$type": "Document",
@@ -1477,8 +1419,7 @@
               "RelativeToolTip": "ModelSetupWizard\\WorksetParameter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:49.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:49.078Z"
             },
             {
               "$type": "Document",
@@ -1490,8 +1431,7 @@
               "RelativeToolTip": "WorksharingUtilities\\WorksharingUtilitiesCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:07:50.57Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:07:50.57Z"
             },
             {
               "$type": "Document",
@@ -1503,8 +1443,7 @@
               "RelativeToolTip": "Common\\About.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T12:37:26.914Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T12:37:26.914Z"
             },
             {
               "$type": "Document",
@@ -1516,8 +1455,7 @@
               "RelativeToolTip": "Common\\BasicDialogService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T12:37:36.575Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T12:37:36.575Z"
             },
             {
               "$type": "Document",
@@ -1529,8 +1467,7 @@
               "RelativeToolTip": "Common\\MiscUtils.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T12:39:01.453Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T12:39:01.453Z"
             },
             {
               "$type": "Document",
@@ -1542,8 +1479,7 @@
               "RelativeToolTip": "LatestRelease.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T12:37:18.112Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T12:37:18.112Z"
             },
             {
               "$type": "Document",
@@ -1555,8 +1491,7 @@
               "RelativeToolTip": "Common\\Bootstrapper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:04.02Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:04.02Z"
             },
             {
               "$type": "Document",
@@ -1568,8 +1503,7 @@
               "RelativeToolTip": "ViewUtilities\\CameraFromViewCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:04.859Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:04.859Z"
             },
             {
               "$type": "Document",
@@ -1581,8 +1515,7 @@
               "RelativeToolTip": "DestructivePurge\\ViewModels\\CheckableItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:05.616Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:05.616Z"
             },
             {
               "$type": "Document",
@@ -1594,8 +1527,7 @@
               "RelativeToolTip": "ModelSetupWizard\\ColourScheme.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:06.23Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:06.23Z"
             },
             {
               "$type": "Document",
@@ -1607,8 +1539,7 @@
               "RelativeToolTip": "ExportManager\\Command.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:06.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:06.892Z"
             },
             {
               "$type": "Document",
@@ -1620,8 +1551,7 @@
               "RelativeToolTip": "ModelSetupWizard\\Command.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:07.66Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:07.66Z"
             },
             {
               "$type": "Document",
@@ -1633,8 +1563,7 @@
               "RelativeToolTip": "ExportManager\\ViewModels\\ConfirmationDialogViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:27.039Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:27.039Z"
             },
             {
               "$type": "Document",
@@ -1646,8 +1575,7 @@
               "RelativeToolTip": "Common\\ConsoleUtils.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:27.712Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:27.712Z"
             },
             {
               "$type": "Document",
@@ -1659,8 +1587,7 @@
               "RelativeToolTip": "Constants.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:28.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:28.211Z"
             },
             {
               "$type": "Document",
@@ -1672,8 +1599,7 @@
               "RelativeToolTip": "ExportManager\\Constants.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:28.765Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:28.765Z"
             },
             {
               "$type": "Document",
@@ -1685,8 +1611,7 @@
               "RelativeToolTip": "HatchEditor\\ConversionUtilities.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:29.65Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:29.65Z"
             },
             {
               "$type": "Document",
@@ -1698,8 +1623,7 @@
               "RelativeToolTip": "SpellChecker\\CorrectionCandidate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:30.506Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:30.506Z"
             },
             {
               "$type": "Document",
@@ -1711,8 +1635,7 @@
               "RelativeToolTip": "ViewUtilities\\CreateUserViewCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:30.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:30.941Z"
             },
             {
               "$type": "Document",
@@ -1724,8 +1647,7 @@
               "RelativeToolTip": "DestructivePurge\\DestructivePurge.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:33.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:33.26Z"
             },
             {
               "$type": "Document",
@@ -1737,8 +1659,7 @@
               "RelativeToolTip": "DestructivePurge\\ViewModels\\DestructivePurgeViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:34.667Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:34.667Z"
             },
             {
               "$type": "Document",
@@ -1750,8 +1671,7 @@
               "RelativeToolTip": "ModelSetupWizard\\ElementCollectors.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:35.419Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:35.419Z"
             },
             {
               "$type": "Document",
@@ -1763,8 +1683,7 @@
               "RelativeToolTip": "ExportManager\\Enums.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:36.036Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:36.036Z"
             },
             {
               "$type": "Document",
@@ -1776,8 +1695,7 @@
               "RelativeToolTip": "ExportManager\\ExportLog.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:36.841Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:36.841Z"
             },
             {
               "$type": "Document",
@@ -1789,8 +1707,7 @@
               "RelativeToolTip": "ExportManager\\ExportLogItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:37.42Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:37.42Z"
             },
             {
               "$type": "Document",
@@ -1802,8 +1719,7 @@
               "RelativeToolTip": "ExportManager\\Views\\ExportLogView.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:38.074Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:38.074Z"
             },
             {
               "$type": "Document",
@@ -1815,8 +1731,7 @@
               "RelativeToolTip": "ExportManager\\ViewModels\\ExportLogViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:38.664Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:38.664Z"
             },
             {
               "$type": "Document",
@@ -1828,8 +1743,7 @@
               "RelativeToolTip": "ExportManager\\ExportManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:39.288Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:39.288Z"
             },
             {
               "$type": "Document",
@@ -1841,8 +1755,7 @@
               "RelativeToolTip": "ExportManager\\FileUtils.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:39.926Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:39.926Z"
             },
             {
               "$type": "Document",
@@ -1854,8 +1767,7 @@
               "RelativeToolTip": "GridManager\\ViewModels\\GridManagerViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:52.664Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:52.664Z"
             },
             {
               "$type": "Document",
@@ -1867,8 +1779,7 @@
               "RelativeToolTip": "HatchEditor\\Views\\HatchCanvas.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:54.601Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:54.601Z"
             },
             {
               "$type": "Document",
@@ -1880,8 +1791,7 @@
               "RelativeToolTip": "HatchEditor\\ViewModels\\HatchEditorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:57.712Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:57.712Z"
             },
             {
               "$type": "Document",
@@ -1893,8 +1803,7 @@
               "RelativeToolTip": "ModelSetupWizard\\IniIO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:58.638Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:58.638Z"
             },
             {
               "$type": "Document",
@@ -1906,8 +1815,7 @@
               "RelativeToolTip": "RenameUtilities\\IRenameCandidate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:59.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:59.273Z"
             },
             {
               "$type": "Document",
@@ -1919,8 +1827,7 @@
               "RelativeToolTip": "LineOfSight\\LineOfSightCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:59.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:59.91Z"
             },
             {
               "$type": "Document",
@@ -1932,8 +1839,7 @@
               "RelativeToolTip": "LineOfSight\\ViewModels\\LineOfSightViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:00.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:00.84Z"
             },
             {
               "$type": "Document",
@@ -1945,8 +1851,7 @@
               "RelativeToolTip": "RoomConverter\\ViewModels\\ListSelectionViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:01.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:01.437Z"
             },
             {
               "$type": "Document",
@@ -1958,8 +1863,7 @@
               "RelativeToolTip": "Common\\MockDialogService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:02.749Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:02.749Z"
             },
             {
               "$type": "Document",
@@ -1971,8 +1875,7 @@
               "RelativeToolTip": "ModelSetupWizard\\ModelSetupWizard.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:03.542Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:03.542Z"
             },
             {
               "$type": "Document",
@@ -1984,8 +1887,7 @@
               "RelativeToolTip": "ModelSetupWizard\\ViewModels\\ModelSetupWizardOptionsViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:04.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:04.179Z"
             },
             {
               "$type": "Document",
@@ -1997,8 +1899,7 @@
               "RelativeToolTip": "ModelSetupWizard\\ViewModels\\ModelSetupWizardViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:04.781Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:04.781Z"
             },
             {
               "$type": "Document",
@@ -2010,8 +1911,7 @@
               "RelativeToolTip": "ExportManager\\NativeNamingRulesUtils.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:05.462Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:05.462Z"
             },
             {
               "$type": "Document",
@@ -2023,8 +1923,7 @@
               "RelativeToolTip": "ExportManager\\NextSheet.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:06.668Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:06.668Z"
             },
             {
               "$type": "Document",
@@ -2036,8 +1935,7 @@
               "RelativeToolTip": "ModelSetupWizard\\NominatedArchitect.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:07.324Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:07.324Z"
             },
             {
               "$type": "Document",
@@ -2049,8 +1947,7 @@
               "RelativeToolTip": "ExportManager\\OpenableView.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:08.543Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:08.543Z"
             },
             {
               "$type": "Document",
@@ -2062,8 +1959,7 @@
               "RelativeToolTip": "ExportManager\\OpenSheet.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:09.19Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:09.19Z"
             },
             {
               "$type": "Document",
@@ -2075,8 +1971,7 @@
               "RelativeToolTip": "ExportManager\\ViewModels\\OpenSheetViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:09.838Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:09.838Z"
             },
             {
               "$type": "Document",
@@ -2088,8 +1983,7 @@
               "RelativeToolTip": "ExportManager\\ViewModels\\OptionsViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:11.16Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:11.16Z"
             },
             {
               "$type": "Document",
@@ -2101,8 +1995,7 @@
               "RelativeToolTip": "RunScript\\ViewModels\\OutputWindowViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:12.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:12.014Z"
             },
             {
               "$type": "Document",
@@ -2114,8 +2007,7 @@
               "RelativeToolTip": "ViewUtilities\\Pin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:12.616Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:12.616Z"
             },
             {
               "$type": "Document",
@@ -2127,8 +2019,7 @@
               "RelativeToolTip": "PlaceCoordinate\\PlaceCoordinate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:13.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:13.292Z"
             },
             {
               "$type": "Document",
@@ -2140,8 +2031,7 @@
               "RelativeToolTip": "ModelSetupWizard\\ProjectInformationReplacement.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:37.501Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:37.501Z"
             },
             {
               "$type": "Document",
@@ -2153,8 +2043,7 @@
               "RelativeToolTip": "RenameUtilities\\RenameCategory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:40.556Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:40.556Z"
             },
             {
               "$type": "Document",
@@ -2166,8 +2055,7 @@
               "RelativeToolTip": "RenameUtilities\\RenameCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:41.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:41.414Z"
             },
             {
               "$type": "Document",
@@ -2179,8 +2067,7 @@
               "RelativeToolTip": "RenameUtilities\\RenameDoors.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:42.237Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:42.237Z"
             },
             {
               "$type": "Document",
@@ -2192,8 +2079,7 @@
               "RelativeToolTip": "RenameUtilities\\RenameFamily.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:43.101Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:43.101Z"
             },
             {
               "$type": "Document",
@@ -2205,8 +2091,7 @@
               "RelativeToolTip": "RenameUtilities\\RenameGrids.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:43.689Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:43.689Z"
             },
             {
               "$type": "Document",
@@ -2218,8 +2103,7 @@
               "RelativeToolTip": "RenameUtilities\\RenameLevel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:44.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:44.961Z"
             },
             {
               "$type": "Document",
@@ -2231,8 +2115,7 @@
               "RelativeToolTip": "RenameUtilities\\RenameManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:46.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:46.179Z"
             },
             {
               "$type": "Document",
@@ -2244,8 +2127,7 @@
               "RelativeToolTip": "RenameUtilities\\RenameParameter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:47.415Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:47.415Z"
             },
             {
               "$type": "Document",
@@ -2257,8 +2139,7 @@
               "RelativeToolTip": "RenameUtilities\\RenameText.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:48.827Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:48.827Z"
             },
             {
               "$type": "Document",
@@ -2270,8 +2151,7 @@
               "RelativeToolTip": "RenameUtilities\\RenameUtilitiesCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:49.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:49.605Z"
             },
             {
               "$type": "Document",
@@ -2283,8 +2163,7 @@
               "RelativeToolTip": "RenameUtilities\\ViewModels\\RenameUtilitiesViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:50.119Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:50.119Z"
             },
             {
               "$type": "Document",
@@ -2296,8 +2175,7 @@
               "RelativeToolTip": "RenameUtilities\\RenameViewFilter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:50.739Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:50.739Z"
             },
             {
               "$type": "Document",
@@ -2309,8 +2187,7 @@
               "RelativeToolTip": "RenameUtilities\\RenameViewTemplate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:51.243Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:51.243Z"
             },
             {
               "$type": "Document",
@@ -2322,8 +2199,7 @@
               "RelativeToolTip": "RenameUtilities\\RenameWindows.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:51.862Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:51.862Z"
             },
             {
               "$type": "Document",
@@ -2335,8 +2211,7 @@
               "RelativeToolTip": "RevisionUtilities\\RevisionCloudItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:52.675Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:52.675Z"
             },
             {
               "$type": "Document",
@@ -2348,8 +2223,7 @@
               "RelativeToolTip": "RevisionUtilities\\RevisionItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:53.805Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:53.805Z"
             },
             {
               "$type": "Document",
@@ -2361,8 +2235,7 @@
               "RelativeToolTip": "ExportManager\\ViewModels\\RevisionSelectionViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:54.509Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:54.509Z"
             },
             {
               "$type": "Document",
@@ -2374,8 +2247,7 @@
               "RelativeToolTip": "RoomConverter\\RoomConversionCandidate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:57.046Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:57.046Z"
             },
             {
               "$type": "Document",
@@ -2387,8 +2259,7 @@
               "RelativeToolTip": "RoomConverter\\RoomConversionManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:57.497Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:57.497Z"
             },
             {
               "$type": "Document",
@@ -2400,8 +2271,7 @@
               "RelativeToolTip": "RoomConverter\\RoomConverterCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:58.177Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:58.177Z"
             },
             {
               "$type": "Document",
@@ -2413,8 +2283,7 @@
               "RelativeToolTip": "RoomConverter\\ViewModels\\RoomConvertorViewModel.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAAwDUAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:58.973Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:58.973Z"
             },
             {
               "$type": "Document",
@@ -2426,8 +2295,7 @@
               "RelativeToolTip": "RoomConverter\\RoomFilter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:05:00.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:05:00.257Z"
             },
             {
               "$type": "Document",
@@ -2439,8 +2307,7 @@
               "RelativeToolTip": "RoomConverter\\RoomFilterEnums.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:05:01.054Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:05:01.054Z"
             },
             {
               "$type": "Document",
@@ -2452,8 +2319,7 @@
               "RelativeToolTip": "RoomConverter\\RoomFilterItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:05:02.074Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:05:02.074Z"
             },
             {
               "$type": "Document",
@@ -2465,8 +2331,7 @@
               "RelativeToolTip": "RoomConverter\\ViewModels\\RoomFilterViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:05:02.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:05:02.78Z"
             },
             {
               "$type": "Document",
@@ -2478,8 +2343,7 @@
               "RelativeToolTip": "RoomConverter\\RoomParameter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:05:03.493Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:05:03.493Z"
             },
             {
               "$type": "Document",
@@ -2491,8 +2355,7 @@
               "RelativeToolTip": "RunScript\\RunScriptCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:05:04.763Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:05:04.763Z"
             },
             {
               "$type": "Document",
@@ -2504,8 +2367,7 @@
               "RelativeToolTip": "RunScript\\ViewModels\\RunScriptViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:05:05.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:05:05.464Z"
             },
             {
               "$type": "Document",
@@ -2517,8 +2379,7 @@
               "RelativeToolTip": "HatchEditor\\ViewModels\\SaveToModelViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:05:06.193Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:05:06.193Z"
             },
             {
               "$type": "Document",
@@ -2530,8 +2391,7 @@
               "RelativeToolTip": "RoomConverter\\ViewModels\\RoomToSheetWizardViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:05:04.058Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:05:04.058Z"
             },
             {
               "$type": "Document",
@@ -2543,8 +2403,7 @@
               "RelativeToolTip": "RevisionUtilities\\ViewModels\\RevisionUtilitiesViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:55.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:55.771Z"
             },
             {
               "$type": "Document",
@@ -2556,8 +2415,7 @@
               "RelativeToolTip": "RevisionUtilities\\RevisionUtilities.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:55.099Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:55.099Z"
             },
             {
               "$type": "Document",
@@ -2569,8 +2427,7 @@
               "RelativeToolTip": "RenameUtilities\\RenameGroups.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:44.253Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:44.253Z"
             },
             {
               "$type": "Document",
@@ -2582,8 +2439,7 @@
               "RelativeToolTip": "RenameUtilities\\RenameCandidate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:39.92Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:39.92Z"
             },
             {
               "$type": "Document",
@@ -2595,8 +2451,7 @@
               "RelativeToolTip": "ViewUtilities\\RemoveUnderlaysCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:39.216Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:39.216Z"
             },
             {
               "$type": "Document",
@@ -2608,8 +2463,7 @@
               "RelativeToolTip": "ExportManager\\RecentExport.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:38.58Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:38.58Z"
             },
             {
               "$type": "Document",
@@ -2621,8 +2475,7 @@
               "RelativeToolTip": "ModelSetupWizard\\ProjectInformationParameter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:36.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:36.961Z"
             },
             {
               "$type": "Document",
@@ -2634,8 +2487,7 @@
               "RelativeToolTip": "ExportManager\\PrintSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:36.016Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:36.016Z"
             },
             {
               "$type": "Document",
@@ -2647,8 +2499,7 @@
               "RelativeToolTip": "ExportManager\\ViewModels\\PrinterSelectionViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:35.322Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:35.322Z"
             },
             {
               "$type": "Document",
@@ -2660,8 +2511,7 @@
               "RelativeToolTip": "ExportManager\\PreviousSheet.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:34.589Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:34.589Z"
             },
             {
               "$type": "Document",
@@ -2673,8 +2523,7 @@
               "RelativeToolTip": "ExportManager\\PostExportHookCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:33.868Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:04:33.868Z"
             },
             {
               "$type": "Document",
@@ -2686,8 +2535,7 @@
               "RelativeToolTip": "HatchEditor\\Hatch.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:53.417Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:53.417Z"
             },
             {
               "$type": "Document",
@@ -2699,8 +2547,7 @@
               "RelativeToolTip": "DestructivePurge\\DeletableItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:31.481Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:31.481Z"
             },
             {
               "$type": "Document",
@@ -2712,8 +2559,7 @@
               "RelativeToolTip": "Common\\ViewModels\\AboutViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:03:02.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T14:03:02.325Z"
             },
             {
               "$type": "Document",
@@ -2724,8 +2570,7 @@
               "ToolTip": "C:\\Work_revit\\src\\Common\\Views\\SettingsView.xaml",
               "RelativeToolTip": "Common\\Views\\SettingsView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-17T12:38:48.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T12:38:48.272Z"
             },
             {
               "$type": "Document",
@@ -2736,8 +2581,7 @@
               "ToolTip": "C:\\Work_revit\\src\\Common\\Views\\UpgradeView.xaml",
               "RelativeToolTip": "Common\\Views\\UpgradeView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-17T12:38:52.217Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T12:38:52.217Z"
             },
             {
               "$type": "Document",
@@ -2749,8 +2593,7 @@
               "RelativeToolTip": "CustomDictionary.xml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-02-17T12:37:15.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T12:37:15.962Z"
             },
             {
               "$type": "Document",
@@ -2762,8 +2605,7 @@
               "RelativeToolTip": "ExportSchedules\\Schedule.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIBJwEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T12:14:30.424Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T12:14:30.424Z"
             },
             {
               "$type": "Document",
@@ -2775,8 +2617,7 @@
               "RelativeToolTip": "ExportSchedules\\Command.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T12:13:36.376Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T12:13:36.376Z"
             },
             {
               "$type": "Document",
@@ -2788,8 +2629,7 @@
               "RelativeToolTip": "ExportSchedules\\Settings.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T12:16:49.65Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T12:16:49.65Z"
             }
           ]
         }

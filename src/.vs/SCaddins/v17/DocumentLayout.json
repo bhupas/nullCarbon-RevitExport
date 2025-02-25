@@ -3,68 +3,32 @@
   "WorkspaceRootPath": "C:\\Work_revit\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\viewmodels\\exportschedulesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\viewmodels\\exportschedulesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\views\\exportschedulesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\views\\exportschedulesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\views\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\views\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\views\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\views\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\viewmodels\\optionsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\viewmodels\\optionsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\views\\exportschedulesview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\views\\exportschedulesview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\views\\optionsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\views\\optionsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\hatcheditor\\views\\selecthatchview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:hatcheditor\\views\\selecthatchview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\viewmodels\\optionsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\viewmodels\\optionsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\destructivepurge\\views\\destructivepurgeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:destructivepurge\\views\\destructivepurgeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\viewmodels\\scheduleitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\viewmodels\\scheduleitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\views\\optionsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\views\\optionsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|C:\\Work_revit\\src\\exportschedules\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\sheetcopier\\views\\viewselectionview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:sheetcopier\\views\\viewselectionview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\scaddins.addin||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:scaddins.addin||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\viewmodels\\exportschedulesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\viewmodels\\exportschedulesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\utilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\utilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\scaddins.addin||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:scaddins.addin||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\common\\views\\aboutview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -635,8 +599,20 @@
       "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:common\\viewmodels\\aboutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\views\\optionsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\views\\optionsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\views\\optionsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\views\\optionsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\common\\views\\settingsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:common\\views\\settingsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|C:\\Work_revit\\src\\exportschedules\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\common\\views\\upgradeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -649,6 +625,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\viewmodels\\scheduleitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\viewmodels\\scheduleitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -666,44 +646,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "OptionsViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\ViewModels\\OptionsViewModel.cs",
               "RelativeDocumentMoniker": "ExportSchedules\\ViewModels\\OptionsViewModel.cs",
               "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\ViewModels\\OptionsViewModel.cs",
               "RelativeToolTip": "ExportSchedules\\ViewModels\\OptionsViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-11T12:48:42.03Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ExportSchedulesViewModel.cs",
-              "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
-              "RelativeDocumentMoniker": "ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
-              "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
-              "RelativeToolTip": "ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAHkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T11:56:49.124Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ExportSchedulesView.xaml",
-              "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Views\\ExportSchedulesView.xaml",
-              "RelativeDocumentMoniker": "ExportSchedules\\Views\\ExportSchedulesView.xaml",
-              "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\Views\\ExportSchedulesView.xaml",
-              "RelativeToolTip": "ExportSchedules\\Views\\ExportSchedulesView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-24T10:53:49.74Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -714,153 +670,91 @@
               "RelativeDocumentMoniker": "ExportSchedules\\ViewModels\\LoginViewModel.cs",
               "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\ViewModels\\LoginViewModel.cs",
               "RelativeToolTip": "ExportSchedules\\ViewModels\\LoginViewModel.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAmwEYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAuwG4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T11:26:19.654Z",
+              "WhenOpened": "2025-02-25T08:23:49.071Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginView.xaml",
-              "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Views\\LoginView.xaml",
-              "RelativeDocumentMoniker": "ExportSchedules\\Views\\LoginView.xaml",
-              "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\Views\\LoginView.xaml",
-              "RelativeToolTip": "ExportSchedules\\Views\\LoginView.xaml",
+              "DocumentIndex": 0,
+              "Title": "ExportSchedulesView.xaml",
+              "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Views\\ExportSchedulesView.xaml",
+              "RelativeDocumentMoniker": "ExportSchedules\\Views\\ExportSchedulesView.xaml",
+              "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\Views\\ExportSchedulesView.xaml",
+              "RelativeToolTip": "ExportSchedules\\Views\\ExportSchedulesView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-24T11:25:24.854Z",
+              "WhenOpened": "2025-02-17T11:56:51.531Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginView.xaml.cs",
-              "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Views\\LoginView.xaml.cs",
-              "RelativeDocumentMoniker": "ExportSchedules\\Views\\LoginView.xaml.cs",
-              "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\Views\\LoginView.xaml.cs",
-              "RelativeToolTip": "ExportSchedules\\Views\\LoginView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T11:25:53.505Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "OptionsView.xaml",
-              "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Views\\OptionsView.xaml",
-              "RelativeDocumentMoniker": "ExportSchedules\\Views\\OptionsView.xaml",
-              "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\Views\\OptionsView.xaml",
-              "RelativeToolTip": "ExportSchedules\\Views\\OptionsView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-17T11:57:50.623Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "ExportSchedulesView.xaml.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Views\\ExportSchedulesView.xaml.cs",
               "RelativeDocumentMoniker": "ExportSchedules\\Views\\ExportSchedulesView.xaml.cs",
               "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\Views\\ExportSchedulesView.xaml.cs",
               "RelativeToolTip": "ExportSchedules\\Views\\ExportSchedulesView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T12:00:03.982Z"
+              "WhenOpened": "2025-02-17T12:00:03.982Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SelectHatchView.xaml",
-              "DocumentMoniker": "C:\\Work_revit\\src\\HatchEditor\\Views\\SelectHatchView.xaml",
-              "RelativeDocumentMoniker": "HatchEditor\\Views\\SelectHatchView.xaml",
-              "ToolTip": "C:\\Work_revit\\src\\HatchEditor\\Views\\SelectHatchView.xaml",
-              "RelativeToolTip": "HatchEditor\\Views\\SelectHatchView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-24T10:51:45.802Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DestructivePurgeView.xaml",
-              "DocumentMoniker": "C:\\Work_revit\\src\\DestructivePurge\\Views\\DestructivePurgeView.xaml",
-              "RelativeDocumentMoniker": "DestructivePurge\\Views\\DestructivePurgeView.xaml",
-              "ToolTip": "C:\\Work_revit\\src\\DestructivePurge\\Views\\DestructivePurgeView.xaml",
-              "RelativeToolTip": "DestructivePurge\\Views\\DestructivePurgeView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-24T10:44:42.773Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ScheduleItemViewModel.cs",
-              "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\ViewModels\\ScheduleItemViewModel.cs",
-              "RelativeDocumentMoniker": "ExportSchedules\\ViewModels\\ScheduleItemViewModel.cs",
-              "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\ViewModels\\ScheduleItemViewModel.cs",
-              "RelativeToolTip": "ExportSchedules\\ViewModels\\ScheduleItemViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAkAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "ExportSchedulesViewModel.cs",
+              "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
+              "RelativeDocumentMoniker": "ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
+              "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
+              "RelativeToolTip": "ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAWwEkAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T12:14:40.044Z"
+              "WhenOpened": "2025-02-17T11:56:49.124Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "OptionsView.xaml.cs",
-              "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Views\\OptionsView.xaml.cs",
-              "RelativeDocumentMoniker": "ExportSchedules\\Views\\OptionsView.xaml.cs",
-              "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\Views\\OptionsView.xaml.cs",
-              "RelativeToolTip": "ExportSchedules\\Views\\OptionsView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABXAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Utilities.cs",
+              "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Utilities.cs",
+              "RelativeDocumentMoniker": "ExportSchedules\\Utilities.cs",
+              "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\Utilities.cs",
+              "RelativeToolTip": "ExportSchedules\\Utilities.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T12:00:18.49Z"
+              "WhenOpened": "2025-02-17T12:14:14.639Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ViewSelectionVIew.xaml",
-              "DocumentMoniker": "C:\\Work_revit\\src\\SheetCopier\\Views\\ViewSelectionVIew.xaml",
-              "RelativeDocumentMoniker": "SheetCopier\\Views\\ViewSelectionVIew.xaml",
-              "ToolTip": "C:\\Work_revit\\src\\SheetCopier\\Views\\ViewSelectionVIew.xaml",
-              "RelativeToolTip": "SheetCopier\\Views\\ViewSelectionVIew.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-24T10:44:44.32Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 6,
               "Title": "SCaddins.addin",
               "DocumentMoniker": "C:\\Work_revit\\src\\SCaddins.addin",
               "RelativeDocumentMoniker": "SCaddins.addin",
               "ToolTip": "C:\\Work_revit\\src\\SCaddins.addin",
               "RelativeToolTip": "SCaddins.addin",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000072|",
-              "WhenOpened": "2025-02-17T14:27:36.79Z"
+              "WhenOpened": "2025-02-17T14:27:36.79Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Settings.settings",
-              "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Settings.settings",
-              "RelativeDocumentMoniker": "ExportSchedules\\Settings.settings",
-              "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\Settings.settings",
-              "RelativeToolTip": "ExportSchedules\\Settings.settings",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
-              "WhenOpened": "2025-02-17T12:35:43.404Z"
+              "DocumentIndex": 9,
+              "Title": "SCaddins.csproj",
+              "DocumentMoniker": "C:\\Work_revit\\src\\SCaddins.csproj",
+              "RelativeDocumentMoniker": "SCaddins.csproj",
+              "ToolTip": "C:\\Work_revit\\src\\SCaddins.csproj",
+              "RelativeToolTip": "SCaddins.csproj",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-17T14:05:07.48Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "PlaceCoordinateViewModel.cs",
-              "DocumentMoniker": "C:\\Work_revit\\src\\PlaceCoordinate\\ViewModels\\PlaceCoordinateViewModel.cs",
-              "RelativeDocumentMoniker": "PlaceCoordinate\\ViewModels\\PlaceCoordinateViewModel.cs",
-              "ToolTip": "C:\\Work_revit\\src\\PlaceCoordinate\\ViewModels\\PlaceCoordinateViewModel.cs",
-              "RelativeToolTip": "PlaceCoordinate\\ViewModels\\PlaceCoordinateViewModel.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAQwD0AAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T14:04:13.939Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 10,
               "Title": "SCaddins.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\SCaddins.cs",
               "RelativeDocumentMoniker": "SCaddins.cs",
@@ -872,43 +766,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "SCaddins.csproj",
-              "DocumentMoniker": "C:\\Work_revit\\src\\SCaddins.csproj",
-              "RelativeDocumentMoniker": "SCaddins.csproj",
-              "ToolTip": "C:\\Work_revit\\src\\SCaddins.csproj",
-              "RelativeToolTip": "SCaddins.csproj",
-              "ViewState": "AgIAAAoAAAAAAAAAAEBVwA8AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-17T14:05:07.48Z"
+              "DocumentIndex": 11,
+              "Title": "PlaceCoordinateViewModel.cs",
+              "DocumentMoniker": "C:\\Work_revit\\src\\PlaceCoordinate\\ViewModels\\PlaceCoordinateViewModel.cs",
+              "RelativeDocumentMoniker": "PlaceCoordinate\\ViewModels\\PlaceCoordinateViewModel.cs",
+              "ToolTip": "C:\\Work_revit\\src\\PlaceCoordinate\\ViewModels\\PlaceCoordinateViewModel.cs",
+              "RelativeToolTip": "PlaceCoordinate\\ViewModels\\PlaceCoordinateViewModel.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAA1wD0AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T14:04:13.939Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 8,
               "Title": "SCexportViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\ViewModels\\SCexportViewModel.cs",
               "RelativeDocumentMoniker": "ExportManager\\ViewModels\\SCexportViewModel.cs",
               "ToolTip": "C:\\Work_revit\\src\\ExportManager\\ViewModels\\SCexportViewModel.cs",
               "RelativeToolTip": "ExportManager\\ViewModels\\SCexportViewModel.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAADwv2IAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAywGIAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-17T14:05:08.425Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Utilities.cs",
-              "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Utilities.cs",
-              "RelativeDocumentMoniker": "ExportSchedules\\Utilities.cs",
-              "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\Utilities.cs",
-              "RelativeToolTip": "ExportSchedules\\Utilities.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAUwDYAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T12:14:14.639Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 7,
               "Title": "AboutView.xaml",
               "DocumentMoniker": "C:\\Work_revit\\src\\Common\\Views\\AboutView.xaml",
               "RelativeDocumentMoniker": "Common\\Views\\AboutView.xaml",
@@ -919,7 +801,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 12,
               "Title": "HatchEditor.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\HatchEditor\\HatchEditor.cs",
               "RelativeDocumentMoniker": "HatchEditor\\HatchEditor.cs",
@@ -931,7 +813,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 13,
               "Title": "GridManager.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\GridManager\\GridManager.cs",
               "RelativeDocumentMoniker": "GridManager\\GridManager.cs",
@@ -943,19 +825,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 14,
               "Title": "DestructivePurgeCommand.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\DestructivePurge\\DestructivePurgeCommand.cs",
               "RelativeDocumentMoniker": "DestructivePurge\\DestructivePurgeCommand.cs",
               "ToolTip": "C:\\Work_revit\\src\\DestructivePurge\\DestructivePurgeCommand.cs",
               "RelativeToolTip": "DestructivePurge\\DestructivePurgeCommand.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAxwCoAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAwCoAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-17T14:03:34.073Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 15,
               "Title": "Command.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RevisionUtilities\\Command.cs",
               "RelativeDocumentMoniker": "RevisionUtilities\\Command.cs",
@@ -967,7 +849,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 16,
               "Title": "SCincrementViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ParameterUtilities\\ViewModels\\SCincrementViewModel.cs",
               "RelativeDocumentMoniker": "ParameterUtilities\\ViewModels\\SCincrementViewModel.cs",
@@ -979,7 +861,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 17,
               "Title": "SegmentedSheetName.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\SegmentedSheetName.cs",
               "RelativeDocumentMoniker": "ExportManager\\SegmentedSheetName.cs",
@@ -991,7 +873,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 18,
               "Title": "SelectHatchViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\HatchEditor\\ViewModels\\SelectHatchViewModel.cs",
               "RelativeDocumentMoniker": "HatchEditor\\ViewModels\\SelectHatchViewModel.cs",
@@ -1003,7 +885,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 19,
               "Title": "SetTemplateParametersIViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\HatchEditor\\ViewModels\\SetTemplateParametersIViewModel.cs",
               "RelativeDocumentMoniker": "HatchEditor\\ViewModels\\SetTemplateParametersIViewModel.cs",
@@ -1015,7 +897,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 20,
               "Title": "SettingsIO.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ModelSetupWizard\\SettingsIO.cs",
               "RelativeDocumentMoniker": "ModelSetupWizard\\SettingsIO.cs",
@@ -1027,7 +909,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 21,
               "Title": "Sheet.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\Sheet.cs",
               "RelativeDocumentMoniker": "ExportManager\\Sheet.cs",
@@ -1039,7 +921,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 22,
               "Title": "SheetCopierCommand.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\SheetCopier\\SheetCopierCommand.cs",
               "RelativeDocumentMoniker": "SheetCopier\\SheetCopierCommand.cs",
@@ -1051,7 +933,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 23,
               "Title": "SheetCopierConstants.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\SheetCopier\\SheetCopierConstants.cs",
               "RelativeDocumentMoniker": "SheetCopier\\SheetCopierConstants.cs",
@@ -1063,7 +945,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 24,
               "Title": "SheetCopierEnums.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\SheetCopier\\SheetCopierEnums.cs",
               "RelativeDocumentMoniker": "SheetCopier\\SheetCopierEnums.cs",
@@ -1075,7 +957,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 25,
               "Title": "SheetCopierManager.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\SheetCopier\\SheetCopierManager.cs",
               "RelativeDocumentMoniker": "SheetCopier\\SheetCopierManager.cs",
@@ -1087,7 +969,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 26,
               "Title": "SheetCopierView.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\SheetCopier\\SheetCopierView.cs",
               "RelativeDocumentMoniker": "SheetCopier\\SheetCopierView.cs",
@@ -1099,7 +981,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 27,
               "Title": "SheetCopierViewHost.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\SheetCopier\\SheetCopierViewHost.cs",
               "RelativeDocumentMoniker": "SheetCopier\\SheetCopierViewHost.cs",
@@ -1111,7 +993,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 28,
               "Title": "SheetCopierViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\SheetCopier\\ViewModels\\SheetCopierViewModel.cs",
               "RelativeDocumentMoniker": "SheetCopier\\ViewModels\\SheetCopierViewModel.cs",
@@ -1123,7 +1005,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 29,
               "Title": "SolarAnalysisColourSchemes.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\SolarAnalysis\\SolarAnalysisColourSchemes.cs",
               "RelativeDocumentMoniker": "SolarAnalysis\\SolarAnalysisColourSchemes.cs",
@@ -1135,7 +1017,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 30,
               "Title": "SolarAnalysisCommand.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\SolarAnalysis\\SolarAnalysisCommand.cs",
               "RelativeDocumentMoniker": "SolarAnalysis\\SolarAnalysisCommand.cs",
@@ -1147,7 +1029,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 31,
               "Title": "SolarAnalysisManager.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\SolarAnalysis\\SolarAnalysisManager.cs",
               "RelativeDocumentMoniker": "SolarAnalysis\\SolarAnalysisManager.cs",
@@ -1159,7 +1041,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 32,
               "Title": "SolarAnalysisTestFace.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\SolarAnalysis\\SolarAnalysisTestFace.cs",
               "RelativeDocumentMoniker": "SolarAnalysis\\SolarAnalysisTestFace.cs",
@@ -1171,7 +1053,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 33,
               "Title": "SolarViewsViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\SolarAnalysis\\ViewModels\\SolarViewsViewModel.cs",
               "RelativeDocumentMoniker": "SolarAnalysis\\ViewModels\\SolarViewsViewModel.cs",
@@ -1183,7 +1065,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 34,
               "Title": "SpellChecker.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\SpellChecker\\SpellChecker.cs",
               "RelativeDocumentMoniker": "SpellChecker\\SpellChecker.cs",
@@ -1195,7 +1077,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 35,
               "Title": "SpellCheckerCommand.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\SpellChecker\\SpellCheckerCommand.cs",
               "RelativeDocumentMoniker": "SpellChecker\\SpellCheckerCommand.cs",
@@ -1207,7 +1089,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 36,
               "Title": "SpellCheckerOptionsViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\SpellChecker\\ViewModels\\SpellCheckerOptionsViewModel.cs",
               "RelativeDocumentMoniker": "SpellChecker\\ViewModels\\SpellCheckerOptionsViewModel.cs",
@@ -1219,7 +1101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 37,
               "Title": "SpellCheckerViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\SpellChecker\\ViewModels\\SpellCheckerViewModel.cs",
               "RelativeDocumentMoniker": "SpellChecker\\ViewModels\\SpellCheckerViewModel.cs",
@@ -1231,7 +1113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 38,
               "Title": "StaduimSeatingTier.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\LineOfSight\\StaduimSeatingTier.cs",
               "RelativeDocumentMoniker": "LineOfSight\\StaduimSeatingTier.cs",
@@ -1243,7 +1125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 39,
               "Title": "StaduimSeatingTread.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\LineOfSight\\StaduimSeatingTread.cs",
               "RelativeDocumentMoniker": "LineOfSight\\StaduimSeatingTread.cs",
@@ -1255,7 +1137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 40,
               "Title": "SystemUtils.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\Common\\SystemUtils.cs",
               "RelativeDocumentMoniker": "Common\\SystemUtils.cs",
@@ -1267,7 +1149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 41,
               "Title": "TemplateViewViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\ViewModels\\TemplateViewViewModel.cs",
               "RelativeDocumentMoniker": "ExportManager\\ViewModels\\TemplateViewViewModel.cs",
@@ -1279,7 +1161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 42,
               "Title": "ToggleSelectedSheetParametersViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\ViewModels\\ToggleSelectedSheetParametersViewModel.cs",
               "RelativeDocumentMoniker": "ExportManager\\ViewModels\\ToggleSelectedSheetParametersViewModel.cs",
@@ -1291,7 +1173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 43,
               "Title": "TransactionLog.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ModelSetupWizard\\TransactionLog.cs",
               "RelativeDocumentMoniker": "ModelSetupWizard\\TransactionLog.cs",
@@ -1303,7 +1185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 44,
               "Title": "TranscactionLogItem.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ModelSetupWizard\\TranscactionLogItem.cs",
               "RelativeDocumentMoniker": "ModelSetupWizard\\TranscactionLogItem.cs",
@@ -1315,7 +1197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 45,
               "Title": "UpgradeViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\Common\\ViewModels\\UpgradeViewModel.cs",
               "RelativeDocumentMoniker": "Common\\ViewModels\\UpgradeViewModel.cs",
@@ -1327,7 +1209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 46,
               "Title": "UserView.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ViewUtilities\\UserView.cs",
               "RelativeDocumentMoniker": "ViewUtilities\\UserView.cs",
@@ -1339,7 +1221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 47,
               "Title": "ViewSelectionViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\SheetCopier\\ViewModels\\ViewSelectionViewModel.cs",
               "RelativeDocumentMoniker": "SheetCopier\\ViewModels\\ViewSelectionViewModel.cs",
@@ -1351,7 +1233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 48,
               "Title": "ViewSetItem.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\ViewSetItem.cs",
               "RelativeDocumentMoniker": "ExportManager\\ViewSetItem.cs",
@@ -1363,7 +1245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 49,
               "Title": "ViewSetSaveAsViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\ViewModels\\ViewSetSaveAsViewModel.cs",
               "RelativeDocumentMoniker": "ExportManager\\ViewModels\\ViewSetSaveAsViewModel.cs",
@@ -1375,7 +1257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 50,
               "Title": "ViewSetSelectionView.xaml.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\Views\\ViewSetSelectionView.xaml.cs",
               "RelativeDocumentMoniker": "ExportManager\\Views\\ViewSetSelectionView.xaml.cs",
@@ -1387,7 +1269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 51,
               "Title": "ViewSetSelectionViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\ViewModels\\ViewSetSelectionViewModel.cs",
               "RelativeDocumentMoniker": "ExportManager\\ViewModels\\ViewSetSelectionViewModel.cs",
@@ -1399,7 +1281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 52,
               "Title": "ViewUnderlays.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ViewUtilities\\ViewUnderlays.cs",
               "RelativeDocumentMoniker": "ViewUtilities\\ViewUnderlays.cs",
@@ -1411,7 +1293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 53,
               "Title": "WorksetParameter.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ModelSetupWizard\\WorksetParameter.cs",
               "RelativeDocumentMoniker": "ModelSetupWizard\\WorksetParameter.cs",
@@ -1423,7 +1305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 54,
               "Title": "WorksharingUtilitiesCommand.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\WorksharingUtilities\\WorksharingUtilitiesCommand.cs",
               "RelativeDocumentMoniker": "WorksharingUtilities\\WorksharingUtilitiesCommand.cs",
@@ -1435,7 +1317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 57,
               "Title": "About.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\Common\\About.cs",
               "RelativeDocumentMoniker": "Common\\About.cs",
@@ -1447,7 +1329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 56,
               "Title": "BasicDialogService.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\Common\\BasicDialogService.cs",
               "RelativeDocumentMoniker": "Common\\BasicDialogService.cs",
@@ -1459,7 +1341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 55,
               "Title": "MiscUtils.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\Common\\MiscUtils.cs",
               "RelativeDocumentMoniker": "Common\\MiscUtils.cs",
@@ -1471,7 +1353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 58,
               "Title": "LatestRelease.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\LatestRelease.cs",
               "RelativeDocumentMoniker": "LatestRelease.cs",
@@ -1483,7 +1365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 59,
               "Title": "Bootstrapper.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\Common\\Bootstrapper.cs",
               "RelativeDocumentMoniker": "Common\\Bootstrapper.cs",
@@ -1495,7 +1377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 60,
               "Title": "CameraFromViewCommand.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ViewUtilities\\CameraFromViewCommand.cs",
               "RelativeDocumentMoniker": "ViewUtilities\\CameraFromViewCommand.cs",
@@ -1507,7 +1389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 61,
               "Title": "CheckableItem.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\DestructivePurge\\ViewModels\\CheckableItem.cs",
               "RelativeDocumentMoniker": "DestructivePurge\\ViewModels\\CheckableItem.cs",
@@ -1519,7 +1401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 62,
               "Title": "ColourScheme.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ModelSetupWizard\\ColourScheme.cs",
               "RelativeDocumentMoniker": "ModelSetupWizard\\ColourScheme.cs",
@@ -1531,7 +1413,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 63,
               "Title": "Command.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\Command.cs",
               "RelativeDocumentMoniker": "ExportManager\\Command.cs",
@@ -1543,7 +1425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 64,
               "Title": "Command.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ModelSetupWizard\\Command.cs",
               "RelativeDocumentMoniker": "ModelSetupWizard\\Command.cs",
@@ -1555,7 +1437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 65,
               "Title": "ConfirmationDialogViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\ViewModels\\ConfirmationDialogViewModel.cs",
               "RelativeDocumentMoniker": "ExportManager\\ViewModels\\ConfirmationDialogViewModel.cs",
@@ -1567,7 +1449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 66,
               "Title": "ConsoleUtils.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\Common\\ConsoleUtils.cs",
               "RelativeDocumentMoniker": "Common\\ConsoleUtils.cs",
@@ -1579,7 +1461,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 67,
               "Title": "Constants.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\Constants.cs",
               "RelativeDocumentMoniker": "Constants.cs",
@@ -1591,7 +1473,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 68,
               "Title": "Constants.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\Constants.cs",
               "RelativeDocumentMoniker": "ExportManager\\Constants.cs",
@@ -1603,7 +1485,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 69,
               "Title": "ConversionUtilities.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\HatchEditor\\ConversionUtilities.cs",
               "RelativeDocumentMoniker": "HatchEditor\\ConversionUtilities.cs",
@@ -1615,7 +1497,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 70,
               "Title": "CorrectionCandidate.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\SpellChecker\\CorrectionCandidate.cs",
               "RelativeDocumentMoniker": "SpellChecker\\CorrectionCandidate.cs",
@@ -1627,7 +1509,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 71,
               "Title": "CreateUserViewCommand.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ViewUtilities\\CreateUserViewCommand.cs",
               "RelativeDocumentMoniker": "ViewUtilities\\CreateUserViewCommand.cs",
@@ -1639,7 +1521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 72,
               "Title": "DestructivePurge.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\DestructivePurge\\DestructivePurge.cs",
               "RelativeDocumentMoniker": "DestructivePurge\\DestructivePurge.cs",
@@ -1651,7 +1533,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 73,
               "Title": "DestructivePurgeViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\DestructivePurge\\ViewModels\\DestructivePurgeViewModel.cs",
               "RelativeDocumentMoniker": "DestructivePurge\\ViewModels\\DestructivePurgeViewModel.cs",
@@ -1663,7 +1545,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 74,
               "Title": "ElementCollectors.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ModelSetupWizard\\ElementCollectors.cs",
               "RelativeDocumentMoniker": "ModelSetupWizard\\ElementCollectors.cs",
@@ -1675,7 +1557,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 75,
               "Title": "Enums.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\Enums.cs",
               "RelativeDocumentMoniker": "ExportManager\\Enums.cs",
@@ -1687,7 +1569,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 76,
               "Title": "ExportLog.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\ExportLog.cs",
               "RelativeDocumentMoniker": "ExportManager\\ExportLog.cs",
@@ -1699,7 +1581,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 77,
               "Title": "ExportLogItem.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\ExportLogItem.cs",
               "RelativeDocumentMoniker": "ExportManager\\ExportLogItem.cs",
@@ -1711,7 +1593,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 78,
               "Title": "ExportLogView.xaml.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\Views\\ExportLogView.xaml.cs",
               "RelativeDocumentMoniker": "ExportManager\\Views\\ExportLogView.xaml.cs",
@@ -1723,7 +1605,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 79,
               "Title": "ExportLogViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\ViewModels\\ExportLogViewModel.cs",
               "RelativeDocumentMoniker": "ExportManager\\ViewModels\\ExportLogViewModel.cs",
@@ -1735,7 +1617,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 80,
               "Title": "ExportManager.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\ExportManager.cs",
               "RelativeDocumentMoniker": "ExportManager\\ExportManager.cs",
@@ -1747,7 +1629,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 81,
               "Title": "FileUtils.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\FileUtils.cs",
               "RelativeDocumentMoniker": "ExportManager\\FileUtils.cs",
@@ -1759,7 +1641,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 82,
               "Title": "GridManagerViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\GridManager\\ViewModels\\GridManagerViewModel.cs",
               "RelativeDocumentMoniker": "GridManager\\ViewModels\\GridManagerViewModel.cs",
@@ -1771,7 +1653,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 83,
               "Title": "HatchCanvas.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\HatchEditor\\Views\\HatchCanvas.cs",
               "RelativeDocumentMoniker": "HatchEditor\\Views\\HatchCanvas.cs",
@@ -1783,7 +1665,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 84,
               "Title": "HatchEditorViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\HatchEditor\\ViewModels\\HatchEditorViewModel.cs",
               "RelativeDocumentMoniker": "HatchEditor\\ViewModels\\HatchEditorViewModel.cs",
@@ -1795,7 +1677,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 85,
               "Title": "IniIO.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ModelSetupWizard\\IniIO.cs",
               "RelativeDocumentMoniker": "ModelSetupWizard\\IniIO.cs",
@@ -1807,7 +1689,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 86,
               "Title": "IRenameCandidate.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RenameUtilities\\IRenameCandidate.cs",
               "RelativeDocumentMoniker": "RenameUtilities\\IRenameCandidate.cs",
@@ -1819,7 +1701,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 87,
               "Title": "LineOfSightCommand.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\LineOfSight\\LineOfSightCommand.cs",
               "RelativeDocumentMoniker": "LineOfSight\\LineOfSightCommand.cs",
@@ -1831,7 +1713,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 88,
               "Title": "LineOfSightViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\LineOfSight\\ViewModels\\LineOfSightViewModel.cs",
               "RelativeDocumentMoniker": "LineOfSight\\ViewModels\\LineOfSightViewModel.cs",
@@ -1843,7 +1725,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 89,
               "Title": "ListSelectionViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RoomConverter\\ViewModels\\ListSelectionViewModel.cs",
               "RelativeDocumentMoniker": "RoomConverter\\ViewModels\\ListSelectionViewModel.cs",
@@ -1855,7 +1737,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 90,
               "Title": "MockDialogService.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\Common\\MockDialogService.cs",
               "RelativeDocumentMoniker": "Common\\MockDialogService.cs",
@@ -1867,7 +1749,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
+              "DocumentIndex": 91,
               "Title": "ModelSetupWizard.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ModelSetupWizard\\ModelSetupWizard.cs",
               "RelativeDocumentMoniker": "ModelSetupWizard\\ModelSetupWizard.cs",
@@ -1879,7 +1761,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 92,
               "Title": "ModelSetupWizardOptionsViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ModelSetupWizard\\ViewModels\\ModelSetupWizardOptionsViewModel.cs",
               "RelativeDocumentMoniker": "ModelSetupWizard\\ViewModels\\ModelSetupWizardOptionsViewModel.cs",
@@ -1891,7 +1773,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
+              "DocumentIndex": 93,
               "Title": "ModelSetupWizardViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ModelSetupWizard\\ViewModels\\ModelSetupWizardViewModel.cs",
               "RelativeDocumentMoniker": "ModelSetupWizard\\ViewModels\\ModelSetupWizardViewModel.cs",
@@ -1903,7 +1785,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 94,
               "Title": "NativeNamingRulesUtils.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\NativeNamingRulesUtils.cs",
               "RelativeDocumentMoniker": "ExportManager\\NativeNamingRulesUtils.cs",
@@ -1915,7 +1797,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 104,
+              "DocumentIndex": 95,
               "Title": "NextSheet.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\NextSheet.cs",
               "RelativeDocumentMoniker": "ExportManager\\NextSheet.cs",
@@ -1927,7 +1809,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 105,
+              "DocumentIndex": 96,
               "Title": "NominatedArchitect.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ModelSetupWizard\\NominatedArchitect.cs",
               "RelativeDocumentMoniker": "ModelSetupWizard\\NominatedArchitect.cs",
@@ -1939,7 +1821,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 106,
+              "DocumentIndex": 97,
               "Title": "OpenableView.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\OpenableView.cs",
               "RelativeDocumentMoniker": "ExportManager\\OpenableView.cs",
@@ -1951,7 +1833,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 98,
               "Title": "OpenSheet.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\OpenSheet.cs",
               "RelativeDocumentMoniker": "ExportManager\\OpenSheet.cs",
@@ -1963,7 +1845,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 108,
+              "DocumentIndex": 99,
               "Title": "OpenSheetViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\ViewModels\\OpenSheetViewModel.cs",
               "RelativeDocumentMoniker": "ExportManager\\ViewModels\\OpenSheetViewModel.cs",
@@ -1975,7 +1857,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 109,
+              "DocumentIndex": 100,
               "Title": "OptionsViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\ViewModels\\OptionsViewModel.cs",
               "RelativeDocumentMoniker": "ExportManager\\ViewModels\\OptionsViewModel.cs",
@@ -1987,7 +1869,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 110,
+              "DocumentIndex": 101,
               "Title": "OutputWindowViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RunScript\\ViewModels\\OutputWindowViewModel.cs",
               "RelativeDocumentMoniker": "RunScript\\ViewModels\\OutputWindowViewModel.cs",
@@ -1999,7 +1881,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 111,
+              "DocumentIndex": 102,
               "Title": "Pin.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ViewUtilities\\Pin.cs",
               "RelativeDocumentMoniker": "ViewUtilities\\Pin.cs",
@@ -2011,7 +1893,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 112,
+              "DocumentIndex": 103,
               "Title": "PlaceCoordinate.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\PlaceCoordinate\\PlaceCoordinate.cs",
               "RelativeDocumentMoniker": "PlaceCoordinate\\PlaceCoordinate.cs",
@@ -2023,7 +1905,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 113,
+              "DocumentIndex": 104,
               "Title": "ProjectInformationReplacement.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ModelSetupWizard\\ProjectInformationReplacement.cs",
               "RelativeDocumentMoniker": "ModelSetupWizard\\ProjectInformationReplacement.cs",
@@ -2035,7 +1917,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 114,
+              "DocumentIndex": 105,
               "Title": "RenameCategory.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RenameUtilities\\RenameCategory.cs",
               "RelativeDocumentMoniker": "RenameUtilities\\RenameCategory.cs",
@@ -2047,7 +1929,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 115,
+              "DocumentIndex": 106,
               "Title": "RenameCommand.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RenameUtilities\\RenameCommand.cs",
               "RelativeDocumentMoniker": "RenameUtilities\\RenameCommand.cs",
@@ -2059,7 +1941,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 116,
+              "DocumentIndex": 107,
               "Title": "RenameDoors.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RenameUtilities\\RenameDoors.cs",
               "RelativeDocumentMoniker": "RenameUtilities\\RenameDoors.cs",
@@ -2071,7 +1953,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 117,
+              "DocumentIndex": 108,
               "Title": "RenameFamily.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RenameUtilities\\RenameFamily.cs",
               "RelativeDocumentMoniker": "RenameUtilities\\RenameFamily.cs",
@@ -2083,7 +1965,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 118,
+              "DocumentIndex": 109,
               "Title": "RenameGrids.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RenameUtilities\\RenameGrids.cs",
               "RelativeDocumentMoniker": "RenameUtilities\\RenameGrids.cs",
@@ -2095,7 +1977,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 119,
+              "DocumentIndex": 110,
               "Title": "RenameLevel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RenameUtilities\\RenameLevel.cs",
               "RelativeDocumentMoniker": "RenameUtilities\\RenameLevel.cs",
@@ -2107,7 +1989,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 120,
+              "DocumentIndex": 111,
               "Title": "RenameManager.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RenameUtilities\\RenameManager.cs",
               "RelativeDocumentMoniker": "RenameUtilities\\RenameManager.cs",
@@ -2119,7 +2001,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 121,
+              "DocumentIndex": 112,
               "Title": "RenameParameter.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RenameUtilities\\RenameParameter.cs",
               "RelativeDocumentMoniker": "RenameUtilities\\RenameParameter.cs",
@@ -2131,7 +2013,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 122,
+              "DocumentIndex": 113,
               "Title": "RenameText.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RenameUtilities\\RenameText.cs",
               "RelativeDocumentMoniker": "RenameUtilities\\RenameText.cs",
@@ -2143,7 +2025,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 123,
+              "DocumentIndex": 114,
               "Title": "RenameUtilitiesCommand.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RenameUtilities\\RenameUtilitiesCommand.cs",
               "RelativeDocumentMoniker": "RenameUtilities\\RenameUtilitiesCommand.cs",
@@ -2155,7 +2037,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 124,
+              "DocumentIndex": 115,
               "Title": "RenameUtilitiesViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RenameUtilities\\ViewModels\\RenameUtilitiesViewModel.cs",
               "RelativeDocumentMoniker": "RenameUtilities\\ViewModels\\RenameUtilitiesViewModel.cs",
@@ -2167,7 +2049,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 125,
+              "DocumentIndex": 116,
               "Title": "RenameViewFilter.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RenameUtilities\\RenameViewFilter.cs",
               "RelativeDocumentMoniker": "RenameUtilities\\RenameViewFilter.cs",
@@ -2179,7 +2061,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 126,
+              "DocumentIndex": 117,
               "Title": "RenameViewTemplate.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RenameUtilities\\RenameViewTemplate.cs",
               "RelativeDocumentMoniker": "RenameUtilities\\RenameViewTemplate.cs",
@@ -2191,7 +2073,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 127,
+              "DocumentIndex": 118,
               "Title": "RenameWindows.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RenameUtilities\\RenameWindows.cs",
               "RelativeDocumentMoniker": "RenameUtilities\\RenameWindows.cs",
@@ -2203,7 +2085,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 128,
+              "DocumentIndex": 119,
               "Title": "RevisionCloudItem.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RevisionUtilities\\RevisionCloudItem.cs",
               "RelativeDocumentMoniker": "RevisionUtilities\\RevisionCloudItem.cs",
@@ -2215,7 +2097,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 129,
+              "DocumentIndex": 120,
               "Title": "RevisionItem.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RevisionUtilities\\RevisionItem.cs",
               "RelativeDocumentMoniker": "RevisionUtilities\\RevisionItem.cs",
@@ -2227,7 +2109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 130,
+              "DocumentIndex": 121,
               "Title": "RevisionSelectionViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\ViewModels\\RevisionSelectionViewModel.cs",
               "RelativeDocumentMoniker": "ExportManager\\ViewModels\\RevisionSelectionViewModel.cs",
@@ -2239,7 +2121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 131,
+              "DocumentIndex": 122,
               "Title": "RoomConversionCandidate.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RoomConverter\\RoomConversionCandidate.cs",
               "RelativeDocumentMoniker": "RoomConverter\\RoomConversionCandidate.cs",
@@ -2251,7 +2133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 132,
+              "DocumentIndex": 123,
               "Title": "RoomConversionManager.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RoomConverter\\RoomConversionManager.cs",
               "RelativeDocumentMoniker": "RoomConverter\\RoomConversionManager.cs",
@@ -2263,7 +2145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 133,
+              "DocumentIndex": 124,
               "Title": "RoomConverterCommand.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RoomConverter\\RoomConverterCommand.cs",
               "RelativeDocumentMoniker": "RoomConverter\\RoomConverterCommand.cs",
@@ -2275,19 +2157,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 134,
+              "DocumentIndex": 125,
               "Title": "RoomConvertorViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RoomConverter\\ViewModels\\RoomConvertorViewModel.cs",
               "RelativeDocumentMoniker": "RoomConverter\\ViewModels\\RoomConvertorViewModel.cs",
               "ToolTip": "C:\\Work_revit\\src\\RoomConverter\\ViewModels\\RoomConvertorViewModel.cs",
               "RelativeToolTip": "RoomConverter\\ViewModels\\RoomConvertorViewModel.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAwDUAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAzwDUAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-17T14:04:58.973Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 135,
+              "DocumentIndex": 126,
               "Title": "RoomFilter.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RoomConverter\\RoomFilter.cs",
               "RelativeDocumentMoniker": "RoomConverter\\RoomFilter.cs",
@@ -2299,7 +2181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 136,
+              "DocumentIndex": 127,
               "Title": "RoomFilterEnums.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RoomConverter\\RoomFilterEnums.cs",
               "RelativeDocumentMoniker": "RoomConverter\\RoomFilterEnums.cs",
@@ -2311,7 +2193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 137,
+              "DocumentIndex": 128,
               "Title": "RoomFilterItem.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RoomConverter\\RoomFilterItem.cs",
               "RelativeDocumentMoniker": "RoomConverter\\RoomFilterItem.cs",
@@ -2323,7 +2205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 138,
+              "DocumentIndex": 129,
               "Title": "RoomFilterViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RoomConverter\\ViewModels\\RoomFilterViewModel.cs",
               "RelativeDocumentMoniker": "RoomConverter\\ViewModels\\RoomFilterViewModel.cs",
@@ -2335,7 +2217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 139,
+              "DocumentIndex": 130,
               "Title": "RoomParameter.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RoomConverter\\RoomParameter.cs",
               "RelativeDocumentMoniker": "RoomConverter\\RoomParameter.cs",
@@ -2347,7 +2229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 140,
+              "DocumentIndex": 131,
               "Title": "RunScriptCommand.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RunScript\\RunScriptCommand.cs",
               "RelativeDocumentMoniker": "RunScript\\RunScriptCommand.cs",
@@ -2359,7 +2241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 141,
+              "DocumentIndex": 132,
               "Title": "RunScriptViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RunScript\\ViewModels\\RunScriptViewModel.cs",
               "RelativeDocumentMoniker": "RunScript\\ViewModels\\RunScriptViewModel.cs",
@@ -2371,7 +2253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 142,
+              "DocumentIndex": 133,
               "Title": "SaveToModelViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\HatchEditor\\ViewModels\\SaveToModelViewModel.cs",
               "RelativeDocumentMoniker": "HatchEditor\\ViewModels\\SaveToModelViewModel.cs",
@@ -2383,7 +2265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 143,
+              "DocumentIndex": 134,
               "Title": "RoomToSheetWizardViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RoomConverter\\ViewModels\\RoomToSheetWizardViewModel.cs",
               "RelativeDocumentMoniker": "RoomConverter\\ViewModels\\RoomToSheetWizardViewModel.cs",
@@ -2395,7 +2277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 144,
+              "DocumentIndex": 135,
               "Title": "RevisionUtilitiesViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RevisionUtilities\\ViewModels\\RevisionUtilitiesViewModel.cs",
               "RelativeDocumentMoniker": "RevisionUtilities\\ViewModels\\RevisionUtilitiesViewModel.cs",
@@ -2407,7 +2289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 145,
+              "DocumentIndex": 136,
               "Title": "RevisionUtilities.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RevisionUtilities\\RevisionUtilities.cs",
               "RelativeDocumentMoniker": "RevisionUtilities\\RevisionUtilities.cs",
@@ -2419,7 +2301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 146,
+              "DocumentIndex": 137,
               "Title": "RenameGroups.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RenameUtilities\\RenameGroups.cs",
               "RelativeDocumentMoniker": "RenameUtilities\\RenameGroups.cs",
@@ -2431,7 +2313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 147,
+              "DocumentIndex": 138,
               "Title": "RenameCandidate.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\RenameUtilities\\RenameCandidate.cs",
               "RelativeDocumentMoniker": "RenameUtilities\\RenameCandidate.cs",
@@ -2443,7 +2325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 148,
+              "DocumentIndex": 139,
               "Title": "RemoveUnderlaysCommand.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ViewUtilities\\RemoveUnderlaysCommand.cs",
               "RelativeDocumentMoniker": "ViewUtilities\\RemoveUnderlaysCommand.cs",
@@ -2455,7 +2337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 149,
+              "DocumentIndex": 140,
               "Title": "RecentExport.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\RecentExport.cs",
               "RelativeDocumentMoniker": "ExportManager\\RecentExport.cs",
@@ -2467,7 +2349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 150,
+              "DocumentIndex": 141,
               "Title": "ProjectInformationParameter.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ModelSetupWizard\\ProjectInformationParameter.cs",
               "RelativeDocumentMoniker": "ModelSetupWizard\\ProjectInformationParameter.cs",
@@ -2479,7 +2361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 151,
+              "DocumentIndex": 142,
               "Title": "PrintSettings.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\PrintSettings.cs",
               "RelativeDocumentMoniker": "ExportManager\\PrintSettings.cs",
@@ -2491,7 +2373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 152,
+              "DocumentIndex": 143,
               "Title": "PrinterSelectionViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\ViewModels\\PrinterSelectionViewModel.cs",
               "RelativeDocumentMoniker": "ExportManager\\ViewModels\\PrinterSelectionViewModel.cs",
@@ -2503,7 +2385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 153,
+              "DocumentIndex": 144,
               "Title": "PreviousSheet.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\PreviousSheet.cs",
               "RelativeDocumentMoniker": "ExportManager\\PreviousSheet.cs",
@@ -2515,7 +2397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 154,
+              "DocumentIndex": 145,
               "Title": "PostExportHookCommand.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportManager\\PostExportHookCommand.cs",
               "RelativeDocumentMoniker": "ExportManager\\PostExportHookCommand.cs",
@@ -2527,7 +2409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 155,
+              "DocumentIndex": 146,
               "Title": "Hatch.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\HatchEditor\\Hatch.cs",
               "RelativeDocumentMoniker": "HatchEditor\\Hatch.cs",
@@ -2539,7 +2421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 156,
+              "DocumentIndex": 147,
               "Title": "DeletableItem.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\DestructivePurge\\DeletableItem.cs",
               "RelativeDocumentMoniker": "DestructivePurge\\DeletableItem.cs",
@@ -2551,7 +2433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 157,
+              "DocumentIndex": 148,
               "Title": "AboutViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\Common\\ViewModels\\AboutViewModel.cs",
               "RelativeDocumentMoniker": "Common\\ViewModels\\AboutViewModel.cs",
@@ -2563,7 +2445,30 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 158,
+              "DocumentIndex": 150,
+              "Title": "OptionsView.xaml",
+              "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Views\\OptionsView.xaml",
+              "RelativeDocumentMoniker": "ExportSchedules\\Views\\OptionsView.xaml",
+              "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\Views\\OptionsView.xaml",
+              "RelativeToolTip": "ExportSchedules\\Views\\OptionsView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-17T11:57:50.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 149,
+              "Title": "OptionsView.xaml.cs",
+              "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Views\\OptionsView.xaml.cs",
+              "RelativeDocumentMoniker": "ExportSchedules\\Views\\OptionsView.xaml.cs",
+              "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\Views\\OptionsView.xaml.cs",
+              "RelativeToolTip": "ExportSchedules\\Views\\OptionsView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T12:00:18.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 151,
               "Title": "SettingsView.xaml",
               "DocumentMoniker": "C:\\Work_revit\\src\\Common\\Views\\SettingsView.xaml",
               "RelativeDocumentMoniker": "Common\\Views\\SettingsView.xaml",
@@ -2574,7 +2479,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 159,
+              "DocumentIndex": 152,
+              "Title": "Settings.settings",
+              "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Settings.settings",
+              "RelativeDocumentMoniker": "ExportSchedules\\Settings.settings",
+              "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\Settings.settings",
+              "RelativeToolTip": "ExportSchedules\\Settings.settings",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
+              "WhenOpened": "2025-02-17T12:35:43.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 153,
               "Title": "UpgradeView.xaml",
               "DocumentMoniker": "C:\\Work_revit\\src\\Common\\Views\\UpgradeView.xaml",
               "RelativeDocumentMoniker": "Common\\Views\\UpgradeView.xaml",
@@ -2585,7 +2501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 160,
+              "DocumentIndex": 154,
               "Title": "CustomDictionary.xml",
               "DocumentMoniker": "C:\\Work_revit\\src\\CustomDictionary.xml",
               "RelativeDocumentMoniker": "CustomDictionary.xml",
@@ -2597,19 +2513,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 161,
+              "DocumentIndex": 155,
               "Title": "Schedule.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Schedule.cs",
               "RelativeDocumentMoniker": "ExportSchedules\\Schedule.cs",
               "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\Schedule.cs",
               "RelativeToolTip": "ExportSchedules\\Schedule.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwEcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-17T12:14:30.424Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 162,
+              "DocumentIndex": 156,
+              "Title": "ScheduleItemViewModel.cs",
+              "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\ViewModels\\ScheduleItemViewModel.cs",
+              "RelativeDocumentMoniker": "ExportSchedules\\ViewModels\\ScheduleItemViewModel.cs",
+              "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\ViewModels\\ScheduleItemViewModel.cs",
+              "RelativeToolTip": "ExportSchedules\\ViewModels\\ScheduleItemViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T12:14:40.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 157,
               "Title": "Command.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Command.cs",
               "RelativeDocumentMoniker": "ExportSchedules\\Command.cs",
@@ -2621,7 +2549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 163,
+              "DocumentIndex": 158,
               "Title": "Settings.Designer.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Settings.Designer.cs",
               "RelativeDocumentMoniker": "ExportSchedules\\Settings.Designer.cs",

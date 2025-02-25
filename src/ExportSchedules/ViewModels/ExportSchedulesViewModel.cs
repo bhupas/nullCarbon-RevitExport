@@ -4,16 +4,20 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Diagnostics;
 
 namespace SCaddins.ExportSchedules.ViewModels
 {
     public class ExportSchedulesViewModel : Screen
     {
+        private bool isLoggedIn;
+
         public ExportSchedulesViewModel(List<Schedule> schedules, string exportDir)
         {
             Schedules = new BindableCollection<ScheduleItemViewModel>(
                 schedules.Select(s => new ScheduleItemViewModel(s)));
             ExportDir = exportDir;
+            IsLoggedIn = !string.IsNullOrEmpty(TokenCache.AccessToken);
 
             foreach (var item in Schedules)
             {
@@ -60,6 +64,19 @@ namespace SCaddins.ExportSchedules.ViewModels
             }
         }
 
+        public bool IsLoggedIn
+        {
+            get => isLoggedIn;
+            set
+            {
+                isLoggedIn = value;
+                NotifyOfPropertyChange(() => IsLoggedIn);
+                NotifyOfPropertyChange(() => LoginButtonText);
+            }
+        }
+
+        public string LoginButtonText => IsLoggedIn ? "Logged in" : "Login";
+
         public BindableCollection<ScheduleItemViewModel> Schedules { get; set; }
 
         public void Export()
@@ -97,9 +114,15 @@ namespace SCaddins.ExportSchedules.ViewModels
             }
         }
 
-
         public async void LoginCommand()
         {
+            if (IsLoggedIn)
+            {
+                // If already logged in, do nothing or show a message
+                SCaddinsApp.WindowManager.ShowMessageBox("You are already logged in.");
+                return;
+            }
+
             // Clear previous tokens to ensure a fresh login attempt.
             TokenCache.AccessToken = null;
             TokenCache.RefreshToken = null;
@@ -111,6 +134,7 @@ namespace SCaddins.ExportSchedules.ViewModels
             // After the dialog closes, check if a token was returned.
             if (!string.IsNullOrEmpty(TokenCache.AccessToken))
             {
+                IsLoggedIn = true;
                 SCaddinsApp.WindowManager.ShowMessageBox("You are logged in!");
             }
             else
@@ -119,5 +143,20 @@ namespace SCaddins.ExportSchedules.ViewModels
             }
         }
 
+        public void SignUpCommand()
+        {
+            try
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = "https://app.nullcarbon.dk/sign-up",
+                    UseShellExecute = true
+                });
+            }
+            catch (Exception ex)
+            {
+                SCaddinsApp.WindowManager.ShowMessageBox($"Could not open the website: {ex.Message}");
+            }
+        }
     }
 }

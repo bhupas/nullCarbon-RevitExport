@@ -1,14 +1,14 @@
-﻿namespace SCaddins.ExportSchedules
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Globalization;
-    using System.IO;
-    using System.Linq;
-    using System.Text;
-    using Autodesk.Revit.DB;
-    using OfficeOpenXml;
+﻿using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Text;
+using Autodesk.Revit.DB;
+using OfficeOpenXml;
 
+namespace SCaddins.ExportSchedules
+{
     public class Utilities
     {
         /// <summary>
@@ -55,7 +55,7 @@
                 return "No schedules to export.";
             }
 
-            // Attempt to get the Revit project’s title from the first schedule.
+            // Attempt to get the Revit project's title from the first schedule.
             // Fall back if it's somehow null/empty.
             string docTitle = schedules[0]?.RevitViewSchedule?.Document?.Title;
             if (string.IsNullOrWhiteSpace(docTitle))
@@ -258,16 +258,21 @@
             // Grab what's stored in Settings for the delimiter
             string fieldDelim = Settings.Default.FieldDelimiter;
 
-            // If the user never picked anything, or if it’s "tab" or "/tab", use an actual tab character.
+            // Handle various representations of tab character
             if (string.IsNullOrWhiteSpace(fieldDelim))
             {
                 fieldDelim = "\t";
             }
             else if (fieldDelim.Equals("tab", StringComparison.OrdinalIgnoreCase)
-                  || fieldDelim.Equals("/tab", StringComparison.OrdinalIgnoreCase))
+                  || fieldDelim.Equals("/tab", StringComparison.OrdinalIgnoreCase)
+                  || fieldDelim.Equals("\\t", StringComparison.OrdinalIgnoreCase)
+                  || fieldDelim.Equals(@"\t", StringComparison.OrdinalIgnoreCase))
             {
                 fieldDelim = "\t";
             }
+
+            // Process escape sequences in the delimiter string
+            fieldDelim = ProcessEscapeSequences(fieldDelim);
 
             // Now set the final delimiter
             options.FieldDelimiter = fieldDelim;
@@ -299,6 +304,21 @@
             options.Title = Settings.Default.ExportTitle;
 
             return options;
+        }
+
+        /// <summary>
+        /// Helper method to process escape sequences in strings
+        /// </summary>
+        private static string ProcessEscapeSequences(string input)
+        {
+            if (string.IsNullOrEmpty(input))
+                return input;
+
+            // Replace common escape sequences
+            return input
+                .Replace("\\t", "\t")  // Tab
+                .Replace("\\n", "\n")  // Newline
+                .Replace("\\r", "\r"); // Carriage return
         }
 
         /// <summary>

@@ -5,40 +5,89 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SCaddins.ExportSchedules.Views"
-             xmlns:viewModels="clr-namespace:SCaddins.ExportSchedules.ViewModels"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <!-- Simple converter for true=visible, false=collapsed -->
+        <BooleanToVisibilityConverter x:Key="BoolToVis"/>
+    </UserControl.Resources>
+
     <Grid>
-        <!-- Define three rows: Top (selection UI), Middle (DataGrid), Bottom (options buttons) -->
+        <!-- Define rows: Top (header), Selection Panel, DataGrid, Status, Bottom (options buttons) -->
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <!-- Top section: Schedule selection UI and buttons -->
+        <!-- Top section: Login controls and authentication info -->
         <Grid Grid.Row="0" Margin="10">
-            <Grid.RowDefinitions>
-                <RowDefinition />
-                <!-- Content row -->
-                <RowDefinition Height="Auto" />
-                <!-- Button row -->
-            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
 
-            <!-- Buttons for Login and Sign Up (Export button removed from here) -->
-            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
-                <Button Content="{Binding LoginButtonText}"
-                        Margin="0,0,8,0"
-                        cal:Message.Attach="LoginCommand" />
-                <Button Content="Sign up"
-                        Margin="0,0,8,0"
-                        cal:Message.Attach="SignUpCommand" />
-            </StackPanel>
+            <TextBlock Text="nullCarbon LCA Export" 
+                       FontSize="18" 
+                       FontWeight="Bold" 
+                       VerticalAlignment="Center"/>
+
+            <!-- Buttons for Login and Sign Up -->
+            <Button Grid.Column="1" 
+                    Content="{Binding LoginButtonText}"
+                    Margin="5"
+                    Padding="8,2"
+                    cal:Message.Attach="LoginCommand" />
+
+            <Button Grid.Column="2" 
+                    Content="Sign up"
+                    Margin="5"
+                    Padding="8,2"
+                    cal:Message.Attach="SignUpCommand" />
+        </Grid>
+
+        <!-- Team and Building selection panel -->
+        <Grid Grid.Row="1" Margin="10" Visibility="{Binding IsLoggedIn, Converter={StaticResource BoolToVis}}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0" 
+                   Content="Team:" 
+                   Margin="0,0,5,0" 
+                   VerticalAlignment="Center"/>
+
+            <ComboBox Grid.Column="1" 
+                      Margin="0,0,10,0"
+                      ItemsSource="{Binding Teams}"
+                      SelectedItem="{Binding SelectedTeam}"
+                      DisplayMemberPath="Name"
+                      IsEnabled="{Binding IsLoggedIn}"/>
+
+            <Label Grid.Column="2" 
+                   Content="Building:" 
+                   Margin="0,0,5,0" 
+                   VerticalAlignment="Center"/>
+
+            <ComboBox Grid.Column="3" 
+                      Margin="0,0,0,0"
+                      ItemsSource="{Binding Buildings}"
+                      SelectedItem="{Binding SelectedBuilding}"
+                      DisplayMemberPath="Name">
+            </ComboBox>
         </Grid>
 
         <!-- Middle section: DataGrid displaying schedules -->
         <DataGrid x:Name="Schedules"
-                  Grid.Row="1"
+                  Grid.Row="2"
                   Margin="5"
                   AutoGenerateColumns="False"
                   GridLinesVisibility="None">
@@ -103,14 +152,32 @@
             </DataGrid.Columns>
         </DataGrid>
 
+        <!-- Status section -->
+        <TextBlock Grid.Row="3" 
+                   Text="{Binding StatusMessage}" 
+                   Margin="5">
+            <TextBlock.Foreground>
+                <SolidColorBrush Color="{Binding IsLoading, Converter={StaticResource BoolToVis}, ConverterParameter=#0000FF}"/>
+            </TextBlock.Foreground>
+        </TextBlock>
+
+        <!-- Progress indicator -->
+        <ProgressBar Grid.Row="3" 
+                     IsIndeterminate="{Binding IsLoading}" 
+                     Height="2" 
+                     Margin="5,0,5,0" 
+                     Visibility="{Binding IsLoading, Converter={StaticResource BoolToVis}}"/>
+
         <!-- Bottom section: Options and Export buttons -->
-        <Grid Grid.Row="2">
+        <Grid Grid.Row="4">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
+
             <Button Height="Auto"
                     Width="Auto"
                     MinWidth="20"
@@ -121,9 +188,10 @@
                     Grid.Column="0">
                 <Image Source="/SCaddins;component/Assets/gear.png" Stretch="None"/>
                 <Button.ToolTip>
-                    <Label>Click to access more options :P</Label>
+                    <Label>Options</Label>
                 </Button.ToolTip>
             </Button>
+
             <Button Height="Auto"
                     Width="Auto"
                     MinWidth="20"
@@ -137,12 +205,23 @@
                     <Label>Select export directory</Label>
                 </Button.ToolTip>
             </Button>
+
             <Label x:Name="ExportDir" Margin="5" Grid.Column="2"/>
+
+            <Button x:Name="ExportOnline" 
+                    IsEnabled="{Binding ExportOnlineIsEnabled}" 
+                    Content="Export Online" 
+                    Padding="8,2"
+                    Margin="5" 
+                    Grid.Column="3"
+                    Visibility="{Binding IsLoggedIn, Converter={StaticResource BoolToVis}}"/>
+
             <Button x:Name="Export" 
                     IsEnabled="{Binding ExportIsEnabled}" 
                     Content="{Binding ExportLabel}" 
+                    Padding="8,2"
                     Margin="5" 
-                    Grid.Column="3"/>
+                    Grid.Column="4"/>
         </Grid>
     </Grid>
 </UserControl>

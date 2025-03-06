@@ -67,7 +67,40 @@ namespace SCaddins.ExportSchedules.Services
             }
         }
 
-        public static async Task<bool> UploadExcelFile(string accessToken, string teamSlug, string buildingId, byte[] fileData, string fileName)
+        public static async Task<List<Report>> GetReports(string accessToken, string buildingId)
+        {
+            try
+            {
+                using (var client = new HttpClient())
+                {
+                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
+                    var response = await client.GetAsync($"{BaseUrl}/lca/{buildingId}/reports/");
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var content = await response.Content.ReadAsStringAsync();
+                        var reportsResponse = JsonConvert.DeserializeObject<ReportsResponse>(content);
+                        return reportsResponse.Results;
+                    }
+                    else
+                    {
+                        throw new Exception($"Failed to get reports: {response.StatusCode}");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error getting reports: {ex.Message}", ex);
+            }
+        }
+
+        public static async Task<bool> UploadExcelFile(
+            string accessToken,
+            string teamSlug,
+            string buildingId,
+            string reportId,
+            byte[] fileData,
+            string fileName)
         {
             try
             {
@@ -81,8 +114,9 @@ namespace SCaddins.ExportSchedules.Services
                         fileContent.Headers.ContentType = new MediaTypeHeaderValue("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
 
                         content.Add(fileContent, "file", fileName);
+                        content.Add(new StringContent(reportId), "report_id"); // Include the report ID
 
-                        // Endpoint for uploading Excel files - adjust as needed
+                        // Endpoint for uploading Excel files
                         var response = await client.PostAsync($"{BaseUrl}/lca/{teamSlug}/building/{buildingId}/upload-excel/", content);
 
                         return response.IsSuccessStatusCode;

@@ -14,6 +14,7 @@ namespace SCaddins.ExportSchedules.ViewModels
         private bool isLoggedIn;
         private Team selectedTeam;
         private Building selectedBuilding;
+        private Report selectedReport;
         private bool isLoading;
         private string statusMessage;
 
@@ -25,6 +26,7 @@ namespace SCaddins.ExportSchedules.ViewModels
             IsLoggedIn = !string.IsNullOrEmpty(TokenCache.AccessToken);
             Teams = new BindableCollection<Team>();
             Buildings = new BindableCollection<Building>();
+            Reports = new BindableCollection<Report>();
 
             foreach (var item in Schedules)
             {
@@ -98,11 +100,13 @@ namespace SCaddins.ExportSchedules.ViewModels
                     }
                     else
                     {
-                        // If logging out, clear teams and buildings
+                        // If logging out, clear teams, buildings, and reports
                         Teams.Clear();
                         Buildings.Clear();
+                        Reports.Clear();
                         SelectedTeam = null;
                         SelectedBuilding = null;
+                        SelectedReport = null;
                     }
                 }
             }
@@ -112,10 +116,12 @@ namespace SCaddins.ExportSchedules.ViewModels
 
         public BindableCollection<ScheduleItemViewModel> Schedules { get; set; }
 
-        // New properties for team/building selection
+        // Team/building/report selection properties
         public BindableCollection<Team> Teams { get; private set; }
 
         public BindableCollection<Building> Buildings { get; private set; }
+
+        public BindableCollection<Report> Reports { get; private set; }
 
         public Team SelectedTeam
         {
@@ -128,9 +134,11 @@ namespace SCaddins.ExportSchedules.ViewModels
                     NotifyOfPropertyChange(() => SelectedTeam);
                     NotifyOfPropertyChange(() => ExportOnlineIsEnabled);
 
-                    // Clear buildings when team changes
+                    // Clear buildings and reports when team changes
                     Buildings.Clear();
+                    Reports.Clear();
                     SelectedBuilding = null;
+                    SelectedReport = null;
 
                     // Load buildings for the selected team
                     if (selectedTeam != null)
@@ -151,6 +159,30 @@ namespace SCaddins.ExportSchedules.ViewModels
                 {
                     selectedBuilding = value;
                     NotifyOfPropertyChange(() => SelectedBuilding);
+                    NotifyOfPropertyChange(() => ExportOnlineIsEnabled);
+
+                    // Clear reports when building changes
+                    Reports.Clear();
+                    SelectedReport = null;
+
+                    // Load reports for the selected building
+                    if (selectedBuilding != null)
+                    {
+                        LoadReportsAsync(selectedBuilding.Id);
+                    }
+                }
+            }
+        }
+
+        public Report SelectedReport
+        {
+            get => selectedReport;
+            set
+            {
+                if (selectedReport != value)
+                {
+                    selectedReport = value;
+                    NotifyOfPropertyChange(() => SelectedReport);
                     NotifyOfPropertyChange(() => ExportOnlineIsEnabled);
                 }
             }
@@ -186,6 +218,7 @@ namespace SCaddins.ExportSchedules.ViewModels
             IsLoggedIn &&
             SelectedTeam != null &&
             SelectedBuilding != null &&
+            SelectedReport != null &&
             Schedules.Any(item => item.IsSelected) &&
             Directory.Exists(ExportDir) &&
             !IsLoading;
@@ -227,7 +260,7 @@ namespace SCaddins.ExportSchedules.ViewModels
             }
         }
 
-        // New methods for the online functionality
+        // Online functionality methods
         private async void LoadTeamsAsync()
         {
             try
@@ -323,6 +356,48 @@ namespace SCaddins.ExportSchedules.ViewModels
             }
         }
 
+        private async void LoadReportsAsync(string buildingId)
+        {
+            try
+            {
+                StatusMessage = $"Loading reports for building...";
+                IsLoading = true;
+
+                System.Diagnostics.Debug.WriteLine($"Loading reports for building ID: {buildingId}");
+
+                var reports = await ApiService.GetReports(TokenCache.AccessToken, buildingId);
+
+                System.Diagnostics.Debug.WriteLine($"Retrieved {reports.Count} reports");
+
+                Reports.Clear();
+                foreach (var report in reports)
+                {
+                    System.Diagnostics.Debug.WriteLine($"Adding report: {report.Name} (ID: {report.Id})");
+                    Reports.Add(report);
+                }
+
+                // If there's only one report, select it automatically
+                if (Reports.Count == 1)
+                {
+                    SelectedReport = Reports[0];
+                }
+
+                StatusMessage = Reports.Count > 0
+                    ? $"Loaded {Reports.Count} reports"
+                    : "No reports found";
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Error in LoadReportsAsync: {ex}");
+                StatusMessage = $"Error loading reports: {ex.Message}";
+                SCaddinsApp.WindowManager.ShowMessageBox($"Failed to load reports: {ex.Message}");
+            }
+            finally
+            {
+                IsLoading = false;
+            }
+        }
+
         public async void ExportOnline()
         {
             if (!ExportOnlineIsEnabled)
@@ -367,6 +442,7 @@ namespace SCaddins.ExportSchedules.ViewModels
                     TokenCache.AccessToken,
                     SelectedTeam.Slug,
                     SelectedBuilding.Id,
+                    SelectedReport.Id,
                     fileData,
                     excelFileName
                 );

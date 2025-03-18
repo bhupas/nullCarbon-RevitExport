@@ -7,12 +7,40 @@
       "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:scaddins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\common\\about.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:common\\about.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\common\\viewmodels\\aboutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:common\\viewmodels\\aboutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\common\\views\\aboutview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:common\\views\\aboutview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\common\\viewmodels\\upgradeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:common\\viewmodels\\upgradeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\latestrelease.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:latestrelease.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\common\\basicdialogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:common\\basicdialogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\common\\viewmodels\\settingsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:common\\viewmodels\\settingsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\common\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,20 +51,12 @@
       "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:common\\viewmodels\\isettingpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\common\\viewmodels\\settingsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:common\\viewmodels\\settingsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\common\\views\\settingsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:common\\views\\settingsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\common\\views\\settingsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:common\\views\\settingsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\views\\exportschedulesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -74,24 +94,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "app.config",
+              "DocumentMoniker": "C:\\Work_revit\\src\\app.config",
+              "RelativeDocumentMoniker": "app.config",
+              "ToolTip": "C:\\Work_revit\\src\\app.config",
+              "RelativeToolTip": "app.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-03-18T10:03:02.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "About.cs",
+              "DocumentMoniker": "C:\\Work_revit\\src\\Common\\About.cs",
+              "RelativeDocumentMoniker": "Common\\About.cs",
+              "ToolTip": "C:\\Work_revit\\src\\Common\\About.cs",
+              "RelativeToolTip": "Common\\About.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T09:55:31.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AboutView.xaml",
+              "DocumentMoniker": "C:\\Work_revit\\src\\Common\\Views\\AboutView.xaml",
+              "RelativeDocumentMoniker": "Common\\Views\\AboutView.xaml",
+              "ToolTip": "C:\\Work_revit\\src\\Common\\Views\\AboutView.xaml",
+              "RelativeToolTip": "Common\\Views\\AboutView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-18T09:47:30.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UpgradeViewModel.cs",
+              "DocumentMoniker": "C:\\Work_revit\\src\\Common\\ViewModels\\UpgradeViewModel.cs",
+              "RelativeDocumentMoniker": "Common\\ViewModels\\UpgradeViewModel.cs",
+              "ToolTip": "C:\\Work_revit\\src\\Common\\ViewModels\\UpgradeViewModel.cs",
+              "RelativeToolTip": "Common\\ViewModels\\UpgradeViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T09:42:49.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "AboutViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\Common\\ViewModels\\AboutViewModel.cs",
               "RelativeDocumentMoniker": "Common\\ViewModels\\AboutViewModel.cs",
               "ToolTip": "C:\\Work_revit\\src\\Common\\ViewModels\\AboutViewModel.cs",
               "RelativeToolTip": "Common\\ViewModels\\AboutViewModel.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAwwFwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAkwGEAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T09:27:02.416Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T09:27:02.416Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "BasicDialogService.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\Common\\BasicDialogService.cs",
               "RelativeDocumentMoniker": "Common\\BasicDialogService.cs",
@@ -99,12 +166,11 @@
               "RelativeToolTip": "Common\\BasicDialogService.cs",
               "ViewState": "AgIAAHYAAAAAAAAAAADwv44AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T09:26:48.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T09:26:48.59Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "Settings.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\Common\\Settings.cs",
               "RelativeDocumentMoniker": "Common\\Settings.cs",
@@ -112,34 +178,7 @@
               "RelativeToolTip": "Common\\Settings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T09:25:35.831Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ISettingPanel.cs",
-              "DocumentMoniker": "C:\\Work_revit\\src\\Common\\ViewModels\\ISettingPanel.cs",
-              "RelativeDocumentMoniker": "Common\\ViewModels\\ISettingPanel.cs",
-              "ToolTip": "C:\\Work_revit\\src\\Common\\ViewModels\\ISettingPanel.cs",
-              "RelativeToolTip": "Common\\ViewModels\\ISettingPanel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T09:23:35.374Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SettingsViewModel.cs",
-              "DocumentMoniker": "C:\\Work_revit\\src\\Common\\ViewModels\\SettingsViewModel.cs",
-              "RelativeDocumentMoniker": "Common\\ViewModels\\SettingsViewModel.cs",
-              "ToolTip": "C:\\Work_revit\\src\\Common\\ViewModels\\SettingsViewModel.cs",
-              "RelativeToolTip": "Common\\ViewModels\\SettingsViewModel.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwDMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T09:23:27.578Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T09:25:35.831Z"
             },
             {
               "$type": "Document",
@@ -149,14 +188,50 @@
               "RelativeDocumentMoniker": "SCaddins.cs",
               "ToolTip": "C:\\Work_revit\\src\\SCaddins.cs",
               "RelativeToolTip": "SCaddins.cs",
-              "ViewState": "AgIAAM4AAAAAAAAAAADwv+MAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAqwIgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-18T09:06:32.161Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
+              "Title": "LatestRelease.cs",
+              "DocumentMoniker": "C:\\Work_revit\\src\\LatestRelease.cs",
+              "RelativeDocumentMoniker": "LatestRelease.cs",
+              "ToolTip": "C:\\Work_revit\\src\\LatestRelease.cs",
+              "RelativeToolTip": "LatestRelease.cs",
+              "ViewState": "AgIAAOQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T09:42:11.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ISettingPanel.cs",
+              "DocumentMoniker": "C:\\Work_revit\\src\\Common\\ViewModels\\ISettingPanel.cs",
+              "RelativeDocumentMoniker": "Common\\ViewModels\\ISettingPanel.cs",
+              "ToolTip": "C:\\Work_revit\\src\\Common\\ViewModels\\ISettingPanel.cs",
+              "RelativeToolTip": "Common\\ViewModels\\ISettingPanel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T09:23:35.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SettingsViewModel.cs",
+              "DocumentMoniker": "C:\\Work_revit\\src\\Common\\ViewModels\\SettingsViewModel.cs",
+              "RelativeDocumentMoniker": "Common\\ViewModels\\SettingsViewModel.cs",
+              "ToolTip": "C:\\Work_revit\\src\\Common\\ViewModels\\SettingsViewModel.cs",
+              "RelativeToolTip": "Common\\ViewModels\\SettingsViewModel.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwDMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T09:23:27.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "SettingsView.xaml.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\Common\\Views\\SettingsView.xaml.cs",
               "RelativeDocumentMoniker": "Common\\Views\\SettingsView.xaml.cs",
@@ -164,24 +239,22 @@
               "RelativeToolTip": "Common\\Views\\SettingsView.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T09:23:09.7Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T09:23:09.7Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "SettingsView.xaml",
               "DocumentMoniker": "C:\\Work_revit\\src\\Common\\Views\\SettingsView.xaml",
               "RelativeDocumentMoniker": "Common\\Views\\SettingsView.xaml",
               "ToolTip": "C:\\Work_revit\\src\\Common\\Views\\SettingsView.xaml",
               "RelativeToolTip": "Common\\Views\\SettingsView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-18T09:22:59.872Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T09:22:59.872Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "Constants.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\Constants.cs",
               "RelativeDocumentMoniker": "Constants.cs",
@@ -194,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "Report.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Models\\Report.cs",
               "RelativeDocumentMoniker": "ExportSchedules\\Models\\Report.cs",
@@ -206,19 +279,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "ExportSchedulesView.xaml",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Views\\ExportSchedulesView.xaml",
               "RelativeDocumentMoniker": "ExportSchedules\\Views\\ExportSchedulesView.xaml",
               "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\Views\\ExportSchedulesView.xaml",
               "RelativeToolTip": "ExportSchedules\\Views\\ExportSchedulesView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-05T13:08:54.009Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T13:08:54.009Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "ValueConverters.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Converters\\ValueConverters.cs",
               "RelativeDocumentMoniker": "ExportSchedules\\Converters\\ValueConverters.cs",
@@ -230,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "ApiService.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Services\\ApiService.cs",
               "RelativeDocumentMoniker": "ExportSchedules\\Services\\ApiService.cs",
@@ -242,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "Team.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Models\\Team.cs",
               "RelativeDocumentMoniker": "ExportSchedules\\Models\\Team.cs",
@@ -254,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "Building.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Models\\Building.cs",
               "RelativeDocumentMoniker": "ExportSchedules\\Models\\Building.cs",
@@ -266,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "ExportSchedulesViewModel.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
               "RelativeDocumentMoniker": "ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",

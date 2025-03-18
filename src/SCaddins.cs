@@ -43,6 +43,7 @@ namespace SCaddins
         private static Common.WindowManager windowManager;
         private RibbonPanel ribbonPanel;
         private PushButton nullCarbonExportButton;
+        private PushButton aboutButton;
 
         public static Version Version => Assembly.GetExecutingAssembly().GetName().Version;
 
@@ -95,7 +96,7 @@ namespace SCaddins
             application.ThemeChanged += Application_ThemeChanged;
 #endif
 
-            ribbonPanel = TryGetPanel(application, "Studio.SC");
+            ribbonPanel = TryGetPanel(application, "nullCarbon");
 
             if (ribbonPanel == null)
             {
@@ -108,13 +109,30 @@ namespace SCaddins
             var scdll = new Uri(Assembly.GetAssembly(typeof(SCaddinsApp)).Location).LocalPath;
 #endif
 
-            // Add nullCarbon-LCA-Export button
+            // Add nullCarbon-LCA-Export button using about.bmp for icon
             nullCarbonExportButton = ribbonPanel.AddItem(LoadNullCarbonExporter(scdll)) as PushButton;
+
+            // Create a small spacing and then add the About button
+            ribbonPanel.AddSeparator();
+            aboutButton = ribbonPanel.AddItem(LoadAbout(scdll)) as PushButton;
 
 #if REVIT2024 || REVIT2025
             ApplyThemeToButtons();
 #else
-            AssignPushButtonImage(nullCarbonExportButton, @"SCaddins.Assets.Ribbon.table-rvt-16.png", 16, scdll);
+            try
+            {
+                // Use bitmap icons for both buttons
+                var aboutImage = GetAboutBmpImage(scdll);
+                if (aboutImage != null)
+                {
+                    nullCarbonExportButton.LargeImage = aboutImage;
+                    aboutButton.LargeImage = aboutImage;
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine("Error loading about.bmp: " + ex.Message);
+            }
 #endif
 
             return Result.Succeeded;
@@ -133,17 +151,19 @@ namespace SCaddins
 #else
             var dll = new Uri(Assembly.GetAssembly(typeof(SCaddinsApp)).Location).LocalPath;
 #endif
-
-            UITheme theme = UIThemeManager.CurrentTheme;
-
-            switch (theme)
+            try
             {
-                case UITheme.Dark:
-                    AssignPushButtonImage(nullCarbonExportButton, @"SCaddins.Assets.Ribbon.table-rvt-16-dark.png", 16, dll);
-                    break;
-                case UITheme.Light:
-                    AssignPushButtonImage(nullCarbonExportButton, @"SCaddins.Assets.Ribbon.table-rvt-16.png", 16, dll);
-                    break;
+                // Use bitmap icons for both buttons regardless of theme
+                var aboutImage = GetAboutBmpImage(dll);
+                if (aboutImage != null)
+                {
+                    nullCarbonExportButton.LargeImage = aboutImage;
+                    aboutButton.LargeImage = aboutImage;
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine("Error loading about.bmp: " + ex.Message);
             }
 
             ribbonPanel.Visible = false;
@@ -166,6 +186,20 @@ namespace SCaddins
                 }
             }
             return application.CreateRibbonPanel(name);
+        }
+
+        private static ImageSource GetAboutBmpImage(string assemblyPath)
+        {
+            try
+            {
+                var uri = new Uri("pack://application:,,,/SCaddins;component/Assets/about.bmp");
+                return new BitmapImage(uri);
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine("Error loading about.bmp from resources: " + ex.Message);
+                return null;
+            }
         }
 
         private static void AssignPushButtonImage(PushButton pushButton, string iconName, int size, string dll)
@@ -230,6 +264,36 @@ namespace SCaddins
             var pbd = new PushButtonData(
                               "nullCarbon-LCA-Export", "nullCarbon-LCA-Export", dll, "SCaddins.ExportSchedules.Command");
             pbd.ToolTip = "Export Schedules for nullCarbon LCA";
+
+            try
+            {
+                // Set the icon to about.bmp
+                pbd.LargeImage = GetAboutBmpImage(dll);
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine("Error loading about.bmp for button: " + ex.Message);
+            }
+
+            return pbd;
+        }
+
+        private static PushButtonData LoadAbout(string dll)
+        {
+            var pbd = new PushButtonData(
+                              "SCaddinsAbout", "About", dll, "SCaddins.Common.About");
+            pbd.ToolTip = "About SCaddins.";
+
+            try
+            {
+                // Set the icon to about.bmp
+                pbd.LargeImage = GetAboutBmpImage(dll);
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine("Error loading about.bmp for button: " + ex.Message);
+            }
+
             return pbd;
         }
     }

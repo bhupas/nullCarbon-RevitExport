@@ -1,13 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>disable</Nullable>
     <UseWPF>true</UseWPF>
     <PlatformTarget>x64</PlatformTarget>
     <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
     <UseWindowsForms>true</UseWindowsForms>
-    <ImplicitUsings>disable</ImplicitUsings>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <Configurations>Debug;Release2025;Release2024;Release2023;Release2022;Release2021;Release2020</Configurations>
@@ -28,7 +27,6 @@
     <TargetFramework>net8.0-windows</TargetFramework>
     <IsPublishable>False</IsPublishable>
     <Deterministic>False</Deterministic>
-    <TargetFramework>net8.0-windows</TargetFramework>
   </PropertyGroup>
   
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release2025|AnyCPU'">
@@ -91,29 +89,48 @@
     <EmbeddedResource Include="Assets\Ribbon\*.png" />
   </ItemGroup>
   
+  <!-- Framework-specific references for net48 -->
+  <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+
+  <!-- Common packages for all frameworks -->
   <ItemGroup>
     <PackageReference Include="Caliburn.Micro" Version="4.0.230" />
     <PackageReference Include="FluentIcons.WPF" Version="1.1.266" />
-    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-    <PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="EPPlus" Version="7.5.1" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="9.0.0" /> 
-    <PackageReference Include="System.Drawing.Common" Version="9.0.0" /> 
-    <PackageReference Include="System.Text.Json" Version="9.0.0" /> 
     <PackageReference Include="WPF-UI" Version="3.0.5" />
   </ItemGroup>
+  
+  <!-- Framework-specific packages -->
+  <ItemGroup Condition="'$(TargetFramework)' == 'net8.0-windows'">
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="9.0.0" />
+    <PackageReference Include="System.Drawing.Common" Version="9.0.0" />
+    <PackageReference Include="System.Text.Json" Version="9.0.0" />
+  </ItemGroup>
 
-  <!-- Specifically adding System.Net.Http reference -->
   <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
-    <Reference Include="System.Net.Http" />
+    <PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
   </ItemGroup>
   
-  <!-- Unified System.Runtime version reference -->
-  <ItemGroup>
-    <PackageReference Include="System.Runtime" Version="4.3.1" />
-  </ItemGroup>
-  
+  <!-- Revit API references -->
   <ItemGroup>
     <PackageReference Include="Revit_All_Main_Versions_API_x64" Version="2020.0.1" allowedVersions="[2020.0.0,2021.0.0)" TargetFramework="net48" Condition="$(Configuration.Contains('2020'))" />
     <PackageReference Include="Revit_All_Main_Versions_API_x64" Version="2021.1.4" allowedVersions="[2021.0.0,2022.0.0)" TargetFramework="net48" Condition="$(Configuration.Contains('2021'))" />
@@ -184,133 +201,5 @@
     <Exec Command="if not exist &quot;$(ProjectDir)Resources&quot; mkdir &quot;$(ProjectDir)Resources&quot;" />
     <Exec Command="echo %date% %time% &gt; &quot;$(ProjectDir)Resources\BuildDate.txt&quot;" />
   </Target>
-  
-  <ItemGroup>
-    <Reference Update="PresentationCore">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Update="PresentationFramework">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Update="System">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Update="System.Core">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Update="System.Data">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Update="System.Drawing">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Update="System.IO.Compression.FileSystem">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Update="System.Numerics">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference TargetFramework="net48" Include="System.Web" Condition="$(Configuration.Contains('2020'))" />
-    <Reference TargetFramework="net48" Include="System.Web" Condition="$(Configuration.Contains('2021'))" />
-    <Reference TargetFramework="net48" Include="System.Web" Condition="$(Configuration.Contains('2022'))" />
-    <Reference TargetFramework="net48" Include="System.Web" Condition="$(Configuration.Contains('2023'))" />
-    <Reference TargetFramework="net48" Include="System.Web" Condition="$(Configuration.Contains('2024'))" />
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Update="System.Runtime.Serialization">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Update="System.Windows.Controls.Ribbon">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Update="System.Windows.Forms">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Update="System.Xaml">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Update="System.Xml">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Update="System.Xml.Linq">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Update="UIAutomationClient">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Update="UIAutomationClientSideProviders">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Update="UIAutomationProvider">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Update="UIAutomationTypes">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Update="WindowsBase">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Update="WindowsFormsIntegration">
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
 
 </Project>

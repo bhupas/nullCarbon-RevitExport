@@ -2,10 +2,10 @@
 {
     using System.Diagnostics;
     using System.Reflection;
-    using System.Windows.Forms;
-    using Caliburn.Micro;
+    // Fully qualify the Screen reference to avoid ambiguity
+    using CaliburnScreen = Caliburn.Micro.Screen;
 
-    public class AboutViewModel : Screen
+    public class AboutViewModel : CaliburnScreen
     {
         public static string AssemblyBuildDate =>
             Properties.Resources.BuildDate.TrimEnd(System.Environment.NewLine.ToCharArray());

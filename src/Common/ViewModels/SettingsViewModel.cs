@@ -1,30 +1,13 @@
-﻿using System.Windows.Forms;
-
-namespace SCaddins.Common.ViewModels
+﻿namespace SCaddins.Common.ViewModels
 {
     using System;
     using Caliburn.Micro;
 
     public class SettingsViewModel : Screen
     {
-        private static ISettingPanel incrementViewModel;
-        private static ISettingPanel roomConverterViewModel;
-        private static ISettingPanel viewUtilitiesViewModel;
-        private static ISettingPanel spellCheckerOptionsViewModel;
-        private static ISettingPanel sheetCopierViewModel;
-
-        public SettingsViewModel(
-            ISettingPanel incrementViewModel,
-            ISettingPanel roomConverterViewModel,
-            ISettingPanel viewUtilitiesViewModel,
-            ISettingPanel sheetCopierViewModel,
-            ISettingPanel spellCheckerOptionsViewModel)
+        public SettingsViewModel()
         {
-            IncrementViewModel = incrementViewModel;
-            RoomConverterViewModel = roomConverterViewModel;
-            ViewUtilitiesViewModel = viewUtilitiesViewModel;
-            SheetCopierViewModel = sheetCopierViewModel;
-            SpellCheckerOptionsViewModel = spellCheckerOptionsViewModel;
+            // Simplified constructor without dependencies on removed modules
         }
 
         public static dynamic DefaultWindowSettings
@@ -45,83 +28,9 @@ namespace SCaddins.Common.ViewModels
             }
         }
 
-        public static ISettingPanel RoomConverterViewModel
-        {
-            get
-            {
-                return roomConverterViewModel;
-            }
-
-            set
-            {
-                roomConverterViewModel = value;
-                //NotifyOfPropertyChange(() => RoomConverterViewModel);
-            }
-        }
-
-        public static ISettingPanel IncrementViewModel
-        {
-            get
-            {
-                return incrementViewModel;
-            }
-
-            set
-            {
-                incrementViewModel = value;
-                //NotifyOfPropertyChange(() => IncrementViewModel);
-            }
-        }
-
-        public static ISettingPanel SheetCopierViewModel
-        {
-            get
-            {
-                return sheetCopierViewModel;
-            }
-
-            set
-            {
-                sheetCopierViewModel = value;
-                //NotifyOfPropertyChange(() => SheetCopierViewModel);
-            }
-        }
-
-        public static ISettingPanel SpellCheckerOptionsViewModel
-        {
-            get
-            {
-                return spellCheckerOptionsViewModel;
-            }
-
-            set
-            {
-                spellCheckerOptionsViewModel = value;
-                //NotifyOfPropertyChange(() => SpellCheckerOptionsViewModel);
-            }
-        }
-
-        public static ISettingPanel ViewUtilitiesViewModel
-        {
-            get
-            {
-                return viewUtilitiesViewModel;
-            }
-
-            set
-            {
-                viewUtilitiesViewModel = value;
-                //NotifyOfPropertyChange(() => ViewUtilitiesViewModel);
-            }
-        }
-
         public void Apply()
         {
-            ParameterUtilities.ViewModels.SCincrementViewModel svm = IncrementViewModel as ParameterUtilities.ViewModels.SCincrementViewModel; ;
-            IncrementViewModel.Apply();
-            ViewUtilitiesViewModel.Apply();
-            SpellCheckerOptionsViewModel.Apply();
-            SheetCopierViewModel.Apply();
+            // Simplified implementation without references to removed modules
         }
 
         public void Cancel()
@@ -137,10 +46,7 @@ namespace SCaddins.Common.ViewModels
 
         public void Reset()
         {
-            IncrementViewModel.Reset();
-            ViewUtilitiesViewModel.Reset();
-            SpellCheckerOptionsViewModel.Reset();
-            SheetCopierViewModel.Reset();
+            // Simplified implementation without references to removed modules
         }
     }
 }

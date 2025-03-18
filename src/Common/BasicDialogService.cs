@@ -1,21 +1,4 @@
-﻿// (C) Copyright 2019-2020 by Andrew Nicholas
-//
-// This file is part of SCaddins.
-//
-// SCaddins is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// SCaddins is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU Lesser General Public License for more details.
-//
-// You should have received a copy of the GNU Lesser General Public License
-// along with SCaddins.  If not, see <http://www.gnu.org/licenses/>.
-
-namespace SCaddins.Common
+﻿namespace SCaddins.Common
 {
     using System;
     using System.IO;
@@ -38,14 +21,13 @@ namespace SCaddins.Common
 
         public bool? ShowConfirmationDialog(string message, bool? defaultCheckboxValue, out bool checkboxResult)
         {
-            var confirmOverwriteDialog = new ExportManager.ViewModels.ConfirmationDialogViewModel
-            {
-                Message = message,
-                Value = defaultCheckboxValue
-            };
-            var task = SCaddinsApp.WindowManager.ShowDialogAsync(confirmOverwriteDialog, null, ExportManager.ViewModels.ConfirmationDialogViewModel.DefaultWindowSettings);
-            checkboxResult = confirmOverwriteDialog.ValueAsBool;
-            return task.Result ?? false;
+            // Simplified implementation without ExportManager dependency
+            checkboxResult = defaultCheckboxValue ?? false;
+            return System.Windows.MessageBox.Show(
+                message,
+                "Confirmation",
+                System.Windows.MessageBoxButton.YesNo,
+                System.Windows.MessageBoxImage.Question) == System.Windows.MessageBoxResult.Yes;
         }
 
         public bool? ShowDirectorySelectionDialog(string defaultDir, out string dirPath)
@@ -73,7 +55,9 @@ namespace SCaddins.Common
                 if (File.Exists(defaultFile))
                 {
                     dialog.InitialDirectory = Path.GetDirectoryName(defaultFile);
-                } else {
+                }
+                else
+                {
                     dialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
                 }
                 dialog.Multiselect = false;

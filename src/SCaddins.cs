@@ -192,7 +192,7 @@ namespace SCaddins
         {
             try
             {
-                var uri = new Uri("pack://application:,,,/SCaddins;component/Assets/about.bmp");
+                var uri = new Uri("pack://application:,,,/SCaddins;component/Assets/Ribbon/table-rvt-16.png");
                 return new BitmapImage(uri);
             }
             catch (Exception ex)

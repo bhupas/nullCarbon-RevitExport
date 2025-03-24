@@ -22,27 +22,27 @@ namespace SCaddins
     {
         /// <summary> Web [http] link to changelog. </summary>
         public const string ChangelogLink =
-            "https://github.com/acnicholas/scaddins/blob/master/CHANGELOG.md";
+            "https://github.com/bhupas/nullCarbon-RevitExport/blob/master/CHANGELOG.md";
 
         /// <summary> Web [http] link to download binaries. </summary>
         public const string DownloadLink =
-            "https://github.com/acnicholas/scaddins/releases/latest";
+            "https://github.com/bhupas/nullCarbon-RevitExport/releases/latest";
 
         //// <summary> Example project configuration dir. </summary>
         //// public const string EtcDirectory = "etc";
 
         /// <summary> Web [http] link to forum. </summary>
         public const string HelpLink =
-            "https://github.com/acnicholas/scaddins/wiki";
+            "https://github.com/bhupas/nullCarbon-RevitExport/wiki";
 
         /// <summary> The install dir.</summary>
-        public const string InstallDirectory = @"C:\Program Files\Studio.SC\SCaddins\";
+        public const string InstallDirectory = @"C:\Program Files\Studio.SC\nullCarbon\";
 
         /// <summary> Data directory. </summary>
         public const string ShareDirectory = "share";
 
         //// <summary> Web [http] link to source code. </summary>
-        //// public const string SourceLink = "https://github.com/acnicholas/scaddins";
+        //// public const string SourceLink = "https://github.com/bhupas/nullCarbon-RevitExport";
 
         /// <summary> License to display in about box. </summary>
         public static readonly string License =

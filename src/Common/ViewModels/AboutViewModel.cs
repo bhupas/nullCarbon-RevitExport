@@ -34,6 +34,10 @@
         {
             get
             {
+                return "nullCarbon-LCA-Export"; // Override assembly title
+
+                // Original code below
+                /*
                 object[] attributes = Assembly.GetExecutingAssembly()
                     .GetCustomAttributes(typeof(AssemblyTitleAttribute), false);
                 if (attributes.Length > 0)
@@ -48,6 +52,7 @@
 
                 return System.IO.Path.GetFileNameWithoutExtension(Assembly
                         .GetExecutingAssembly().Location.Trim());
+                */
             }
         }
 

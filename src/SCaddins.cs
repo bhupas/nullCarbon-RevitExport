@@ -43,21 +43,8 @@ namespace SCaddins
         // ReSharper disable once InconsistentNaming
         private static Common.WindowManager windowManager;
         private RibbonPanel ribbonPanel;
-        private PushButton modelWizardPushButton;
-        private PushButton scaosPushButton;
-        private PushButton scasfarPushButton;
-        private PushButton sccopyPushButton;
         private PushButton scheduleExporterPushButton;
-        private PushButton scexportPushButton;
-        private PushButton scightlinesPushButton;
-        private PushButton scloudschedPushButton;
-        private PushButton scoordPushButton;
-        private PushButton sculcasePushButton;
-        private PushButton scincrementPushButton;
-        private PushButton scwashPushButton;
-        private PushButton spellingChecker;
-        private PushButton gridManagerPushButton;
-        private PushButton openSheetPushButton;
+        private PushButton aboutPushButton;
 
         public static Version Version => Assembly.GetExecutingAssembly().GetName().Version;
 
@@ -156,44 +143,6 @@ namespace SCaddins
             WindowManager.ShowDialogAsync(upgradeViewModel, null, settings);
         }
 
-        public static PushButtonData LoadInfo(string dll)
-        {
-            var pbd = new PushButtonData(
-                              "Element Information", "Element Information", dll, "SCaddins.WorksharingUtilities.WorksharingUtilitiesCommand");
-            pbd.SetContextualHelp(
-                new ContextualHelp(
-                    ContextualHelpType.Url, Constants.HelpLink));
-            AssignPushButtonImage(pbd, "SCaddins.Assets.Ribbon.info-rvt-16.png", 16, dll);
-            pbd.ToolTip = "Display Additional Element Information";
-            pbd.LongDescription = "Display additional element information. Can be used to see the last user who edited an element";
-            return pbd;
-        }
-
-        public static PushButtonData LoadSCaos(string dll)
-        {
-            var pbd = new PushButtonData(
-                              "SCaos", Resources.AngleOfSun, dll, "SCaddins.SolarAnalysis.Command");
-            pbd.SetContextualHelp(
-                new ContextualHelp(
-                    ContextualHelpType.Url, Constants.HelpLink));
-            //AssignPushButtonImage(pbd, "SCaddins.Assets.Ribbon.scaos-rvt-16.png", 16, dll);
-            pbd.ToolTip = Resources.AngleOfSunToolTip;
-            pbd.LongDescription = Resources.AngleOfSunLongDescription;
-            return pbd;
-        }
-
-        public static PushButtonData LoadSCopy(string dll, int iconSize)
-        {
-            var pbd = new PushButtonData(
-                              "SCopy", Resources.CopySheets, dll, "SCaddins.SheetCopier.Command");
-
-            //AssignPushButtonImage(pbd, "SCaddins.Assets.Ribbon.scopy-rvt-16.png", 16, dll);
-            //AssignPushButtonImage(pbd, "SheetCopier.Assets.scopy-rvt.png", 32, dll);
-            pbd.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Constants.HelpLink));
-            pbd.ToolTip = Resources.CopySheetsToolTip;
-            return pbd;
-        }
-
         public Result OnShutdown(UIControlledApplication application)
         {
             return Result.Succeeded;
@@ -211,48 +160,19 @@ namespace SCaddins
 
 
             UITheme theme = UIThemeManager.CurrentTheme;
-            //SCaddinsApp.WindowManager.ShowMessageBox(theme.ToString());
             switch (theme)
             {
                 case UITheme.Dark:
-                    //SCaddinsApp.WindowManager.ShowMessageBox("setting dark theme");
-                    AssignPushButtonImage(scexportPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt-dark.png", 32, dll);
-                    AssignPushButtonImage(scexportPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt-16-dark.png", 16, dll);
-                    AssignPushButtonImage(scincrementPushButton, @"SCaddins.Assets.Ribbon.scincrement-rvt-16-dark.png", 16, dll);
-                    AssignPushButtonImage(sculcasePushButton, @"SCaddins.Assets.Ribbon.sculcase-rvt-16-dark.png", 16, dll);
-                    AssignPushButtonImage(scwashPushButton, @"SCaddins.Assets.Ribbon.scwash-rvt-16-dark.png", 16, dll);
-                    AssignPushButtonImage(gridManagerPushButton, @"SCaddins.Assets.Ribbon.gridman-rvt-16-dark.png", 16, dll);
-                    AssignPushButtonImage(sccopyPushButton, @"SCaddins.Assets.Ribbon.scopy-rvt-16-dark.png", 16, dll);
-                    AssignPushButtonImage(sccopyPushButton, @"SheetCopier.Assets.scopy-rvt-dark.png", 32, dll);
-                    AssignPushButtonImage(scaosPushButton, @"SCaddins.Assets.Ribbon.scaos-rvt-16-dark.png", 16, dll);
-                    AssignPushButtonImage(scightlinesPushButton, @"SCaddins.Assets.Ribbon.scightlines-rvt-16-dark.png", 16, dll);
-                    AssignPushButtonImage(scasfarPushButton, "SCaddins.Assets.Ribbon.scasfar-rvt-16-dark.png", 16, dll);
-                    AssignPushButtonImage(scloudschedPushButton, "SCaddins.Assets.Ribbon.scloudsched-rvt-16-dark.png", 16, dll);
-                    AssignPushButtonImage(spellingChecker, "SCaddins.Assets.Ribbon.spelling-rvt-16-dark.png", 16, dll);
-                    AssignPushButtonImage(scheduleExporterPushButton, @"SCaddins.Assets.Ribbon.table-rvt-16-dark.png", 16, dll);
-                    AssignPushButtonImage(scoordPushButton, @"SCaddins.Assets.Ribbon.scoord-rvt-16-dark.png", 16, dll);
-                    AssignPushButtonImage(modelWizardPushButton, "SCaddins.Assets.Ribbon.checkdoc-rvt-16-dark.png", 16, dll);
-                    AssignPushButtonImage(openSheetPushButton, "SCaddins.Assets.Ribbon.find-rvt-16-dark.png", 16, dll);
+                    AssignPushButtonImage(scheduleExporterPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt-16-dark.png", 16, dll);
+                    AssignPushButtonImage(scheduleExporterPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt-dark.png", 32, dll);
+                    AssignPushButtonImage(aboutPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt-16-dark.png", 16, dll);
+                    AssignPushButtonImage(aboutPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt-dark.png", 32, dll);
                     break;
                 case UITheme.Light:
-                    //SCaddinsApp.WindowManager.ShowMessageBox("setting light theme");
-                    AssignPushButtonImage(scexportPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt.png", 32, dll);
-                    AssignPushButtonImage(scexportPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt-16.png", 16, dll);
-                    AssignPushButtonImage(scincrementPushButton, @"SCaddins.Assets.Ribbon.scincrement-rvt-16.png", 16, dll);
-                    AssignPushButtonImage(sculcasePushButton, @"SCaddins.Assets.Ribbon.sculcase-rvt-16.png", 16, dll);
-                    AssignPushButtonImage(scwashPushButton, @"SCaddins.Assets.Ribbon.scwash-rvt-16.png", 16, dll);
-                    AssignPushButtonImage(gridManagerPushButton, @"SCaddins.Assets.Ribbon.gridman-rvt-16.png", 16, dll);
-                    AssignPushButtonImage(sccopyPushButton, @"SCaddins.Assets.Ribbon.scopy-rvt-16.png", 16, dll);
-                    AssignPushButtonImage(sccopyPushButton, @"SheetCopier.Assets.scopy-rvt.png", 32, dll);
-                    AssignPushButtonImage(scaosPushButton, @"SCaddins.Assets.Ribbon.scaos-rvt-16.png", 16, dll);
-                    AssignPushButtonImage(scightlinesPushButton, @"SCaddins.Assets.Ribbon.scightlines-rvt-16.png", 16, dll);
-                    AssignPushButtonImage(scasfarPushButton, "SCaddins.Assets.Ribbon.scasfar-rvt-16.png", 16, dll);
-                    AssignPushButtonImage(scloudschedPushButton, "SCaddins.Assets.Ribbon.scloudsched-rvt-16.png", 16, dll);
-                    AssignPushButtonImage(spellingChecker, "SCaddins.Assets.Ribbon.spelling-rvt-16.png", 16, dll);
-                    AssignPushButtonImage(scheduleExporterPushButton, @"SCaddins.Assets.Ribbon.table-rvt-16.png", 16, dll);
-                    AssignPushButtonImage(scoordPushButton, @"SCaddins.Assets.Ribbon.scoord-rvt-16.png", 16, dll);
-                    AssignPushButtonImage(modelWizardPushButton, "SCaddins.Assets.Ribbon.checkdoc-rvt-16.png", 16, dll);
-                    AssignPushButtonImage(openSheetPushButton, "SCaddins.Assets.Ribbon.find-rvt-16.png", 16, dll);
+                    AssignPushButtonImage(scheduleExporterPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt-16.png", 16, dll);
+                    AssignPushButtonImage(scheduleExporterPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt.png", 32, dll);
+                    AssignPushButtonImage(aboutPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt-16.png", 16, dll);
+                    AssignPushButtonImage(aboutPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt.png", 32, dll);
                     break;
             }
             ribbonPanel.Visible = false;
@@ -266,7 +186,7 @@ namespace SCaddins
             application.ThemeChanged += Application_ThemeChanged;
 #endif
 
-            ribbonPanel = TryGetPanel(application, "Studio.SC");
+            ribbonPanel = TryGetPanel(application, "nullCarbon");
 
             if (ribbonPanel == null)
             {
@@ -279,85 +199,26 @@ namespace SCaddins
             var scdll = new Uri(Assembly.GetAssembly(typeof(SCaddinsApp)).Location).LocalPath;
 #endif
 
-            var scx = LoadScexport(scdll);
-            scexportPushButton = ribbonPanel.AddItem(scx) as PushButton;
+            // Only add the Export Schedules and About buttons
+            var exportButton = LoadScheduleExporter(scdll);
+            scheduleExporterPushButton = ribbonPanel.AddItem(exportButton) as PushButton;
 
-            var stackedItemZero = ribbonPanel.AddStackedItems(
-                LoadSCopy(scdll, 16),
-                LoadSCuv(scdll),
-                LoadHatchEditor(scdll));
+            // Explicitly set the icon for Export button
+            AssignPushButtonImage(scheduleExporterPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt-16.png", 16, scdll);
+            AssignPushButtonImage(scheduleExporterPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt.png", 32, scdll);
 
-            sccopyPushButton = stackedItemZero[0] as PushButton;
+            // Add About button
+            var aboutButton = LoadAbout(scdll);
+            aboutPushButton = ribbonPanel.AddItem(aboutButton) as PushButton;
 
-            var stackedItemOne = ribbonPanel.AddStackedItems(
-                LoadSCaos(scdll),
-                LoadSCightlines(scdll),
-                LoadSCasfar(scdll));
+            // Explicitly set the icon for About button
+            AssignPushButtonImage(aboutPushButton, "SCaddins.Assets.Ribbon.scexport-rvt-16.png", 16, scdll);
+            AssignPushButtonImage(aboutPushButton, "SCaddins.Assets.Ribbon.scexport-rvt.png", 32, scdll);
 
-            scaosPushButton = stackedItemOne[0] as PushButton;
-            scightlinesPushButton = stackedItemOne[1] as PushButton;
-            scasfarPushButton = stackedItemOne[2] as PushButton;
-
-            var stackedItemTwo = ribbonPanel.AddStackedItems(
-                LoadScheduleExporter(scdll),
-                LoadSCloudShed(scdll),
-                LoadSCoord(scdll));
-
-            scheduleExporterPushButton = stackedItemTwo[0] as PushButton;
-            scloudschedPushButton = stackedItemTwo[1] as PushButton;
-            scoordPushButton = stackedItemTwo[2] as PushButton;
-
-
-            var stackedItemThree = ribbonPanel.AddStackedItems(
-                LoadSCulcase(scdll),
-                LoadSpellingChecker(scdll),
-                LoadSCincrement(scdll));
-
-            sculcasePushButton = stackedItemThree[0] as PushButton;
-            spellingChecker = stackedItemThree[1] as PushButton;
-            scincrementPushButton = stackedItemThree[2] as PushButton;
-
-            var stackedItemFour = ribbonPanel.AddStackedItems(
-                LoadGridManager(scdll),
-                LoadInfo(scdll),
-                LoadOpenSheet(scdll));
-
-            gridManagerPushButton = stackedItemFour[0] as PushButton;
-            openSheetPushButton = stackedItemFour[2] as PushButton;
-
-
-            var stackedItemFive = ribbonPanel.AddStackedItems(
-                LoadSCwash(scdll),
-                LoadModelWizard(scdll),
-                LoadAbout(scdll));
-
-            scwashPushButton = stackedItemFive[0] as PushButton;
-            modelWizardPushButton = stackedItemFive[1] as PushButton;
-
-            ribbonPanel.AddSlideOut();
-            ribbonPanel.AddStackedItems(
-                LoadGlobalSettings(scdll),
-                LoadRunScript(scdll));
 #if REVIT2024 || REVIT2025
-            ChangeTheme(); //FIXME, this doesn't need to run everytime, load the correct theme once.
+            ChangeTheme();
 #else
-            AssignPushButtonImage(scexportPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt.png", 32, scdll);
-            AssignPushButtonImage(scexportPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt-16.png", 16, scdll);
-            AssignPushButtonImage(scincrementPushButton, @"SCaddins.Assets.Ribbon.scincrement-rvt-16.png", 16, scdll);
-            AssignPushButtonImage(sculcasePushButton, @"SCaddins.Assets.Ribbon.sculcase-rvt-16.png", 16, scdll);
-            AssignPushButtonImage(scwashPushButton, @"SCaddins.Assets.Ribbon.scwash-rvt-16.png", 16, scdll);
-            AssignPushButtonImage(gridManagerPushButton, @"SCaddins.Assets.Ribbon.gridman-rvt-16.png", 16, scdll);
-            AssignPushButtonImage(sccopyPushButton, @"SCaddins.Assets.Ribbon.scopy-rvt-16.png", 16, scdll);
-            AssignPushButtonImage(sccopyPushButton, @"SheetCopier.Assets.scopy-rvt.png", 32, scdll);
-            AssignPushButtonImage(scaosPushButton, @"SCaddins.Assets.Ribbon.scaos-rvt-16.png", 16, scdll);
-            AssignPushButtonImage(scightlinesPushButton, @"SCaddins.Assets.Ribbon.scightlines-rvt-16.png", 16, scdll);
-            AssignPushButtonImage(scasfarPushButton, "SCaddins.Assets.Ribbon.scasfar-rvt-16.png", 16, scdll);
-            AssignPushButtonImage(scloudschedPushButton, "SCaddins.Assets.Ribbon.scloudsched-rvt-16.png", 16, scdll);
-            AssignPushButtonImage(spellingChecker, "SCaddins.Assets.Ribbon.spelling-rvt-16.png", 16, scdll);
             AssignPushButtonImage(scheduleExporterPushButton, @"SCaddins.Assets.Ribbon.table-rvt-16.png", 16, scdll);
-            AssignPushButtonImage(scoordPushButton, @"SCaddins.Assets.Ribbon.scoord-rvt-16.png", 16, scdll);
-            AssignPushButtonImage(modelWizardPushButton, "SCaddins.Assets.Ribbon.checkdoc-rvt-16.png", 16, scdll);
-            AssignPushButtonImage(openSheetPushButton, "SCaddins.Assets.Ribbon.find-rvt-16.png", 16, scdll);
 #endif
 
             return Result.Succeeded;
@@ -366,7 +227,6 @@ namespace SCaddins
 #if REVIT2024 || REVIT2025
         private void Application_ThemeChanged(object sender, Autodesk.Revit.UI.Events.ThemeChangedEventArgs e)
         {
-            //SCaddinsApp.WindowManager.ShowMessageBox("theme changed");
             ChangeTheme();
         }
 #endif
@@ -428,23 +288,16 @@ namespace SCaddins
             }
         }
 
-        //private static void AssignThemedPushButtonImage(ButtonData pushButtonData, string iconName, int size, string dll)
-        //{
-
-        //}
-
         private static PushButtonData LoadAbout(string dll)
         {
             var pbd = new PushButtonData(
                               "SCaddinsAbout", Resources.About, dll, "SCaddins.Common.About");
-            AssignPushButtonImage(pbd, "SCaddins.Assets.Ribbon.help-rvt-16.png", 16, dll);
-            pbd.ToolTip = "About SCaddins.";
+            AssignPushButtonImage(pbd, "SCaddins.Assets.Ribbon.scexport-rvt-16.png", 16, dll);
+            AssignPushButtonImage(pbd, "SCaddins.Assets.Ribbon.scexport-rvt.png", 32, dll);
+            pbd.ToolTip = "About nullCarbon";
             return pbd;
         }
 
-        // from https://github.com/WeConnect/issue-tracker/blob/master/Case.IssueTracker.Revit/Entry/AppMain.cs
-        ////[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1031:DoNotCatchGeneralExceptionTypes")]
-        ////[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Reliability", "CA2001:AvoidCallingProblematicMethods", MessageId = "System.Reflection.Assembly.LoadFrom")]
         private static ImageSource LoadPNGImageSource(string sourceName, string path)
         {
             try
@@ -462,165 +315,14 @@ namespace SCaddins
             }
         }
 
-        private static PushButtonData LoadSCasfar(string dll)
-        {
-            var pbd = new PushButtonData(
-                              "SCasfar", Resources.RoomTools, dll, "SCaddins.RoomConverter.RoomConverterCommand");
-            pbd.ToolTip = Resources.RoomToolsToolTip;
-            return pbd;
-        }
-
-        private static PushButtonData LoadScexport(string dll)
-        {
-            var pbd = new PushButtonData(
-                          "SCexport", Resources.SCexport, dll, "SCaddins.ExportManager.Command");
-            pbd.SetContextualHelp(
-                new ContextualHelp(ContextualHelpType.Url, Constants.HelpLink));
-            pbd.ToolTip = Resources.SCexportToolTip;
-            pbd.LongDescription = Resources.SCexportLongDescription;
-            return pbd;
-        }
-
-        private static PushButtonData LoadSCightlines(string dll)
-        {
-            var pbd = new PushButtonData(
-                              "SCightLines", Resources.LineofSight, dll, "SCaddins.LineOfSight.Command");
-            pbd.ToolTip = Resources.LineofSightToolTip;
-            return pbd;
-        }
-
-        private static PushButtonData LoadGridManager(string dll)
-        {
-            var pbd = new PushButtonData(
-                              "GridManager", Resources.GridManager, dll, "SCaddins.GridManager.GridManager");
-            pbd.ToolTip = Resources.GridManagerToolTip;
-            return pbd;
-        }
-
-        private static PushButtonData LoadHatchEditor(string dll)
-        {
-            var pbd = new PushButtonData(
-                              "HatchEditor", Resources.HatchEditor, dll, "SCaddins.HatchEditor.Command");
-            AssignPushButtonImage(pbd, "SCaddins.Assets.Ribbon.hatch-rvt-16.png", 16, dll);
-            pbd.ToolTip = Resources.HatchEditorToolTip;
-            return pbd;
-        }
-
-        private static PushButtonData LoadNextSheet(string dll)
-        {
-            var pbd = new PushButtonData(
-                              "Next Sheet", @"Next Sheet", dll, "SCaddins.ExportManager.NextSheet");
-            AssignPushButtonImage(pbd, "SCaddins.Assets.Ribbon.forward-rvt-16.png", 16, dll);
-            pbd.ToolTip = "Attempt to open the next sheet";
-            return pbd;
-        }
-
-        private static PushButtonData LoadOpenSheet(string dll)
-        {
-            var pbd = new PushButtonData(
-                              "Quick Open", @"Quick Open", dll, "SCaddins.ExportManager.OpenSheet");
-            pbd.ToolTip = "Find and open a view/sheet";
-            return pbd;
-        }
-
-        private static PushButtonData LoadPreviousSheet(string dll)
-        {
-            var pbd = new PushButtonData(
-                              "Previous Sheet", @"Previous Sheet", dll, "SCaddins.ExportManager.PreviousSheet");
-            AssignPushButtonImage(pbd, "SCaddins.Assets.Ribbon.back-rvt-16.png", 16, dll);
-            pbd.ToolTip = "Attempt to open the previous sheet";
-            return pbd;
-        }
-
-        private static PushButtonData LoadRunScript(string dll)
-        {
-            var pbd = new PushButtonData(
-                              "RunScript", @"Run Script (lua)", dll, "SCaddins.RunScript.RunScriptCommand");
-            AssignPushButtonImage(pbd, "SCaddins.Assets.Ribbon.lua-rvt-16.png", 16, dll);
-            pbd.ToolTip = "Run a lua script";
-            return pbd;
-        }
-
-        private static PushButtonData LoadSCincrement(string dll)
-        {
-            var pbd = new PushButtonData(
-                              "SCincrement", Resources.IncrementTool, dll, "SCaddins.ParameterUtilities.Command");
-            //AssignPushButtonImage(pbd, "SCaddins.Assets.Ribbon.scincrement-rvt-16.png", 16, dll);
-            pbd.ToolTip = Resources.IncrementToolToolTip;
-            return pbd;
-        }
-
-        private static PushButtonData LoadGlobalSettings(string dll)
-        {
-            var pbd = new PushButtonData(
-                              "Glabal Settings", "Global Settings", dll, "SCaddins.Common.Settings");
-            AssignPushButtonImage(pbd, "SCaddins.Assets.Ribbon.gear-rvt-16.png", 16, dll);
-            pbd.ToolTip = Resources.IncrementToolSettings;
-            return pbd;
-        }
-
-        private static PushButtonData LoadSCloudShed(string dll)
-        {
-            var pbd = new PushButtonData(
-                              "SCloudSChed", Resources.ScheduleClouds, dll, "SCaddins.RevisionUtilities.Command");
-            //AssignPushButtonImage(pbd, "SCaddins.Assets.Ribbon.scloudsched-rvt-16.png", 16, dll);
-            pbd.ToolTip = Resources.ScheduleCloudsToolTip;
-            return pbd;
-        }
-
         private static PushButtonData LoadScheduleExporter(string dll)
         {
             var pbd = new PushButtonData(
-                              "Export Schedules", "Export Schedules", dll, "SCaddins.ExportSchedules.Command");
-            pbd.ToolTip = Resources.ScheduleCloudsToolTip;
-            return pbd;
-        }
-
-        private static PushButtonData LoadSCoord(string dll)
-        {
-            var pbd = new PushButtonData(
-                           "Scoord", Resources.PlaceCoordinate, dll, "SCaddins.PlaceCoordinate.Command");
-            pbd.ToolTip = Resources.PlaceCoordinateToolTip;
-            return pbd;
-        }
-
-        private static PushButtonData LoadSCulcase(string dll)
-        {
-            var pbd = new PushButtonData(
-                           "Rename", Resources.Rename, dll, "SCaddins.RenameUtilities.RenameUtilitiesCommand");
-            pbd.ToolTip = Resources.RenameToolTip;
-            pbd.LongDescription = Resources.RenameLongDescription;
-            return pbd;
-        }
-
-        private static PushButtonData LoadSCuv(string dll)
-        {
-            var pbd = new PushButtonData(
-                              "SCuv", Resources.UserView, dll, "SCaddins.ViewUtilities.CreateUserViewCommand");
-            AssignPushButtonImage(pbd, "SCaddins.Assets.Ribbon.user-rvt-16.png", 16, dll);
-            pbd.ToolTip = Resources.UserViewToolTip;
-            return pbd;
-        }
-
-        private static PushButtonData LoadSCwash(string dll)
-        {
-            var pbd = new PushButtonData(
-                              "SCwash", Resources.DestructivePurge, dll, "SCaddins.DestructivePurge.Command");
-            pbd.ToolTip = Resources.DestructivePurgeToolTip;
-            return pbd;
-        }
-
-        private static PushButtonData LoadSpellingChecker(string dll)
-        {
-            var pbd = new PushButtonData("Spelling Checker", "Check Spelling", dll, "SCaddins.SpellChecker.Command");
-            return pbd;
-        }
-
-        private static PushButtonData LoadModelWizard(string dll)
-        {
-            var pbd = new PushButtonData(
-                              "Model Setup Wizard", "Model Setup", dll, "SCaddins.ModelSetupWizard.Command");
-            pbd.ToolTip = "Setup up model work sets and parameters";
+                              "Export Schedules", "nullCarbon Export", dll, "SCaddins.ExportSchedules.Command");
+            pbd.ToolTip = "Export Schedules to nullCarbon";
+            // Pre-assign images to the button data using SCexport icons
+            AssignPushButtonImage(pbd, @"SCaddins.Assets.Ribbon.scexport-rvt-16.png", 16, dll);
+            AssignPushButtonImage(pbd, @"SCaddins.Assets.Ribbon.scexport-rvt.png", 32, dll);
             return pbd;
         }
     }

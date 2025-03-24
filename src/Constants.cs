@@ -46,20 +46,20 @@ namespace SCaddins
 
         /// <summary> License to display in about box. </summary>
         public static readonly string License =
-            "SCaddins is free software: you can redistribute it and/or modify " +
+            "Thuis is free software: you can redistribute it and/or modify " +
             "it under the terms of the GNU Lesser General Public License as " +
             "published by the Free Software Foundation, either version 3 of " +
             "the License, or (at your option) any later version." +
             System.Environment.NewLine +
             System.Environment.NewLine +
-            "SCaddins is distributed in the hope that it will be useful, " +
+            "This is distributed in the hope that it will be useful, " +
             "but WITHOUT ANY WARRANTY; without even the implied warranty of " +
             "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the " +
             "GNU Lesser General Public License for more details." +
             System.Environment.NewLine +
             System.Environment.NewLine +
             "You should have received a copy of the GNU Lesser General " +
-            "Public License along with SCaddins.  " +
+            "Public License along with nullCarbon.  " +
             "If not, see <http://www.gnu.org/licenses/>.";
 
         public static string FamilyDirectory => InstallDirectory + @"\" + ShareDirectory + @"\rfa\";

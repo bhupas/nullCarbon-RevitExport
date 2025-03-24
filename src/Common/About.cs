@@ -33,9 +33,9 @@ namespace SCaddins.Common
             dynamic settings = new ExpandoObject();
             settings.Height = 640;
             settings.Width = 480;
-            settings.Title = "About SCaddins";
+            settings.Title = "About";
             settings.Icon = new System.Windows.Media.Imaging.BitmapImage(
-                    new System.Uri("pack://application:,,,/SCaddins;component/Assets/scexport.png"));
+                    new System.Uri("pack://application:,,,/SCaddins;component/Assets/table.png"));
             settings.ShowInTaskbar = false;
             settings.ResizeMode = System.Windows.ResizeMode.NoResize;
             settings.SizeToContent = System.Windows.SizeToContent.WidthAndHeight;

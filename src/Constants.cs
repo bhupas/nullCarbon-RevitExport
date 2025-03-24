@@ -36,7 +36,7 @@ namespace SCaddins
             "https://github.com/bhupas/nullCarbon-RevitExport/wiki";
 
         /// <summary> The install dir.</summary>
-        public const string InstallDirectory = @"C:\Program Files\Studio.SC\nullCarbon\";
+        public const string InstallDirectory = @"C:\Program Files\Studio.SC\nullCarbon-LCA-Export\";
 
         /// <summary> Data directory. </summary>
         public const string ShareDirectory = "share";

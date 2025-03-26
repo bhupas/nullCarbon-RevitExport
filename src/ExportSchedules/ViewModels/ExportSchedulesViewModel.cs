@@ -422,29 +422,29 @@ namespace SCaddins.ExportSchedules.ViewModels
                 {
                     docTitle = "UnknownProject";
                 }
-                string excelFileName = $"{docTitle}_nullCarbon-LCA-Export.xlsx";
-                string excelFilePath = Path.Combine(ExportDir, excelFileName);
+
+                // Match the filename format used in Utilities.Export
+                string mergedExcelFileName = docTitle + " nullCarbon-LCA-Export.xlsx";
+                string mergedExcelFilePath = Path.Combine(ExportDir, mergedExcelFileName);
 
                 // Use the existing export functionality to create the Excel file
                 var exportMsg = Utilities.Export(selectedSchedules, ExportDir);
 
                 // Check if the file was created successfully
-                if (!File.Exists(excelFilePath))
+                if (!File.Exists(mergedExcelFilePath))
                 {
                     throw new Exception("Failed to create Excel file for upload.");
                 }
 
                 // Read the file into a byte array
-                byte[] fileData = File.ReadAllBytes(excelFilePath);
+                byte[] fileData = File.ReadAllBytes(mergedExcelFilePath);
 
                 // Upload the file to the nullCarbon backend
                 bool uploadSuccess = await ApiService.UploadExcelFile(
                     TokenCache.AccessToken,
-                    SelectedTeam.Slug,
-                    SelectedBuilding.Id,
                     SelectedReport.Id,
                     fileData,
-                    excelFileName
+                    mergedExcelFileName
                 );
 
                 if (uploadSuccess)

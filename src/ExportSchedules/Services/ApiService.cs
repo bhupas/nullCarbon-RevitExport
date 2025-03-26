@@ -11,7 +11,7 @@ namespace SCaddins.ExportSchedules.Services
 {
     public class ApiService
     {
-        private const string BaseUrl = "https://backend.nullcarbon.dk";
+        private const string BaseUrl = "https://nullcarbonstaging.germanywestcentral.cloudapp.azure.com/backend";
 
         public static async Task<List<Team>> GetTeams(string accessToken)
         {
@@ -96,11 +96,10 @@ namespace SCaddins.ExportSchedules.Services
 
         public static async Task<bool> UploadExcelFile(
             string accessToken,
-            string teamSlug,
-            string buildingId,
             string reportId,
             byte[] fileData,
-            string fileName)
+            string fileName,
+            string processor = "Revit")
         {
             try
             {
@@ -110,14 +109,15 @@ namespace SCaddins.ExportSchedules.Services
 
                     using (var content = new MultipartFormDataContent())
                     {
+                        // Add the excel_file parameter
                         var fileContent = new ByteArrayContent(fileData);
                         fileContent.Headers.ContentType = new MediaTypeHeaderValue("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+                        content.Add(fileContent, "excel_file", fileName);
 
-                        content.Add(fileContent, "file", fileName);
-                        content.Add(new StringContent(reportId), "report_id"); // Include the report ID
+                        // Add the processor parameter
+                        content.Add(new StringContent(processor), "processor");
 
-                        // Endpoint for uploading Excel files
-                        var response = await client.PostAsync($"{BaseUrl}/lca/{teamSlug}/building/{buildingId}/upload-excel/", content);
+                        var response = await client.PostAsync($"{BaseUrl}/lca/report/{reportId}/batch-upload", content);
 
                         return response.IsSuccessStatusCode;
                     }

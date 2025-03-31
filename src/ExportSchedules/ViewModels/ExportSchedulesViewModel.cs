@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Diagnostics;
+using System.Windows.Data;
+using System.ComponentModel;
 
 namespace SCaddins.ExportSchedules.ViewModels
 {
@@ -17,11 +19,19 @@ namespace SCaddins.ExportSchedules.ViewModels
         private Report selectedReport;
         private bool isLoading;
         private string statusMessage;
+        private string scheduleFilterText;
+        private string scheduleTypeFilter;
+        private ICollectionView scheduleCollectionView;
 
         public ExportSchedulesViewModel(List<Schedule> schedules, string exportDir)
         {
             Schedules = new BindableCollection<ScheduleItemViewModel>(
                 schedules.Select(s => new ScheduleItemViewModel(s)));
+
+            // Set up collection view for filtering
+            scheduleCollectionView = CollectionViewSource.GetDefaultView(Schedules);
+            scheduleCollectionView.Filter = ScheduleFilter;
+
             ExportDir = exportDir;
             IsLoggedIn = !string.IsNullOrEmpty(TokenCache.AccessToken);
             Teams = new BindableCollection<Team>();
@@ -35,7 +45,6 @@ namespace SCaddins.ExportSchedules.ViewModels
                     if (e.PropertyName == nameof(ScheduleItemViewModel.IsSelected))
                     {
                         NotifyOfPropertyChange(() => ExportIsEnabled);
-                        NotifyOfPropertyChange(() => ExportLabel);
                         NotifyOfPropertyChange(() => ExportOnlineIsEnabled);
                     }
                 };
@@ -53,8 +62,8 @@ namespace SCaddins.ExportSchedules.ViewModels
             get
             {
                 dynamic settings = new System.Dynamic.ExpandoObject();
-                settings.Height = 480;
-                settings.Width = 768;
+                settings.Height = 750;
+                settings.Width = 1050;
                 settings.Icon = new System.Windows.Media.Imaging.BitmapImage(
                     new Uri("pack://application:,,,/SCaddins;component/Assets/table.png"));
                 settings.Title = "nullCarbon-LCA-Export";
@@ -64,6 +73,54 @@ namespace SCaddins.ExportSchedules.ViewModels
                 settings.WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
                 return settings;
             }
+        }
+
+        // Schedule filtering properties
+        public string ScheduleFilterText
+        {
+            get => scheduleFilterText;
+            set
+            {
+                if (scheduleFilterText != value)
+                {
+                    scheduleFilterText = value;
+                    NotifyOfPropertyChange(() => ScheduleFilterText);
+                    scheduleCollectionView.Refresh();
+                }
+            }
+        }
+
+        public string ScheduleTypeFilter
+        {
+            get => scheduleTypeFilter;
+            set
+            {
+                if (scheduleTypeFilter != value)
+                {
+                    scheduleTypeFilter = value;
+                    NotifyOfPropertyChange(() => ScheduleTypeFilter);
+                    scheduleCollectionView.Refresh();
+                }
+            }
+        }
+
+        private bool ScheduleFilter(object item)
+        {
+            if (item is ScheduleItemViewModel scheduleItem)
+            {
+                // Filter by text
+                bool textMatch = string.IsNullOrEmpty(ScheduleFilterText) ||
+                                 scheduleItem.Schedule.RevitName.IndexOf(ScheduleFilterText, StringComparison.OrdinalIgnoreCase) >= 0 ||
+                                 scheduleItem.Schedule.Type.IndexOf(ScheduleFilterText, StringComparison.OrdinalIgnoreCase) >= 0;
+
+                // Filter by type
+                bool typeMatch = string.IsNullOrEmpty(ScheduleTypeFilter) ||
+                                 ScheduleTypeFilter == "All Types" ||
+                                 scheduleItem.Schedule.Type == ScheduleTypeFilter;
+
+                return textMatch && typeMatch;
+            }
+            return true;
         }
 
         // Original properties
@@ -112,7 +169,7 @@ namespace SCaddins.ExportSchedules.ViewModels
             }
         }
 
-        public string LoginButtonText => IsLoggedIn ? "Logged in" : "Login";
+        public string LoginButtonText => IsLoggedIn ? "Sign Out" : "Login";
 
         public BindableCollection<ScheduleItemViewModel> Schedules { get; set; }
 
@@ -222,19 +279,6 @@ namespace SCaddins.ExportSchedules.ViewModels
             Schedules.Any(item => item.IsSelected) &&
             Directory.Exists(ExportDir) &&
             !IsLoading;
-
-        // Original methods
-        public void Export()
-        {
-            var selectedSchedules = Schedules
-                .Where(item => item.IsSelected)
-                .Select(item => item.Schedule)
-                .ToList();
-
-            var outputMsg = Utilities.Export(selectedSchedules, ExportDir);
-            SCaddinsApp.WindowManager.ShowMessageBox(outputMsg);
-            TryCloseAsync(true);
-        }
 
         public void Options()
         {
@@ -407,14 +451,24 @@ namespace SCaddins.ExportSchedules.ViewModels
 
             try
             {
-                StatusMessage = "Exporting and uploading...";
-                IsLoading = true;
-
                 // Get selected schedules
                 var selectedSchedules = Schedules
                     .Where(item => item.IsSelected)
                     .Select(item => item.Schedule)
                     .ToList();
+
+                // Generate schedule names for status message
+                string scheduleNames = string.Join(", ", selectedSchedules.Select(s => s.RevitName));
+
+                // If the list is too long, truncate it
+                if (scheduleNames.Length > 80)
+                {
+                    int count = selectedSchedules.Count;
+                    scheduleNames = scheduleNames.Substring(0, 80) + $"... and {count - 3} more";
+                }
+
+                StatusMessage = $"Please wait... Exporting schedules: {scheduleNames}";
+                IsLoading = true;
 
                 // Generate a unique filename based on the document name
                 string docTitle = selectedSchedules[0]?.RevitViewSchedule?.Document?.Title;
@@ -427,6 +481,9 @@ namespace SCaddins.ExportSchedules.ViewModels
                 string mergedExcelFileName = docTitle + " nullCarbon-LCA-Export.xlsx";
                 string mergedExcelFilePath = Path.Combine(ExportDir, mergedExcelFileName);
 
+                // Update status with exporting message
+                StatusMessage = "Please wait... Creating Excel file";
+
                 // Use the existing export functionality to create the Excel file
                 var exportMsg = Utilities.Export(selectedSchedules, ExportDir);
 
@@ -435,6 +492,9 @@ namespace SCaddins.ExportSchedules.ViewModels
                 {
                     throw new Exception("Failed to create Excel file for upload.");
                 }
+
+                // Update status with uploading message
+                StatusMessage = "Please wait... Uploading to nullCarbon";
 
                 // Read the file into a byte array
                 byte[] fileData = File.ReadAllBytes(mergedExcelFilePath);
@@ -450,7 +510,9 @@ namespace SCaddins.ExportSchedules.ViewModels
                 if (uploadSuccess)
                 {
                     StatusMessage = "Export and upload completed successfully.";
-                    SCaddinsApp.WindowManager.ShowMessageBox("The schedules have been exported and uploaded successfully.");
+                    SCaddinsApp.WindowManager.ShowMessageBox(
+                        "The schedules have been exported and uploaded successfully.\n\n" +
+                        "Note: It may take a few minutes before the data appears in the nullCarbon web application.");
                 }
                 else
                 {
@@ -473,8 +535,11 @@ namespace SCaddins.ExportSchedules.ViewModels
         {
             if (IsLoggedIn)
             {
-                // If already logged in, do nothing or show a message
-                SCaddinsApp.WindowManager.ShowMessageBox("You are already logged in.");
+                // If already logged in, sign out
+                TokenCache.AccessToken = null;
+                TokenCache.RefreshToken = null;
+                IsLoggedIn = false;
+                SCaddinsApp.WindowManager.ShowMessageBox("You have been signed out.");
                 return;
             }
 
@@ -495,22 +560,6 @@ namespace SCaddins.ExportSchedules.ViewModels
             else
             {
                 SCaddinsApp.WindowManager.ShowMessageBox("Login failed or was canceled.");
-            }
-        }
-
-        public void SignUpCommand()
-        {
-            try
-            {
-                Process.Start(new ProcessStartInfo
-                {
-                    FileName = "https://app.nullcarbon.dk/sign-up",
-                    UseShellExecute = true
-                });
-            }
-            catch (Exception ex)
-            {
-                SCaddinsApp.WindowManager.ShowMessageBox($"Could not open the website: {ex.Message}");
             }
         }
     }

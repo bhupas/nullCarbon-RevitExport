@@ -1,6 +1,7 @@
 ﻿using Caliburn.Micro;
 using Newtonsoft.Json;
 using System;
+using System.Diagnostics;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -107,6 +108,22 @@ namespace SCaddins.ExportSchedules.ViewModels
             catch (Exception ex)
             {
                 StatusMessage = $"Exception: {ex.Message}";
+            }
+        }
+
+        public void SignUp()
+        {
+            try
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = "https://app.nullcarbon.dk/sign-up",
+                    UseShellExecute = true
+                });
+            }
+            catch (Exception ex)
+            {
+                StatusMessage = $"Could not open the signup page: {ex.Message}";
             }
         }
     }

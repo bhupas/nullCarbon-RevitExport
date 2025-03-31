@@ -200,7 +200,7 @@ namespace SCaddins.ExportSchedules.ViewModels
                     // Load buildings for the selected team
                     if (selectedTeam != null)
                     {
-                        System.Diagnostics.Debug.WriteLine($"Selected team: {selectedTeam.Name}, Slug: {selectedTeam.Slug}");
+                        Debug.WriteLine($"Selected team: {selectedTeam.Name}, Slug: {selectedTeam.Slug}");
                         LoadBuildingsAsync(selectedTeam.Slug);
                     }
                 }
@@ -242,16 +242,6 @@ namespace SCaddins.ExportSchedules.ViewModels
                     NotifyOfPropertyChange(() => SelectedReport);
                     NotifyOfPropertyChange(() => CanSelectSchedules);
                     NotifyOfPropertyChange(() => ExportOnlineIsEnabled);
-
-                    // Clear reports when building changes
-                    Reports.Clear();
-                    SelectedReport = null;
-
-                    // Load reports for the selected building
-                    if (selectedBuilding != null)
-                    {
-                        LoadReportsAsync(selectedBuilding.Id);
-                    }
                 }
             }
         }
@@ -357,7 +347,7 @@ namespace SCaddins.ExportSchedules.ViewModels
                 StatusMessage = $"Loading buildings for team '{teamSlug}'...";
                 IsLoading = true;
 
-                System.Diagnostics.Debug.WriteLine($"Loading buildings for team slug: {teamSlug}");
+                Debug.WriteLine($"Loading buildings for team slug: {teamSlug}");
 
                 // Validate arguments
                 if (string.IsNullOrEmpty(teamSlug))
@@ -372,12 +362,12 @@ namespace SCaddins.ExportSchedules.ViewModels
 
                 var buildings = await ApiService.GetBuildings(TokenCache.AccessToken, teamSlug);
 
-                System.Diagnostics.Debug.WriteLine($"Retrieved {buildings.Count} buildings");
+                Debug.WriteLine($"Retrieved {buildings.Count} buildings");
 
                 Buildings.Clear();
                 foreach (var building in buildings)
                 {
-                    System.Diagnostics.Debug.WriteLine($"Adding building: {building.Name} (ID: {building.Id})");
+                    Debug.WriteLine($"Adding building: {building.Name} (ID: {building.Id})");
                     Buildings.Add(building);
                 }
 
@@ -388,11 +378,11 @@ namespace SCaddins.ExportSchedules.ViewModels
                 }
                 else if (Buildings.Count > 0)
                 {
-                    System.Diagnostics.Debug.WriteLine($"Multiple buildings found: {Buildings.Count}");
+                    Debug.WriteLine($"Multiple buildings found: {Buildings.Count}");
                 }
                 else
                 {
-                    System.Diagnostics.Debug.WriteLine("No buildings found");
+                    Debug.WriteLine("No buildings found");
                 }
 
                 StatusMessage = Buildings.Count > 0
@@ -401,7 +391,7 @@ namespace SCaddins.ExportSchedules.ViewModels
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine($"Error in LoadBuildingsAsync: {ex}");
+                Debug.WriteLine($"Error in LoadBuildingsAsync: {ex}");
                 StatusMessage = $"Error loading buildings: {ex.Message}";
                 SCaddinsApp.WindowManager.ShowMessageBox($"Failed to load buildings: {ex.Message}");
             }
@@ -418,16 +408,16 @@ namespace SCaddins.ExportSchedules.ViewModels
                 StatusMessage = $"Loading reports for building...";
                 IsLoading = true;
 
-                System.Diagnostics.Debug.WriteLine($"Loading reports for building ID: {buildingId}");
+                Debug.WriteLine($"Loading reports for building ID: {buildingId}");
 
                 var reports = await ApiService.GetReports(TokenCache.AccessToken, buildingId);
 
-                System.Diagnostics.Debug.WriteLine($"Retrieved {reports.Count} reports");
+                Debug.WriteLine($"Retrieved {reports.Count} reports");
 
                 Reports.Clear();
                 foreach (var report in reports)
                 {
-                    System.Diagnostics.Debug.WriteLine($"Adding report: {report.Name} (ID: {report.Id})");
+                    Debug.WriteLine($"Adding report: {report.Name} (ID: {report.Id})");
                     Reports.Add(report);
                 }
 
@@ -443,7 +433,7 @@ namespace SCaddins.ExportSchedules.ViewModels
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine($"Error in LoadReportsAsync: {ex}");
+                Debug.WriteLine($"Error in LoadReportsAsync: {ex}");
                 StatusMessage = $"Error loading reports: {ex.Message}";
                 SCaddinsApp.WindowManager.ShowMessageBox($"Failed to load reports: {ex.Message}");
             }
@@ -517,7 +507,6 @@ namespace SCaddins.ExportSchedules.ViewModels
                     fileData,
                     mergedExcelFileName
                 );
-
                 if (uploadSuccess)
                 {
                     StatusMessage = "Export and upload completed successfully.";
@@ -541,6 +530,7 @@ namespace SCaddins.ExportSchedules.ViewModels
                 IsLoading = false;
             }
         }
+
         public bool CanSelectSchedules => SelectedReport != null;
 
         public async void LoginCommand()

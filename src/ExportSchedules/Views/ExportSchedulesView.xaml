@@ -298,17 +298,18 @@
                                    VerticalAlignment="Center"
                                    Margin="0,0,15,0"/>
 
-                        <!-- Wider Search Box -->
+                        <!-- Wider Search Box - Disabled if no report is selected -->
                         <TextBox Grid.Column="1" 
                                  x:Name="ScheduleFilterText"
                                  Style="{StaticResource SearchBoxStyle}"
                                  MinWidth="350"
                                  Width="Auto"
+                                 IsEnabled="{Binding CanSelectSchedules}"
                                  HorizontalAlignment="Stretch"/>
                     </Grid>
                 </Border>
 
-                <!-- DataGrid - IsEnabled based on having a report selected -->
+                <!-- DataGrid - Disabled if no report is selected -->
                 <DataGrid x:Name="Schedules"
                           Grid.Row="1"
                           Margin="0"
@@ -321,7 +322,15 @@
                           Background="White"
                           BorderThickness="0"
                           HeadersVisibility="Column"
-                          IsEnabled="{Binding SelectedReport, Converter={StaticResource ObjectToBooleanConverter}}">
+                          IsEnabled="{Binding CanSelectSchedules}">
+                    <!-- Optional ToolTip for when disabled -->
+                    <DataGrid.ToolTip>
+                        <ToolTip 
+                            Visibility="{Binding CanSelectSchedules, Converter={StaticResource BoolToVis}, ConverterParameter=Inverse}">
+                            <TextBlock Text="Select a report first to enable schedule selection" />
+                        </ToolTip>
+                    </DataGrid.ToolTip>
+
                     <DataGrid.Columns>
                         <!-- DataGridTemplateColumn for selection check box -->
                         <DataGridTemplateColumn Header="Select" Width="70">
@@ -347,12 +356,12 @@
                 </DataGrid>
 
                 <!-- Overlay message when no report is selected -->
-                <Border Grid.Row="1" 
-                        Background="#F9F9F9" 
-                        Opacity="0.8"
-                        Visibility="{Binding SelectedReport, Converter={StaticResource ObjectToBooleanConverter}, ConverterParameter=Inverse}">
-                    <TextBlock Text="Please select a Team, Building and Report to enable schedule selection" 
-                               HorizontalAlignment="Center" 
+                <Border Grid.Row="1"
+                        Background="#F5F5F5"
+                        Opacity="0.7"
+                        Visibility="{Binding CanSelectSchedules, Converter={StaticResource BoolToVis}, ConverterParameter=Inverse}">
+                    <TextBlock Text="Please select a Report above to enable schedule selection"
+                               HorizontalAlignment="Center"
                                VerticalAlignment="Center"
                                FontSize="14"
                                Foreground="#555555"/>
@@ -401,63 +410,58 @@
                     </Button.ToolTip>
                 </Button>
 
-                <!-- Status Area with separate visibility controls -->
+                <!-- Status Area - Contains Export Dir AND Loading Status -->
                 <Grid Grid.Column="2">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="11*"/>
-                        <ColumnDefinition Width="366*"/>
-                    </Grid.ColumnDefinitions>
-                    <!-- Export Directory - Always visible unless loading -->
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Export Directory - Always visible -->
                     <TextBlock x:Name="ExportDir" 
+                               Grid.Row="0"
                                Margin="5,0,5,0" 
                                VerticalAlignment="Center"
                                TextTrimming="CharacterEllipsis"
-                               FontSize="13" Grid.ColumnSpan="2">
-                        <TextBlock.Style>
-                            <Style TargetType="TextBlock">
-                                <Style.Triggers>
-                                    <DataTrigger Binding="{Binding IsLoading}" Value="True">
-                                        <Setter Property="Visibility" Value="Collapsed"/>
-                                    </DataTrigger>
-                                </Style.Triggers>
-                            </Style>
-                        </TextBlock.Style>
-                    </TextBlock>
+                               FontSize="13"/>
 
-                    <!-- Status Message During Operations -->
-                    <StackPanel Orientation="Horizontal" 
-                                Visibility="{Binding IsLoading, Converter={StaticResource BoolToVis}}" Grid.ColumnSpan="2">
-                        <TextBlock Text="{Binding StatusMessage}" 
-                                   Foreground="#007ACC" 
-                                   Margin="5,0,8,0"
-                                   VerticalAlignment="Center"
-                                   TextTrimming="CharacterEllipsis"/>
-                        <Grid Width="16" Height="16">
-                            <Path Stroke="#007ACC" 
-                                  StrokeThickness="3" 
-                                  RenderTransformOrigin="0.5,0.5">
-                                <Path.Data>
-                                    <EllipseGeometry Center="8,8" RadiusX="6" RadiusY="6"/>
-                                </Path.Data>
-                                <Path.RenderTransform>
-                                    <RotateTransform x:Name="SpinnerRotate" Angle="0"/>
-                                </Path.RenderTransform>
-                                <Path.Triggers>
-                                    <EventTrigger RoutedEvent="FrameworkElement.Loaded">
-                                        <BeginStoryboard>
-                                            <Storyboard>
-                                                <DoubleAnimation 
-                                                    Storyboard.TargetName="SpinnerRotate"
-                                                    Storyboard.TargetProperty="Angle"
-                                                    From="0" To="360" Duration="0:0:1"
-                                                    RepeatBehavior="Forever"/>
-                                            </Storyboard>
-                                        </BeginStoryboard>
-                                    </EventTrigger>
-                                </Path.Triggers>
-                            </Path>
-                        </Grid>
-                    </StackPanel>
+                    <!-- Status Message During Operations - Overlays the directory when active -->
+                    <Border Grid.Row="0" 
+                            Visibility="{Binding IsLoading, Converter={StaticResource BoolToVis}}"
+                            Background="#F7F7F7"
+                            Padding="2,0">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding StatusMessage}" 
+                                       Foreground="#007ACC" 
+                                       Margin="5,0,8,0"
+                                       VerticalAlignment="Center"
+                                       TextTrimming="CharacterEllipsis"/>
+                            <Grid Width="16" Height="16" VerticalAlignment="Center">
+                                <Path Stroke="#007ACC" 
+                                      StrokeThickness="3" 
+                                      RenderTransformOrigin="0.5,0.5">
+                                    <Path.Data>
+                                        <EllipseGeometry Center="8,8" RadiusX="6" RadiusY="6"/>
+                                    </Path.Data>
+                                    <Path.RenderTransform>
+                                        <RotateTransform x:Name="SpinnerRotate" Angle="0"/>
+                                    </Path.RenderTransform>
+                                    <Path.Triggers>
+                                        <EventTrigger RoutedEvent="Path.Loaded">
+                                            <BeginStoryboard>
+                                                <Storyboard>
+                                                    <DoubleAnimation 
+                                                        Storyboard.TargetName="SpinnerRotate"
+                                                        Storyboard.TargetProperty="Angle"
+                                                        From="0" To="360" Duration="0:0:1"
+                                                        RepeatBehavior="Forever"/>
+                                                </Storyboard>
+                                            </BeginStoryboard>
+                                        </EventTrigger>
+                                    </Path.Triggers>
+                                </Path>
+                            </Grid>
+                        </StackPanel>
+                    </Border>
                 </Grid>
 
                 <!-- Single Export Button -->

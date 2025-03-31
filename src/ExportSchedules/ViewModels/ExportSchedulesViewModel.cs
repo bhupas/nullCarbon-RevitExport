@@ -240,7 +240,18 @@ namespace SCaddins.ExportSchedules.ViewModels
                 {
                     selectedReport = value;
                     NotifyOfPropertyChange(() => SelectedReport);
+                    NotifyOfPropertyChange(() => CanSelectSchedules);
                     NotifyOfPropertyChange(() => ExportOnlineIsEnabled);
+
+                    // Clear reports when building changes
+                    Reports.Clear();
+                    SelectedReport = null;
+
+                    // Load reports for the selected building
+                    if (selectedBuilding != null)
+                    {
+                        LoadReportsAsync(selectedBuilding.Id);
+                    }
                 }
             }
         }
@@ -530,6 +541,7 @@ namespace SCaddins.ExportSchedules.ViewModels
                 IsLoading = false;
             }
         }
+        public bool CanSelectSchedules => SelectedReport != null;
 
         public async void LoginCommand()
         {

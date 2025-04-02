@@ -5,7 +5,6 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SCaddins.ExportSchedules.Views"
-             xmlns:converters="clr-namespace:SCaddins.ExportSchedules.Converters"
              xmlns:system="clr-namespace:System;assembly=mscorlib"
              mc:Ignorable="d" 
              d:DesignHeight="700" d:DesignWidth="1000"
@@ -91,10 +90,12 @@
         <Style x:Key="ModernDataGridCellStyle" TargetType="DataGridCell">
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="Padding" Value="8,6"/>
+            <Setter Property="Foreground" Value="Black"/>
             <Style.Triggers>
                 <Trigger Property="IsSelected" Value="True">
                     <Setter Property="Background" Value="Transparent"/>
                     <Setter Property="BorderBrush" Value="Transparent"/>
+                    <Setter Property="Foreground" Value="Black"/>
                 </Trigger>
             </Style.Triggers>
         </Style>
@@ -117,27 +118,7 @@
             <Setter Property="BorderBrush" Value="#CCCCCC"/>
             <Setter Property="Background" Value="White"/>
             <Setter Property="FontSize" Value="13"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="TextBox">
-                        <Border Background="{TemplateBinding Background}"
-                                BorderBrush="{TemplateBinding BorderBrush}"
-                                BorderThickness="{TemplateBinding BorderThickness}"
-                                CornerRadius="3">
-                            <Grid>
-                                <ScrollViewer x:Name="PART_ContentHost" 
-                                              Margin="{TemplateBinding Padding}" 
-                                              VerticalAlignment="Center"/>
-                                <TextBlock Text="Search schedules..." 
-                                           Margin="{TemplateBinding Padding}" 
-                                           VerticalAlignment="Center" 
-                                           Foreground="Gray" 
-                                           Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Text.IsEmpty, Converter={StaticResource BoolToVis}}"/>
-                            </Grid>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
         </Style>
 
         <!-- Selector Style -->
@@ -298,14 +279,32 @@
                                    VerticalAlignment="Center"
                                    Margin="0,0,15,0"/>
 
-                        <!-- Wider Search Box - Disabled if no report is selected -->
-                        <TextBox Grid.Column="1" 
-                                 x:Name="ScheduleFilterText"
-                                 Style="{StaticResource SearchBoxStyle}"
-                                 MinWidth="350"
-                                 Width="Auto"
-                                 IsEnabled="{Binding CanSelectSchedules}"
-                                 HorizontalAlignment="Stretch"/>
+                        <!-- Improved Search Box - Fixed cursor position issue -->
+                        <Grid Grid.Column="1">
+                            <TextBox x:Name="ScheduleFilterText"
+                                     Style="{StaticResource SearchBoxStyle}"
+                                     MinWidth="350"
+                                     Width="Auto"
+                                     IsEnabled="{Binding CanSelectSchedules}"
+                                     HorizontalAlignment="Stretch"/>
+                            <TextBlock Text="Search schedules..." 
+                                       Margin="9,0,0,0"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Left"
+                                       Foreground="Gray"
+                                       IsHitTestVisible="False">
+                                <TextBlock.Style>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="Visibility" Value="Collapsed"/>
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=ScheduleFilterText}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+                        </Grid>
                     </Grid>
                 </Border>
 
@@ -322,44 +321,78 @@
                           Background="White"
                           BorderThickness="0"
                           HeadersVisibility="Column"
-                          IsEnabled="{Binding CanSelectSchedules}">
-                    <!-- Optional ToolTip for when disabled -->
-                    <DataGrid.ToolTip>
-                        <ToolTip 
-                            Visibility="{Binding CanSelectSchedules, Converter={StaticResource BoolToVis}, ConverterParameter=Inverse}">
-                            <TextBlock Text="Select a report first to enable schedule selection" />
-                        </ToolTip>
-                    </DataGrid.ToolTip>
+                          SelectionMode="Extended"
+                          SelectionUnit="Cell"
+                          IsReadOnly="False"
+                          CanUserAddRows="False">
+                    <DataGrid.Style>
+                        <Style TargetType="DataGrid">
+                            <Setter Property="IsEnabled" Value="True"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding CanSelectSchedules}" Value="False">
+                                    <Setter Property="IsEnabled" Value="False"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </DataGrid.Style>
 
                     <DataGrid.Columns>
                         <!-- DataGridTemplateColumn for selection check box -->
-                        <DataGridTemplateColumn Header="Select" Width="70">
+                        <DataGridTemplateColumn Width="70">
+                            <DataGridTemplateColumn.Header>
+                                <CheckBox Content="All" 
+                      IsChecked="{Binding SelectAllSchedules, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                      IsEnabled="{Binding CanSelectSchedules}"
+                      VerticalAlignment="Center"
+                      Margin="0"/>
+                            </DataGridTemplateColumn.Header>
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
                                     <CheckBox IsChecked="{Binding IsSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                                              VerticalAlignment="Center"
-                                              HorizontalAlignment="Center"
-                                              Margin="0" />
+                          VerticalAlignment="Center"
+                          HorizontalAlignment="Center"
+                          Margin="0"/>
                                 </DataTemplate>
                             </DataGridTemplateColumn.CellTemplate>
                         </DataGridTemplateColumn>
-                        <!-- Name column -->
+                        <!-- Name column with explicit foreground -->
                         <DataGridTextColumn IsReadOnly="True"
-                                            Header="Name"
-                                            Binding="{Binding Schedule.RevitName}"
-                                            Width="*"/>
-                        <!-- Type column -->
+                        Header="Name"
+                        Binding="{Binding Schedule.RevitName}"
+                        Width="*">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="Foreground" Value="Black"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <!-- Type column with explicit foreground -->
                         <DataGridTextColumn Header="Type"
-                                            Binding="{Binding Schedule.Type}"
-                                            Width="160"/>
+                        Binding="{Binding Schedule.Type}"
+                        Width="160">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="Foreground" Value="Black"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
                     </DataGrid.Columns>
                 </DataGrid>
 
                 <!-- Overlay message when no report is selected -->
                 <Border Grid.Row="1"
                         Background="#F5F5F5"
-                        Opacity="0.7"
-                        Visibility="{Binding CanSelectSchedules, Converter={StaticResource BoolToVis}, ConverterParameter=Inverse}">
+                        Opacity="0.7">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding CanSelectSchedules}" Value="False">
+                                    <Setter Property="Visibility" Value="Visible"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
                     <TextBlock Text="Please select a Report above to enable schedule selection"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"

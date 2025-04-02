@@ -22,6 +22,8 @@ namespace SCaddins.ExportSchedules.ViewModels
         private string scheduleFilterText;
         private string scheduleTypeFilter;
         private ICollectionView scheduleCollectionView;
+        private bool _canSelectSchedules;
+        private bool _selectAllSchedules;
 
         public ExportSchedulesViewModel(List<Schedule> schedules, string exportDir)
         {
@@ -46,6 +48,7 @@ namespace SCaddins.ExportSchedules.ViewModels
                     {
                         NotifyOfPropertyChange(() => ExportIsEnabled);
                         NotifyOfPropertyChange(() => ExportOnlineIsEnabled);
+                        UpdateSelectAllState();
                     }
                 };
             }
@@ -54,6 +57,24 @@ namespace SCaddins.ExportSchedules.ViewModels
             if (IsLoggedIn)
             {
                 LoadTeamsAsync();
+            }
+        }
+
+        // Updates the SelectAllSchedules property based on current selections
+        private void UpdateSelectAllState()
+        {
+            // Only update if we have schedules and filtering is active
+            if (Schedules.Count > 0 && scheduleCollectionView != null)
+            {
+                var visibleSchedules = Schedules.Where(s => scheduleCollectionView.Filter(s));
+                bool allSelected = visibleSchedules.All(s => s.IsSelected);
+                bool anySelected = visibleSchedules.Any(s => s.IsSelected);
+
+                if (allSelected != _selectAllSchedules)
+                {
+                    _selectAllSchedules = allSelected;
+                    NotifyOfPropertyChange(() => SelectAllSchedules);
+                }
             }
         }
 
@@ -86,6 +107,7 @@ namespace SCaddins.ExportSchedules.ViewModels
                     scheduleFilterText = value;
                     NotifyOfPropertyChange(() => ScheduleFilterText);
                     scheduleCollectionView.Refresh();
+                    UpdateSelectAllState();
                 }
             }
         }
@@ -100,10 +122,41 @@ namespace SCaddins.ExportSchedules.ViewModels
                     scheduleTypeFilter = value;
                     NotifyOfPropertyChange(() => ScheduleTypeFilter);
                     scheduleCollectionView.Refresh();
+                    UpdateSelectAllState();
                 }
             }
         }
 
+        // Select All property for checkboxes
+        public bool SelectAllSchedules
+        {
+            get => _selectAllSchedules;
+            set
+            {
+                if (_selectAllSchedules != value)
+                {
+                    _selectAllSchedules = value;
+                    Debug.WriteLine($"SelectAllSchedules changed to: {value}");
+
+                    // Apply selection to all visible items
+                    Execute.OnUIThread(() =>
+                    {
+                        foreach (var item in Schedules)
+                        {
+                            if (scheduleCollectionView.Filter(item))
+                            {
+                                item.IsSelected = value;
+                            }
+                        }
+
+                        NotifyOfPropertyChange(() => SelectAllSchedules);
+                        NotifyOfPropertyChange(() => ExportIsEnabled);
+                        NotifyOfPropertyChange(() => ExportOnlineIsEnabled);
+                        NotifyOfPropertyChange(() => ExportLabel);
+                    });
+                }
+            }
+        }
         private bool ScheduleFilter(object item)
         {
             if (item is ScheduleItemViewModel scheduleItem)
@@ -239,9 +292,27 @@ namespace SCaddins.ExportSchedules.ViewModels
                 if (selectedReport != value)
                 {
                     selectedReport = value;
+                    Debug.WriteLine($"SelectedReport changed to: {(value == null ? "null" : value.Name)}");
+
+                    // Update the CanSelectSchedules property
+                    CanSelectSchedules = selectedReport != null;
+
                     NotifyOfPropertyChange(() => SelectedReport);
-                    NotifyOfPropertyChange(() => CanSelectSchedules);
                     NotifyOfPropertyChange(() => ExportOnlineIsEnabled);
+                }
+            }
+        }
+
+        public bool CanSelectSchedules
+        {
+            get { return _canSelectSchedules; }
+            private set
+            {
+                if (_canSelectSchedules != value)
+                {
+                    _canSelectSchedules = value;
+                    Debug.WriteLine($"CanSelectSchedules changed to: {value}");
+                    NotifyOfPropertyChange(() => CanSelectSchedules);
                 }
             }
         }
@@ -424,7 +495,18 @@ namespace SCaddins.ExportSchedules.ViewModels
                 // If there's only one report, select it automatically
                 if (Reports.Count == 1)
                 {
+                    Debug.WriteLine("Auto-selecting the only report: " + Reports[0].Name);
                     SelectedReport = Reports[0];
+
+                    // Force update after a delay to ensure UI catches up
+                    await System.Threading.Tasks.Task.Delay(100);
+                    Execute.OnUIThread(() =>
+                    {
+                        // Force selection again to ensure it's set
+                        SelectedReport = Reports[0];
+                        Debug.WriteLine($"Force refreshed SelectedReport: {SelectedReport.Name}");
+                        Debug.WriteLine($"CanSelectSchedules after refresh: {CanSelectSchedules}");
+                    });
                 }
 
                 StatusMessage = Reports.Count > 0
@@ -530,8 +612,6 @@ namespace SCaddins.ExportSchedules.ViewModels
                 IsLoading = false;
             }
         }
-
-        public bool CanSelectSchedules => SelectedReport != null;
 
         public async void LoginCommand()
         {

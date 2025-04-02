@@ -141,7 +141,7 @@
 
         <!-- Header Section -->
         <Border Grid.Row="0" 
-                Background="#007ACC" 
+                Background="#010a4f" 
                 CornerRadius="4"
                 Padding="20,12">
             <Grid>
@@ -337,14 +337,12 @@
                     </DataGrid.Style>
 
                     <DataGrid.Columns>
-                        <!-- DataGridTemplateColumn for selection check box -->
                         <DataGridTemplateColumn Width="70">
                             <DataGridTemplateColumn.Header>
-                                <CheckBox Content="All" 
-                      IsChecked="{Binding SelectAllSchedules, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                      IsEnabled="{Binding CanSelectSchedules}"
-                      VerticalAlignment="Center"
-                      Margin="0"/>
+                                <TextBlock Text="Select" 
+                       VerticalAlignment="Center" 
+                       HorizontalAlignment="Center"
+                       Margin="0"/>
                             </DataGridTemplateColumn.Header>
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
@@ -416,19 +414,6 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
-
-                <Button Height="Auto"
-                        Width="Auto"
-                        MinWidth="20"
-                        Margin="0,0,15,0"
-                        x:Name="Options"
-                        Style="{StaticResource IconButton}"
-                        Grid.Column="0">
-                    <Image Source="/SCaddins;component/Assets/gear.png" Stretch="None"/>
-                    <Button.ToolTip>
-                        <TextBlock>Export Options</TextBlock>
-                    </Button.ToolTip>
-                </Button>
 
                 <Button Height="Auto"
                         Width="Auto"

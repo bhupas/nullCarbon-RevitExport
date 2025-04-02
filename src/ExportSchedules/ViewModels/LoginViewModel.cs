@@ -5,46 +5,76 @@ using System.Diagnostics;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace SCaddins.ExportSchedules.ViewModels
 {
     public class LoginViewModel : Screen
     {
         private string username;
+        private string password;
+        private string statusMessage;
+        private bool isLoggingIn;
+
         public string Username
         {
             get => username;
             set
             {
-                username = value;
-                NotifyOfPropertyChange(() => Username);
+                if (username != value)
+                {
+                    username = value;
+                    NotifyOfPropertyChange(() => Username);
+                    NotifyOfPropertyChange(() => CanLogin);
+                }
             }
         }
 
-        // We'll collect the password from the OnPasswordChanged event 
-        private string password;
+        // Password is collected from the OnPasswordChanged event
         public string Password
         {
             get => password;
             set
             {
-                password = value;
-                NotifyOfPropertyChange(() => Password);
+                if (password != value)
+                {
+                    password = value;
+                    NotifyOfPropertyChange(() => Password);
+                    NotifyOfPropertyChange(() => CanLogin);
+                }
             }
         }
 
-        private string statusMessage;
         public string StatusMessage
         {
             get => statusMessage;
             set
             {
-                statusMessage = value;
-                NotifyOfPropertyChange(() => StatusMessage);
+                if (statusMessage != value)
+                {
+                    statusMessage = value;
+                    NotifyOfPropertyChange(() => StatusMessage);
+                }
             }
         }
 
-        // This is called from XAML when the PasswordBox changes:
+        public bool IsLoggingIn
+        {
+            get => isLoggingIn;
+            set
+            {
+                if (isLoggingIn != value)
+                {
+                    isLoggingIn = value;
+                    NotifyOfPropertyChange(() => IsLoggingIn);
+                    NotifyOfPropertyChange(() => CanLogin);
+                }
+            }
+        }
+
+        public bool CanLogin => !IsLoggingIn && !string.IsNullOrWhiteSpace(Username) && !string.IsNullOrWhiteSpace(Password);
+
+        // Called from XAML when the PasswordBox changes
         public void OnPasswordChanged(object source)
         {
             if (source is System.Windows.Controls.PasswordBox pwd)
@@ -55,59 +85,100 @@ namespace SCaddins.ExportSchedules.ViewModels
 
         public async Task Login()
         {
-            // Example base URL for your environment:
-            string baseUrl = "https://nullcarbonstaging.germanywestcentral.cloudapp.azure.com/backend";
-            string loginRoute = "/auth/jwt/create";
-            string fullUrl = baseUrl + loginRoute;
-
-            var requestData = new
+            if (!CanLogin)
             {
-                username = Username,
-                password = Password
-            };
+                return;
+            }
 
-            var jsonString = JsonConvert.SerializeObject(requestData);
-            var requestContent = new StringContent(jsonString, Encoding.UTF8, "application/json");
-
-            // Clear old status
-            StatusMessage = "";
+            IsLoggingIn = true;
+            StatusMessage = "Logging in...";
 
             try
             {
+                // API endpoint configuration
+                string baseUrl = "https://nullcarbonstaging.germanywestcentral.cloudapp.azure.com/backend";
+                string loginRoute = "/auth/jwt/create";
+                string fullUrl = baseUrl + loginRoute;
+
+                var requestData = new
+                {
+                    username = Username,
+                    password = Password
+                };
+
+                var jsonString = JsonConvert.SerializeObject(requestData);
+                var requestContent = new StringContent(jsonString, Encoding.UTF8, "application/json");
+
                 using (var client = new HttpClient())
                 {
+                    client.Timeout = TimeSpan.FromSeconds(30);
                     var response = await client.PostAsync(fullUrl, requestContent);
                     var responseBody = await response.Content.ReadAsStringAsync();
 
                     if (response.IsSuccessStatusCode)
                     {
-                        // Deserialize the JSON response for tokens.
+                        // Deserialize the JSON response for tokens
                         var tokenData = JsonConvert.DeserializeObject<LoginResponse>(responseBody);
 
                         if (tokenData != null && !string.IsNullOrEmpty(tokenData.Access))
                         {
-                            // Store the tokens in the static TokenCache.
+                            // Store the tokens
                             TokenCache.AccessToken = tokenData.Access;
                             TokenCache.RefreshToken = tokenData.Refresh;
 
-                            StatusMessage = "You are logged in!";
-                            // Close the dialog on successful login.
+                            StatusMessage = "Login successful!";
+
+                            // Close the dialog on successful login
+                            await Task.Delay(500); // Small delay to show success message
                             await TryCloseAsync(true);
                         }
                         else
                         {
-                            StatusMessage = "Login succeeded, but no token returned.";
+                            StatusMessage = "Login succeeded, but no valid token was returned.";
                         }
                     }
                     else
                     {
-                        StatusMessage = $"Login failed: {responseBody}";
+                        // Try to get a more specific error message from the response
+                        try
+                        {
+                            var errorObject = JsonConvert.DeserializeObject<dynamic>(responseBody);
+                            string errorMsg = "Login failed";
+
+                            // Check for common error fields in API responses
+                            if (errorObject.detail != null)
+                            {
+                                errorMsg += ": " + errorObject.detail.ToString();
+                            }
+                            else if (errorObject.error != null)
+                            {
+                                errorMsg += ": " + errorObject.error.ToString();
+                            }
+                            else if (errorObject.message != null)
+                            {
+                                errorMsg += ": " + errorObject.message.ToString();
+                            }
+                            else if (!string.IsNullOrEmpty(responseBody))
+                            {
+                                errorMsg += ": " + (responseBody.Length > 100 ? responseBody.Substring(0, 100) + "..." : responseBody);
+                            }
+
+                            StatusMessage = errorMsg;
+                        }
+                        catch
+                        {
+                            StatusMessage = $"Login failed with status code: {response.StatusCode}";
+                        }
                     }
                 }
             }
             catch (Exception ex)
             {
-                StatusMessage = $"Exception: {ex.Message}";
+                StatusMessage = $"Login error: {ex.Message}";
+            }
+            finally
+            {
+                IsLoggingIn = false;
             }
         }
 
@@ -143,5 +214,13 @@ namespace SCaddins.ExportSchedules.ViewModels
     {
         public static string AccessToken { get; set; }
         public static string RefreshToken { get; set; }
+
+        public static bool IsTokenValid => !string.IsNullOrEmpty(AccessToken);
+
+        public static void ClearTokens()
+        {
+            AccessToken = null;
+            RefreshToken = null;
+        }
     }
 }

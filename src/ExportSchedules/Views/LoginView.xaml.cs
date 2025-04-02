@@ -1,7 +1,7 @@
-﻿using System.Windows;
-
-namespace SCaddins.ExportSchedules.Views
+﻿namespace SCaddins.ExportSchedules.Views
 {
+    using System.Windows;
+
     public partial class LoginView : Window
     {
         public LoginView()
@@ -9,9 +9,5 @@ namespace SCaddins.ExportSchedules.Views
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

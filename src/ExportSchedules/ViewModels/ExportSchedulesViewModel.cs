@@ -23,7 +23,7 @@ namespace SCaddins.ExportSchedules.ViewModels
         private string scheduleTypeFilter;
         private ICollectionView scheduleCollectionView;
         private bool _canSelectSchedules;
-        private bool _selectAllSchedules;
+        // Removed _selectAllSchedules field
 
         public ExportSchedulesViewModel(List<Schedule> schedules, string exportDir)
         {
@@ -48,7 +48,7 @@ namespace SCaddins.ExportSchedules.ViewModels
                     {
                         NotifyOfPropertyChange(() => ExportIsEnabled);
                         NotifyOfPropertyChange(() => ExportOnlineIsEnabled);
-                        UpdateSelectAllState();
+                        // Removed UpdateSelectAllState() call
                     }
                 };
             }
@@ -60,23 +60,7 @@ namespace SCaddins.ExportSchedules.ViewModels
             }
         }
 
-        // Updates the SelectAllSchedules property based on current selections
-        private void UpdateSelectAllState()
-        {
-            // Only update if we have schedules and filtering is active
-            if (Schedules.Count > 0 && scheduleCollectionView != null)
-            {
-                var visibleSchedules = Schedules.Where(s => scheduleCollectionView.Filter(s));
-                bool allSelected = visibleSchedules.All(s => s.IsSelected);
-                bool anySelected = visibleSchedules.Any(s => s.IsSelected);
-
-                if (allSelected != _selectAllSchedules)
-                {
-                    _selectAllSchedules = allSelected;
-                    NotifyOfPropertyChange(() => SelectAllSchedules);
-                }
-            }
-        }
+        // Removed UpdateSelectAllState() method
 
         public static dynamic DefaultWindowSettings
         {
@@ -107,7 +91,7 @@ namespace SCaddins.ExportSchedules.ViewModels
                     scheduleFilterText = value;
                     NotifyOfPropertyChange(() => ScheduleFilterText);
                     scheduleCollectionView.Refresh();
-                    UpdateSelectAllState();
+                    // Removed UpdateSelectAllState() call
                 }
             }
         }
@@ -122,41 +106,13 @@ namespace SCaddins.ExportSchedules.ViewModels
                     scheduleTypeFilter = value;
                     NotifyOfPropertyChange(() => ScheduleTypeFilter);
                     scheduleCollectionView.Refresh();
-                    UpdateSelectAllState();
+                    // Removed UpdateSelectAllState() call
                 }
             }
         }
 
-        // Select All property for checkboxes
-        public bool SelectAllSchedules
-        {
-            get => _selectAllSchedules;
-            set
-            {
-                if (_selectAllSchedules != value)
-                {
-                    _selectAllSchedules = value;
-                    Debug.WriteLine($"SelectAllSchedules changed to: {value}");
+        // Removed SelectAllSchedules property
 
-                    // Apply selection to all visible items
-                    Execute.OnUIThread(() =>
-                    {
-                        foreach (var item in Schedules)
-                        {
-                            if (scheduleCollectionView.Filter(item))
-                            {
-                                item.IsSelected = value;
-                            }
-                        }
-
-                        NotifyOfPropertyChange(() => SelectAllSchedules);
-                        NotifyOfPropertyChange(() => ExportIsEnabled);
-                        NotifyOfPropertyChange(() => ExportOnlineIsEnabled);
-                        NotifyOfPropertyChange(() => ExportLabel);
-                    });
-                }
-            }
-        }
         private bool ScheduleFilter(object item)
         {
             if (item is ScheduleItemViewModel scheduleItem)
@@ -376,6 +332,21 @@ namespace SCaddins.ExportSchedules.ViewModels
             }
         }
 
+        // Added method to select/deselect all visible schedules
+        public void SelectNoneVisible()
+        {
+            foreach (var item in Schedules)
+            {
+                if (scheduleCollectionView.Filter(item))
+                {
+                    item.IsSelected = false;
+                }
+            }
+            NotifyOfPropertyChange(() => ExportIsEnabled);
+            NotifyOfPropertyChange(() => ExportOnlineIsEnabled);
+            NotifyOfPropertyChange(() => ExportLabel);
+        }
+
         // Online functionality methods
         private async void LoadTeamsAsync()
         {
@@ -410,6 +381,7 @@ namespace SCaddins.ExportSchedules.ViewModels
                 IsLoading = false;
             }
         }
+
 
         private async void LoadBuildingsAsync(string teamSlug)
         {
@@ -540,6 +512,12 @@ namespace SCaddins.ExportSchedules.ViewModels
                     .Select(item => item.Schedule)
                     .ToList();
 
+                if (selectedSchedules.Count == 0)
+                {
+                    StatusMessage = "No schedules selected for export";
+                    return;
+                }
+
                 // Generate schedule names for status message
                 string scheduleNames = string.Join(", ", selectedSchedules.Select(s => s.RevitName));
 
@@ -576,19 +554,26 @@ namespace SCaddins.ExportSchedules.ViewModels
                     throw new Exception("Failed to create Excel file for upload.");
                 }
 
+                // Get file size for information
+                var fileInfo = new FileInfo(mergedExcelFilePath);
+                string fileSize = (fileInfo.Length / 1024.0 / 1024.0).ToString("F2"); // Size in MB
+
                 // Update status with uploading message
-                StatusMessage = "Please wait... Uploading to nullCarbon";
+                StatusMessage = $"Please wait... Uploading to nullCarbon ({fileSize} MB)";
 
                 // Read the file into a byte array
                 byte[] fileData = File.ReadAllBytes(mergedExcelFilePath);
 
                 // Upload the file to the nullCarbon backend
+                StatusMessage = $"Uploading file... This may take several minutes for large files";
+
                 bool uploadSuccess = await ApiService.UploadExcelFile(
                     TokenCache.AccessToken,
                     SelectedReport.Id,
                     fileData,
                     mergedExcelFileName
                 );
+
                 if (uploadSuccess)
                 {
                     StatusMessage = "Export and upload completed successfully.";
@@ -621,7 +606,7 @@ namespace SCaddins.ExportSchedules.ViewModels
                 TokenCache.AccessToken = null;
                 TokenCache.RefreshToken = null;
                 IsLoggedIn = false;
-                SCaddinsApp.WindowManager.ShowMessageBox("You have been signed out.");
+                // Sign out popup message has been removed
                 return;
             }
 
@@ -637,7 +622,7 @@ namespace SCaddins.ExportSchedules.ViewModels
             if (!string.IsNullOrEmpty(TokenCache.AccessToken))
             {
                 IsLoggedIn = true; // This will trigger LoadTeamsAsync()
-                SCaddinsApp.WindowManager.ShowMessageBox("You are logged in!");
+                               
             }
             else
             {

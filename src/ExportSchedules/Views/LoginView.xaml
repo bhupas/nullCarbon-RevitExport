@@ -14,7 +14,7 @@
         </Grid.RowDefinitions>
 
         <!-- Header with logo/title -->
-        <Border Grid.Row="0" Background="#007ACC" Padding="20,15">
+        <Border Grid.Row="0" Background="#010a4f" Padding="20,15">
             <TextBlock Text="nullCarbon LCA" 
                        Foreground="White" 
                        FontSize="24" 
@@ -53,7 +53,7 @@
                     <Button Grid.Column="0" 
                             Content="Login" 
                             cal:Message.Attach="Login"
-                            Background="#007ACC"
+                            Background="#010a4f"
                             Foreground="White"
                             FontSize="14"
                             Padding="15,8" 

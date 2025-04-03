@@ -135,7 +135,7 @@ namespace SCaddins
             dynamic settings = new ExpandoObject();
             settings.Height = 640;
             settings.Width = 480;
-            settings.Title = "SCaddins Version Information";
+            settings.Title = " Version Information";
             settings.ShowInTaskbar = false;
             settings.ResizeMode = System.Windows.ResizeMode.NoResize;
             settings.SizeToContent = System.Windows.SizeToContent.WidthAndHeight;
@@ -165,14 +165,16 @@ namespace SCaddins
                 case UITheme.Dark:
                     AssignPushButtonImage(scheduleExporterPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt-16-dark.png", 16, dll);
                     AssignPushButtonImage(scheduleExporterPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt-dark.png", 32, dll);
-                    AssignPushButtonImage(aboutPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt-16-dark.png", 16, dll);
-                    AssignPushButtonImage(aboutPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt-dark.png", 32, dll);
+                    // Commenting out About button image assignment since we're making it invisible
+                    // AssignPushButtonImage(aboutPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt-16-dark.png", 16, dll);
+                    // AssignPushButtonImage(aboutPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt-dark.png", 32, dll);
                     break;
                 case UITheme.Light:
                     AssignPushButtonImage(scheduleExporterPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt-16.png", 16, dll);
                     AssignPushButtonImage(scheduleExporterPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt.png", 32, dll);
-                    AssignPushButtonImage(aboutPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt-16.png", 16, dll);
-                    AssignPushButtonImage(aboutPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt.png", 32, dll);
+                    // Commenting out About button image assignment since we're making it invisible
+                    // AssignPushButtonImage(aboutPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt-16.png", 16, dll);
+                    // AssignPushButtonImage(aboutPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt.png", 32, dll);
                     break;
             }
             ribbonPanel.Visible = false;
@@ -199,7 +201,7 @@ namespace SCaddins
             var scdll = new Uri(Assembly.GetAssembly(typeof(SCaddinsApp)).Location).LocalPath;
 #endif
 
-            // Only add the Export Schedules and About buttons
+            // Only add the Export Schedules button
             var exportButton = LoadScheduleExporter(scdll);
             scheduleExporterPushButton = ribbonPanel.AddItem(exportButton) as PushButton;
 
@@ -207,13 +209,15 @@ namespace SCaddins
             AssignPushButtonImage(scheduleExporterPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt-16.png", 16, scdll);
             AssignPushButtonImage(scheduleExporterPushButton, @"SCaddins.Assets.Ribbon.scexport-rvt.png", 32, scdll);
 
-            // Add About button
+            // Comment out About button creation to make it invisible
+            /* 
             var aboutButton = LoadAbout(scdll);
             aboutPushButton = ribbonPanel.AddItem(aboutButton) as PushButton;
 
             // Explicitly set the icon for About button
             AssignPushButtonImage(aboutPushButton, "SCaddins.Assets.Ribbon.scexport-rvt-16.png", 16, scdll);
             AssignPushButtonImage(aboutPushButton, "SCaddins.Assets.Ribbon.scexport-rvt.png", 32, scdll);
+            */
 
 #if REVIT2024 || REVIT2025
             ChangeTheme();

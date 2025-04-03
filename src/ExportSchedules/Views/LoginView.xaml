@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:cal="http://www.caliburnproject.org"
         Title="Login to nullCarbon" 
-        Height="500" Width="500"
+        Height="550" Width="500"
         WindowStartupLocation="CenterScreen"
         WindowStyle="ToolWindow">
     <Grid>
@@ -14,10 +14,10 @@
         </Grid.RowDefinitions>
 
         <!-- Header with logo/title -->
-        <Border Grid.Row="0" Background="#010a4f" Padding="20,15">
+        <Border Grid.Row="0" Background="#010a4f" Padding="20,18">
             <TextBlock Text="nullCarbon LCA" 
                        Foreground="White" 
-                       FontSize="24" 
+                       FontSize="26" 
                        FontWeight="Bold"
                        HorizontalAlignment="Center"/>
         </Border>
@@ -26,37 +26,46 @@
         <Border Grid.Row="1" 
                 Background="White" 
                 Margin="30" 
-                CornerRadius="5" 
+                CornerRadius="6" 
                 BorderBrush="#DDDDDD" 
                 BorderThickness="1"
-                Padding="30">
+                Padding="35">
             <StackPanel VerticalAlignment="Center">
+
                 <TextBlock Text="Username:" Margin="0,0,0,8" FontWeight="SemiBold" FontSize="14"/>
                 <TextBox Text="{Binding Username, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                         Padding="8,6"
+                         Padding="10,8"
                          FontSize="14"
+                         BorderThickness="1"
+                         BorderBrush="#CCCCCC"
                          Margin="0,0,0,20"/>
 
                 <TextBlock Text="Password:" Margin="0,0,0,8" FontWeight="SemiBold" FontSize="14"/>
                 <PasswordBox cal:Message.Attach="[Event PasswordChanged] = [Action OnPasswordChanged($source)]"
-                             Padding="8,6"
+                             Padding="10,8"
                              FontSize="14"
+                             BorderThickness="1"
+                             BorderBrush="#CCCCCC"
                              Margin="0,0,0,30"/>
 
-                <!-- Buttons -->
+                <!-- Buttons - Positions swapped and colors changed -->
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
 
+                    <!-- Sign Up button - Now on the left with subdued styling -->
                     <Button Grid.Column="0" 
-                            Content="Login" 
-                            cal:Message.Attach="Login"
-                            Background="#010a4f"
-                            Foreground="White"
+                            Content="Sign Up" 
+                            cal:Message.Attach="SignUp"
+                            Background="#F2F2F2"
+                            Foreground="#555555"
                             FontSize="14"
-                            Padding="15,8" 
+                            FontWeight="Normal"
+                            BorderBrush="#CCCCCC"
+                            BorderThickness="1"
+                            Padding="15,10" 
                             Margin="0,0,5,0">
                         <Button.Template>
                             <ControlTemplate TargetType="Button">
@@ -70,20 +79,22 @@
                                 </Border>
                                 <ControlTemplate.Triggers>
                                     <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter Property="Background" Value="#0066A8"/>
+                                        <Setter Property="Background" Value="#E5E5E5"/>
                                     </Trigger>
                                 </ControlTemplate.Triggers>
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
 
+                    <!-- Login button - Now on the right with prominent styling -->
                     <Button Grid.Column="1" 
-                            Content="Sign Up" 
-                            cal:Message.Attach="SignUp"
-                            Background="#1E9E42"
+                            Content="Login" 
+                            cal:Message.Attach="Login"
+                            Background="#1E7AC9"
                             Foreground="White"
                             FontSize="14"
-                            Padding="15,8"
+                            FontWeight="SemiBold"
+                            Padding="15,10"
                             Margin="5,0,0,0">
                         <Button.Template>
                             <ControlTemplate TargetType="Button">
@@ -97,7 +108,7 @@
                                 </Border>
                                 <ControlTemplate.Triggers>
                                     <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter Property="Background" Value="#167A32"/>
+                                        <Setter Property="Background" Value="#0066CC"/>
                                     </Trigger>
                                 </ControlTemplate.Triggers>
                             </ControlTemplate>
@@ -111,6 +122,13 @@
                            Foreground="Red"
                            TextWrapping="Wrap"
                            FontSize="13"/>
+
+                <!-- Help text -->
+                <TextBlock Text="Need help? Contact support@nullcarbon.com" 
+                           Foreground="#666666"
+                           FontSize="12"
+                           HorizontalAlignment="Center"
+                           Margin="0,20,0,0"/>
             </StackPanel>
         </Border>
     </Grid>

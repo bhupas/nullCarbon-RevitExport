@@ -352,7 +352,7 @@ namespace SCaddins.ExportSchedules.ViewModels
         {
             try
             {
-                StatusMessage = "Loading teams...";
+                StatusMessage = "Indlæser hold...";
                 IsLoading = true;
 
                 var teams = await ApiService.GetTeams(TokenCache.AccessToken);
@@ -373,7 +373,7 @@ namespace SCaddins.ExportSchedules.ViewModels
             }
             catch (Exception ex)
             {
-                StatusMessage = $"Error loading teams: {ex.Message}";
+                StatusMessage = $"Fejl ved indlæsning af hold: {ex.Message}";
                 SCaddinsApp.WindowManager.ShowMessageBox($"Failed to load teams: {ex.Message}");
             }
             finally
@@ -387,7 +387,7 @@ namespace SCaddins.ExportSchedules.ViewModels
         {
             try
             {
-                StatusMessage = $"Loading buildings for team '{teamSlug}'...";
+                StatusMessage = $"Indlæser bygninger for hold '{teamSlug}'...";
                 IsLoading = true;
 
                 Debug.WriteLine($"Loading buildings for team slug: {teamSlug}");
@@ -429,13 +429,13 @@ namespace SCaddins.ExportSchedules.ViewModels
                 }
 
                 StatusMessage = Buildings.Count > 0
-                    ? $"Loaded {Buildings.Count} buildings"
-                    : "No buildings found";
+                    ? $"Indlæst {Buildings.Count} bygninger"
+                    : "Ingen bygninger fundet";
             }
             catch (Exception ex)
             {
                 Debug.WriteLine($"Error in LoadBuildingsAsync: {ex}");
-                StatusMessage = $"Error loading buildings: {ex.Message}";
+                StatusMessage = $"Fejl ved indlæsning af bygninger: {ex.Message}";
                 SCaddinsApp.WindowManager.ShowMessageBox($"Failed to load buildings: {ex.Message}");
             }
             finally
@@ -448,7 +448,7 @@ namespace SCaddins.ExportSchedules.ViewModels
         {
             try
             {
-                StatusMessage = $"Loading reports for building...";
+                StatusMessage = $"Indlæser rapporter for bygning...";
                 IsLoading = true;
 
                 Debug.WriteLine($"Loading reports for building ID: {buildingId}");
@@ -482,13 +482,13 @@ namespace SCaddins.ExportSchedules.ViewModels
                 }
 
                 StatusMessage = Reports.Count > 0
-                    ? $"Loaded {Reports.Count} reports"
-                    : "No reports found";
+                    ? $"Indlæst {Reports.Count} rapporter"
+                    : "Ingen rapporter fundet";
             }
             catch (Exception ex)
             {
                 Debug.WriteLine($"Error in LoadReportsAsync: {ex}");
-                StatusMessage = $"Error loading reports: {ex.Message}";
+                StatusMessage = $"Fejl ved indlæsning af rapporter: {ex.Message}";
                 SCaddinsApp.WindowManager.ShowMessageBox($"Failed to load reports: {ex.Message}");
             }
             finally
@@ -514,7 +514,7 @@ namespace SCaddins.ExportSchedules.ViewModels
 
                 if (selectedSchedules.Count == 0)
                 {
-                    StatusMessage = "No schedules selected for export";
+                    StatusMessage = "Ingen skemaer valgt til eksport";
                     return;
                 }
 
@@ -528,7 +528,7 @@ namespace SCaddins.ExportSchedules.ViewModels
                     scheduleNames = scheduleNames.Substring(0, 80) + $"... and {count - 3} more";
                 }
 
-                StatusMessage = $"Please wait... Exporting schedules: {scheduleNames}";
+                StatusMessage = $"Vent venligst... Eksporterer skemaer: {scheduleNames}";
                 IsLoading = true;
 
                 // Generate a unique filename based on the document name
@@ -543,7 +543,7 @@ namespace SCaddins.ExportSchedules.ViewModels
                 string mergedExcelFilePath = Path.Combine(ExportDir, mergedExcelFileName);
 
                 // Update status with exporting message
-                StatusMessage = "Please wait... Creating Excel file";
+                StatusMessage = "Vent venligst... Opretter Excel-fil";
 
                 // Use the existing export functionality to create the Excel file
                 var exportMsg = Utilities.Export(selectedSchedules, ExportDir);
@@ -559,13 +559,13 @@ namespace SCaddins.ExportSchedules.ViewModels
                 string fileSize = (fileInfo.Length / 1024.0 / 1024.0).ToString("F2"); // Size in MB
 
                 // Update status with uploading message
-                StatusMessage = $"Please wait... Uploading to nullCarbon ({fileSize} MB)";
+                StatusMessage = $"Vent venligst... Uploader til nullCarbon ({fileSize} MB)";
 
                 // Read the file into a byte array
                 byte[] fileData = File.ReadAllBytes(mergedExcelFilePath);
 
                 // Upload the file to the nullCarbon backend
-                StatusMessage = $"Uploading file... This may take several minutes for large files";
+                StatusMessage = $"Uploader fil... Dette kan tage flere minutter for store filer";
 
                 bool uploadSuccess = await ApiService.UploadExcelFile(
                     TokenCache.AccessToken,
@@ -576,20 +576,20 @@ namespace SCaddins.ExportSchedules.ViewModels
 
                 if (uploadSuccess)
                 {
-                    StatusMessage = "Export and upload completed successfully.";
+                    StatusMessage = "Eksport og upload gennemført med succes.";
                     SCaddinsApp.WindowManager.ShowMessageBox(
-                        "The schedules have been exported and uploaded successfully.\n\n" +
-                        "Note: It may take a few minutes before the data appears in the nullCarbon web application.");
+                        "Skemaerne er blevet eksporteret og uploadet med succes\n\n" +
+                        "Bemærk: Det kan tage et par minutter, før dataene vises i nullCarbon web-applikationen.");
                 }
                 else
                 {
-                    StatusMessage = "Upload failed.";
-                    SCaddinsApp.WindowManager.ShowMessageBox("The schedules were exported but could not be uploaded to the server.");
+                    StatusMessage = "Upload mislykkedes.";
+                    SCaddinsApp.WindowManager.ShowMessageBox("Skemaerne blev eksporteret, men kunne ikke uploades til serveren");
                 }
             }
             catch (Exception ex)
             {
-                StatusMessage = $"Error during export and upload: {ex.Message}";
+                StatusMessage = $"Fejl under eksport og upload: {ex.Message}";
                 SCaddinsApp.WindowManager.ShowMessageBox($"Export and upload failed: {ex.Message}");
             }
             finally
@@ -622,11 +622,11 @@ namespace SCaddins.ExportSchedules.ViewModels
             if (!string.IsNullOrEmpty(TokenCache.AccessToken))
             {
                 IsLoggedIn = true; // This will trigger LoadTeamsAsync()
-                               
+
             }
             else
             {
-                SCaddinsApp.WindowManager.ShowMessageBox("Login failed or was canceled.");
+                SCaddinsApp.WindowManager.ShowMessageBox("Loginfejl eller blev annulleret");
             }
         }
     }

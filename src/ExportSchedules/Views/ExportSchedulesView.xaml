@@ -150,7 +150,7 @@
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
 
-                <TextBlock Text="nullCarbon LCA Export" 
+                <TextBlock Text="nullCarbon LCA Eksport" 
                            FontSize="20" 
                            FontWeight="Bold" 
                            Foreground="White"
@@ -211,7 +211,7 @@
 
                     <!-- Team Selector -->
                     <StackPanel Grid.Column="0" Margin="0,0,5,0">
-                        <TextBlock Text="Team" 
+                        <TextBlock Text="Hold" 
                                    FontWeight="SemiBold" 
                                    Margin="0,0,0,5"/>
                         <ComboBox ItemsSource="{Binding Teams}"
@@ -223,7 +223,7 @@
 
                     <!-- Building Selector -->
                     <StackPanel Grid.Column="1" Margin="5,0,5,0">
-                        <TextBlock Text="Building" 
+                        <TextBlock Text="Bygning" 
                                    FontWeight="SemiBold" 
                                    Margin="0,0,0,5"/>
                         <ComboBox ItemsSource="{Binding Buildings}"
@@ -235,7 +235,7 @@
 
                     <!-- Report Selector -->
                     <StackPanel Grid.Column="2" Margin="5,0,0,0">
-                        <TextBlock Text="Report" 
+                        <TextBlock Text="Rapport" 
                                    FontWeight="SemiBold" 
                                    Margin="0,0,0,5"/>
                         <ComboBox ItemsSource="{Binding Reports}"
@@ -273,7 +273,7 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
 
-                        <TextBlock Text="Available Schedules" 
+                        <TextBlock Text="Tilgængelige Skemaer" 
                                    FontWeight="SemiBold" 
                                    FontSize="14"
                                    VerticalAlignment="Center"
@@ -287,7 +287,7 @@
                                      Width="Auto"
                                      IsEnabled="{Binding CanSelectSchedules}"
                                      HorizontalAlignment="Stretch"/>
-                            <TextBlock Text="Search schedules..." 
+                            <TextBlock Text="Søg i skemaer..." 
                                        Margin="9,0,0,0"
                                        VerticalAlignment="Center"
                                        HorizontalAlignment="Left"
@@ -339,7 +339,7 @@
                     <DataGrid.Columns>
                         <DataGridTemplateColumn Width="70">
                             <DataGridTemplateColumn.Header>
-                                <TextBlock Text="Select" 
+                                <TextBlock Text="Vælg" 
                        VerticalAlignment="Center" 
                        HorizontalAlignment="Center"
                        Margin="0"/>
@@ -355,7 +355,7 @@
                         </DataGridTemplateColumn>
                         <!-- Name column with explicit foreground -->
                         <DataGridTextColumn IsReadOnly="True"
-                        Header="Name"
+                        Header="Navn"
                         Binding="{Binding Schedule.RevitName}"
                         Width="*">
                             <DataGridTextColumn.ElementStyle>
@@ -391,7 +391,7 @@
                             </Style.Triggers>
                         </Style>
                     </Border.Style>
-                    <TextBlock Text="Please select a Report above to enable schedule selection"
+                    <TextBlock Text="Vælg venligst en rapport ovenfor for at aktivere skemavalg"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"
                                FontSize="14"
@@ -424,7 +424,7 @@
                         Grid.Column="1">
                     <Image Source="/SCaddins;component/Assets/folder.png" Stretch="None"/>
                     <Button.ToolTip>
-                        <TextBlock>Select export directory</TextBlock>
+                        <TextBlock>Vælg eksportmappe</TextBlock>
                     </Button.ToolTip>
                 </Button>
 
@@ -485,12 +485,12 @@
                 <!-- Single Export Button -->
                 <Button x:Name="ExportOnline" 
                         IsEnabled="{Binding ExportOnlineIsEnabled}" 
-                        Content="Export" 
+                        Content="Eksporter" 
                         Style="{StaticResource ActionButton}"
                         Margin="0" 
                         MinWidth="120"
                         Grid.Column="3"
-                        Visibility="{Binding IsLoggedIn, Converter={StaticResource BoolToVis}}"/>
+                        Visibility="{Binding IsLoggedIn, Converter={StaticResource BoolToVis}}" Click="ExportOnline_Click"/>
             </Grid>
         </Border>
     </Grid>

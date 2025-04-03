@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\viewmodels\\exportschedulesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\views\\exportschedulesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\views\\exportschedulesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -29,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\utilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\utilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|solutionrelative:exportschedules\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27F35A98-001A-4309-A488-95632B96BDDA}|SCaddins.csproj|c:\\work_revit\\src\\exportschedules\\views\\exportschedulesview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -165,23 +165,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\ViewModels\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "ExportSchedules\\ViewModels\\LoginViewModel.cs",
-              "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\ViewModels\\LoginViewModel.cs",
-              "RelativeToolTip": "ExportSchedules\\ViewModels\\LoginViewModel.cs",
-              "ViewState": "AgIAAMAAAAAAAAAAAAAowMwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T09:15:55.499Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "LoginView.xaml",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Views\\LoginView.xaml",
               "RelativeDocumentMoniker": "ExportSchedules\\Views\\LoginView.xaml",
@@ -192,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Schedule.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Schedule.cs",
               "RelativeDocumentMoniker": "ExportSchedules\\Schedule.cs",
@@ -210,14 +198,14 @@
               "RelativeDocumentMoniker": "ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
               "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
               "RelativeToolTip": "ExportSchedules\\ViewModels\\ExportSchedulesViewModel.cs",
-              "ViewState": "AgIAAC8CAAAAAAAAAAAuwEMCAAANAAAAAAAAAA==",
+              "ViewState": "AgIAADkCAAAAAAAAAAAAAE0CAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T13:05:50.969Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ExportSchedulesView.xaml",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Views\\ExportSchedulesView.xaml",
               "RelativeDocumentMoniker": "ExportSchedules\\Views\\ExportSchedulesView.xaml",
@@ -228,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "LoginView.xaml.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Views\\LoginView.xaml.cs",
               "RelativeDocumentMoniker": "ExportSchedules\\Views\\LoginView.xaml.cs",
@@ -237,6 +225,31 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-26T13:09:21.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApiService.cs",
+              "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Services\\ApiService.cs",
+              "RelativeDocumentMoniker": "ExportSchedules\\Services\\ApiService.cs",
+              "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\Services\\ApiService.cs",
+              "RelativeToolTip": "ExportSchedules\\Services\\ApiService.cs",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAAAK4AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T13:07:32.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "ExportSchedules\\ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "ExportSchedules\\ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAowMwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T09:15:55.499Z"
             },
             {
               "$type": "Document",
@@ -252,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Utilities.cs",
               "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Utilities.cs",
               "RelativeDocumentMoniker": "ExportSchedules\\Utilities.cs",
@@ -261,18 +274,6 @@
               "ViewState": "AgIAABkBAAAAAAAAAAAowCsBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-02T09:17:10.826Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ApiService.cs",
-              "DocumentMoniker": "C:\\Work_revit\\src\\ExportSchedules\\Services\\ApiService.cs",
-              "RelativeDocumentMoniker": "ExportSchedules\\Services\\ApiService.cs",
-              "ToolTip": "C:\\Work_revit\\src\\ExportSchedules\\Services\\ApiService.cs",
-              "RelativeToolTip": "ExportSchedules\\Services\\ApiService.cs",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAowKcAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T13:07:32.684Z"
             },
             {
               "$type": "Document",

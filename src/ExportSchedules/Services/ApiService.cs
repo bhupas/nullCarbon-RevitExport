@@ -11,7 +11,7 @@ namespace SCaddins.ExportSchedules.Services
 {
     public class ApiService
     {
-        private const string BaseUrl = "https://nullcarbonstaging.germanywestcentral.cloudapp.azure.com/backend";
+        private const string BaseUrl = "https://backend.nullcarbon.dk";
         private static readonly HttpClient _httpClient;
 
         // Static constructor to initialize the shared HttpClient
